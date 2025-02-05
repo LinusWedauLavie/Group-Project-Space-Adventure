@@ -484,7 +484,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      toxic_waste_0: -65814191190327750
+      toxic_waste_1: 3579490768516010563
+      toxic_waste_10: 7377954492167114916
+      toxic_waste_11: 1358308260036360862
+      toxic_waste_12: -6048597109046714800
+      toxic_waste_13: 5415525484969091318
+      toxic_waste_14: 8625426581384450349
+      toxic_waste_2: 6975357594900002746
+      toxic_waste_3: 2079143557563022077
+      toxic_waste_4: -4581112984625150654
+      toxic_waste_5: 302266575884663362
+      toxic_waste_6: 4311254739602597162
+      toxic_waste_7: -1980944092873345411
+      toxic_waste_8: -1228513614847854764
+      toxic_waste_9: 5903862000492882855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

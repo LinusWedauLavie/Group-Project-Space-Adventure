@@ -151,17 +151,23 @@ TextureImporter:
       name: doors_and_buttons_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 127
-        width: 18
-        height: 8
+        x: 16
+        y: 128
+        width: 16
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 9, y: 3}
+        - {x: 8, y: 4}
+        - {x: -8, y: 4}
+        - {x: -9, y: 2}
+        - {x: -9, y: -4}
+        - {x: 9, y: -4}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 3d95a55bfd06d2310800000000000000
       internalID: 1381867174609181139
@@ -173,17 +179,21 @@ TextureImporter:
       name: doors_and_buttons_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 63
-        width: 15
-        height: 82
+        x: 33
+        y: 64
+        width: 13
+        height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 7.5, y: 41}
+        - {x: -7.5, y: 41}
+        - {x: -7.5, y: -41}
+        - {x: 7.5, y: -41}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 2ab0786478c53f7d0800000000000000
       internalID: -2885861200140760158
@@ -195,17 +205,23 @@ TextureImporter:
       name: doors_and_buttons_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 130
-        width: 15
-        height: 15
+        x: 49
+        y: 131
+        width: 13
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 7.5, y: -5.5}
+        - {x: 7.5, y: 7.5}
+        - {x: -7.5, y: 7.5}
+        - {x: -7.5, y: -3.5}
+        - {x: -1.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 15cd74f8bcb5d6030800000000000000
       internalID: 3489546216122342481
@@ -217,17 +233,21 @@ TextureImporter:
       name: doors_and_buttons_3
       rect:
         serializedVersion: 2
-        x: 68
-        y: 127
-        width: 24
-        height: 7
+        x: 69
+        y: 128
+        width: 22
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 12, y: 3.5}
+        - {x: -12, y: 3.5}
+        - {x: -12, y: -3.5}
+        - {x: 12, y: -3.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 580aec05b1b128730800000000000000
       internalID: 3999789223192207493
@@ -239,17 +259,21 @@ TextureImporter:
       name: doors_and_buttons_4
       rect:
         serializedVersion: 2
-        x: 95
-        y: 47
-        width: 194
-        height: 98
+        x: 256
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -64, y: 1}
+        - {x: -95, y: 1}
+        - {x: -95, y: -48}
+        - {x: -64, y: -48}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 8fe7d917578401510800000000000000
       internalID: 1517792743678377720
@@ -261,17 +285,23 @@ TextureImporter:
       name: doors_and_buttons_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 111
-        width: 18
-        height: 7
+        x: 16
+        y: 112
+        width: 16
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 9, y: 1.5}
+        - {x: 7, y: 3.5}
+        - {x: -8, y: 3.5}
+        - {x: -9, y: 2.5}
+        - {x: -9, y: -3.5}
+        - {x: 9, y: -3.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 3d0d3b9604784d220800000000000000
       internalID: 2509779603073257683
@@ -283,17 +313,21 @@ TextureImporter:
       name: doors_and_buttons_6
       rect:
         serializedVersion: 2
-        x: 49
-        y: 95
-        width: 13
-        height: 34
+        x: 50
+        y: 96
+        width: 11
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 6.5, y: 17}
+        - {x: -6.5, y: 17}
+        - {x: -6.5, y: -17}
+        - {x: 6.5, y: -17}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: d57c91e7517b15e10800000000000000
       internalID: 2184728597189216093
@@ -305,17 +339,21 @@ TextureImporter:
       name: doors_and_buttons_7
       rect:
         serializedVersion: 2
-        x: 68
-        y: 111
-        width: 24
-        height: 7
+        x: 69
+        y: 112
+        width: 22
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 12, y: 3.5}
+        - {x: -12, y: 3.5}
+        - {x: -12, y: -3.5}
+        - {x: 12, y: -3.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 2f721e38c56139c50800000000000000
       internalID: 6670700059671209970
@@ -327,17 +365,21 @@ TextureImporter:
       name: doors_and_buttons_8
       rect:
         serializedVersion: 2
-        x: 18
-        y: 95
-        width: 11
-        height: 15
+        x: 19
+        y: 96
+        width: 9
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 5.5, y: 7.5}
+        - {x: -5.5, y: 7.5}
+        - {x: -5.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 67ae44fd34812ed70800000000000000
       internalID: 9070839279265311350
@@ -349,17 +391,21 @@ TextureImporter:
       name: doors_and_buttons_9
       rect:
         serializedVersion: 2
-        x: 68
-        y: 95
-        width: 24
-        height: 7
+        x: 69
+        y: 96
+        width: 22
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 12, y: 3.5}
+        - {x: -12, y: 3.5}
+        - {x: -12, y: -3.5}
+        - {x: 12, y: -3.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 4cf8b22bd78ed1530800000000000000
       internalID: 3827470884892544964
@@ -371,17 +417,21 @@ TextureImporter:
       name: doors_and_buttons_10
       rect:
         serializedVersion: 2
-        x: 18
-        y: 79
-        width: 11
-        height: 15
+        x: 19
+        y: 80
+        width: 9
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 5.5, y: 7.5}
+        - {x: -5.5, y: 7.5}
+        - {x: -5.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: ad342423f905187b0800000000000000
       internalID: -5223805448099839014
@@ -393,17 +443,22 @@ TextureImporter:
       name: doors_and_buttons_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 79
-        width: 15
-        height: 8
+        x: 49
+        y: 80
+        width: 13
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 7.5, y: 2}
+        - {x: 5.5, y: 4}
+        - {x: -7.5, y: 4}
+        - {x: -7.5, y: -4}
+        - {x: 7.5, y: -4}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 2b1b1c00dab48d020800000000000000
       internalID: 2366724810597314994
@@ -415,17 +470,21 @@ TextureImporter:
       name: doors_and_buttons_12
       rect:
         serializedVersion: 2
-        x: 68
-        y: 79
-        width: 24
-        height: 7
+        x: 69
+        y: 80
+        width: 22
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 12, y: 3.5}
+        - {x: -12, y: 3.5}
+        - {x: -12, y: -3.5}
+        - {x: 12, y: -3.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: a7b0d76f7ef19fde0800000000000000
       internalID: -1298971936386380934
@@ -437,17 +496,21 @@ TextureImporter:
       name: doors_and_buttons_13
       rect:
         serializedVersion: 2
-        x: 34
-        y: 47
-        width: 11
-        height: 15
+        x: 35
+        y: 48
+        width: 9
+        height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 5.5, y: 7.5}
+        - {x: -5.5, y: 7.5}
+        - {x: -5.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: b2be520dc2c2419d0800000000000000
       internalID: -2804568096962647253
@@ -459,17 +522,23 @@ TextureImporter:
       name: doors_and_buttons_14
       rect:
         serializedVersion: 2
-        x: 50
-        y: 47
-        width: 11
-        height: 31
+        x: 51
+        y: 48
+        width: 9
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 5.5, y: -9.5}
+        - {x: 5.5, y: 15.5}
+        - {x: -5.5, y: 15.5}
+        - {x: -5.5, y: -8.5}
+        - {x: -3.5, y: -15.5}
+        - {x: 3.5, y: -15.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: e30722d1fffa49d80800000000000000
       internalID: -8244771507568218050
@@ -481,17 +550,23 @@ TextureImporter:
       name: doors_and_buttons_15
       rect:
         serializedVersion: 2
-        x: 66
-        y: 47
-        width: 27
-        height: 31
+        x: 67
+        y: 48
+        width: 25
+        height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 13.5, y: -11.5}
+        - {x: 13.5, y: 15.5}
+        - {x: -13.5, y: 15.5}
+        - {x: -13.5, y: -8.5}
+        - {x: -11.5, y: -15.5}
+        - {x: 12.5, y: -15.5}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: d425a91d5918acb20800000000000000
       internalID: 3155476969393115725
@@ -506,17 +581,109 @@ TextureImporter:
         x: 0
         y: 0
         width: 304
-        height: 20
+        height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 152, y: 10}
+        - {x: -152, y: 10}
+        - {x: -152, y: -10}
+        - {x: 152, y: -10}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f3ba3d436e89b10800000000000000
+      internalID: 1988592350047977283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_and_buttons_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 48
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 34f3ba3d436e89b10800000000000000
-      internalID: 1988592350047977283
+      spriteID: 7cb0c8bdaa0ed8e4dbbdd34bc60fa1f8
+      internalID: 1229449260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_and_buttons_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6d273879526f74e8f8148b404aa7f1
+      internalID: -590859876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_and_buttons_19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92a8c7d9054534408dc7ded30c8c609
+      internalID: -1819314875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doors_and_buttons_20
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f15665420d7924fbe341436aebf387
+      internalID: 1016316711
       vertices: []
       indices: 
       edges: []
@@ -525,7 +692,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1a9590b3e608a1d48a5f357a1e43ece5
     internalID: 0
     vertices: []
     indices: 
@@ -544,7 +711,11 @@ TextureImporter:
       doors_and_buttons_14: -8244771507568218050
       doors_and_buttons_15: 3155476969393115725
       doors_and_buttons_16: 1988592350047977283
+      doors_and_buttons_17: 1229449260
+      doors_and_buttons_18: -590859876
+      doors_and_buttons_19: -1819314875
       doors_and_buttons_2: 3489546216122342481
+      doors_and_buttons_20: 1016316711
       doors_and_buttons_3: 3999789223192207493
       doors_and_buttons_4: 1517792743678377720
       doors_and_buttons_5: 2509779603073257683

@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 1d5b58e453963b943b0a89426b3b80df
+guid: 59976dac4e4526c4bad4be26a604cfaf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9102839692974796613
-    second: Just cables_0
+      213: -8019239915147560276
+    second: Cyborg_idle_0
   - first:
-      213: -7523662415762566545
-    second: Just cables_1
+      213: -6526221278753614019
+    second: Cyborg_idle_1
+  - first:
+      213: -1626806750166959302
+    second: Cyborg_idle_2
+  - first:
+      213: 7969078075045196988
+    second: Cyborg_idle_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Just cables_0
+      name: Cyborg_idle_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 20
-        width: 15
-        height: 95
+        x: 2
+        y: 0
+        width: 21
+        height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 40, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb059e437873ca180800000000000000
-      internalID: -9102839692974796613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Just cables_1
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 61
-        width: 7
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f62d38a15e4969790800000000000000
-      internalID: -7523662415762566545
+      spriteID: caafef0f8cfe5b090800000000000000
+      internalID: -8019239915147560276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_idle_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d379b4a03543e65a0800000000000000
+      internalID: -6526221278753614019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_idle_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b371241eb6c69e0800000000000000
+      internalID: -1626806750166959302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_idle_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb43c6a894ad79e60800000000000000
+      internalID: 7969078075045196988
       vertices: []
       indices: 
       edges: []
@@ -150,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3514618940c2ce5459efd85504af92fb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Just cables_0: -9102839692974796613
-      Just cables_1: -7523662415762566545
+      Cyborg_idle_0: -8019239915147560276
+      Cyborg_idle_1: -6526221278753614019
+      Cyborg_idle_2: -1626806750166959302
+      Cyborg_idle_3: 7969078075045196988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

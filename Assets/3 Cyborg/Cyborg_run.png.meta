@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 1d5b58e453963b943b0a89426b3b80df
+guid: 4a84b5c2ece9bb6418e71df4edfb0dc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9102839692974796613
-    second: Just cables_0
+      213: -2760476029438245614
+    second: Cyborg_run_0
   - first:
-      213: -7523662415762566545
-    second: Just cables_1
+      213: 5798244199525097649
+    second: Cyborg_run_1
+  - first:
+      213: -5068142148817044500
+    second: Cyborg_run_2
+  - first:
+      213: 7958664899273603240
+    second: Cyborg_run_3
+  - first:
+      213: 1971013790562645882
+    second: Cyborg_run_4
+  - first:
+      213: 8889248399938843937
+    second: Cyborg_run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Just cables_0
+      name: Cyborg_run_0
       rect:
         serializedVersion: 2
-        x: 143
-        y: 20
-        width: 15
-        height: 95
+        x: 4
+        y: 0
+        width: 22
+        height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 40, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb059e437873ca180800000000000000
-      internalID: -9102839692974796613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Just cables_1
-      rect:
-        serializedVersion: 2
-        x: 163
-        y: 61
-        width: 7
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f62d38a15e4969790800000000000000
-      internalID: -7523662415762566545
+      spriteID: 2154a564da1d0b9d0800000000000000
+      internalID: -2760476029438245614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0a9a90160877050800000000000000
+      internalID: 5798244199525097649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb339c51975aa9b0800000000000000
+      internalID: -5068142148817044500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8b29f1f8bd27e60800000000000000
+      internalID: 7958664899273603240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77f1e189927a5b10800000000000000
+      internalID: 1971013790562645882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyborg_run_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125709e8254fc5b70800000000000000
+      internalID: 8889248399938843937
       vertices: []
       indices: 
       edges: []
@@ -150,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3514618940c2ce5459efd85504af92fb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Just cables_0: -9102839692974796613
-      Just cables_1: -7523662415762566545
+      Cyborg_run_0: -2760476029438245614
+      Cyborg_run_1: 5798244199525097649
+      Cyborg_run_2: -5068142148817044500
+      Cyborg_run_3: 7958664899273603240
+      Cyborg_run_4: 1971013790562645882
+      Cyborg_run_5: 8889248399938843937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

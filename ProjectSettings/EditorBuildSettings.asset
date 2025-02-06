@@ -8,16 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Cryo(old).unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: fcd26422102111e4e84dea861f6aa6f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cryo.unity
     guid: 7b34ce1551faae84f9e05637ecdd9017
   - enabled: 1
     path: Assets/Scenes/Hangar.unity
     guid: c1a2ed3e1f939024793bd4ca13e411ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bridge.unity
     guid: b3205f3acf404bb47bf64bc52613bb04
   - enabled: 1

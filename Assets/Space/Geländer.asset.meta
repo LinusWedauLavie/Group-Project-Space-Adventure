@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Space/Geländer.asset.meta
 guid: ef8f39adebb6ca1488d522824e108051
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
+========
+guid: da1adb01c46e63b4ca5f95dc0d19e83d
+PrefabImporter:
+  externalObjects: {}
+>>>>>>>> Stashed changes:Assets/Canvas.prefab.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

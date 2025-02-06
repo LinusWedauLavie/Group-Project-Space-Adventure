@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Space/1_0.asset.meta
 guid: e0f79827bbf0f554ab695238906149b9
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
+========
+guid: b3205f3acf404bb47bf64bc52613bb04
+DefaultImporter:
+  externalObjects: {}
+>>>>>>>> Stashed changes:Assets/Bridge.unity.meta
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -350,6 +350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
   pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
+  doorOpen: 0
+  sceneName: 
 --- !u!114 &69391307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1031,6 +1033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4830729801773806479, guid: da1adb01c46e63b4ca5f95dc0d19e83d, type: 3}
+      propertyPath: sceneName
+      value: Cryo
+      objectReference: {fileID: 0}
     - target: {fileID: 5098735264557756675, guid: da1adb01c46e63b4ca5f95dc0d19e83d, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1585,6 +1591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
   pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
+  doorOpen: 0
+  sceneName: 
 --- !u!114 &923051391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2579,6 +2587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
   pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
+  doorOpen: 0
+  sceneName: 
 --- !u!114 &2031664949
 MonoBehaviour:
   m_ObjectHideFlags: 0

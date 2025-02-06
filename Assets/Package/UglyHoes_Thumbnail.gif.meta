@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UglyHoes_Thumbnail_0: -8015973305871573007
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

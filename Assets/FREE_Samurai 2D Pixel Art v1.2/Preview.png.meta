@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e620aeaa99f7e4d44b632f6629a4c634
+guid: 643ff0949c3a16749960f40413935963
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7232779202566939752
-    second: 2 doors_0
-  - first:
-      213: 1777794342925791369
-    second: 2 doors_1
+      213: 7722654891345554819
+    second: Preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClosedDoor
+      name: Preview_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 75
-        width: 34
-        height: 51
+        x: 0
+        y: 0
+        width: 475
+        height: 375
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89b1a2cd2a100ab90800000000000000
-      internalID: -7232779202566939752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OpenDoor
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 75
-        width: 34
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9807ac5298efba810800000000000000
-      internalID: 1777794342925791369
+      spriteID: 38da59115b16c2b60800000000000000
+      internalID: 7722654891345554819
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: acf4195b577913c42978f8f564366f55
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ClosedDoor: -7232779202566939752
-      OpenDoor: 1777794342925791369
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

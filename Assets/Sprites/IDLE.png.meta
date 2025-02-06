@@ -1,52 +1,37 @@
 fileFormatVersion: 2
-guid: e78e7dc7a4b31e24b999d5b2183e6c31
+guid: 201bf84f1bacf9145b6d137e90e2d1c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -65814191190327750
-    second: toxic_waste_0
+      213: 815424164945274260
+    second: IDLE_0
   - first:
-      213: 3579490768516010563
-    second: toxic_waste_1
+      213: -270785710348516584
+    second: IDLE_1
   - first:
-      213: 6975357594900002746
-    second: toxic_waste_2
+      213: 8443794771774750484
+    second: IDLE_2
   - first:
-      213: 2079143557563022077
-    second: toxic_waste_3
+      213: 1777182293076053196
+    second: IDLE_3
   - first:
-      213: -4581112984625150654
-    second: toxic_waste_4
+      213: 6114163804962241700
+    second: IDLE_4
   - first:
-      213: 302266575884663362
-    second: toxic_waste_5
+      213: -7154528564402915179
+    second: IDLE_5
   - first:
-      213: 4311254739602597162
-    second: toxic_waste_6
+      213: -8112586356116296526
+    second: IDLE_6
   - first:
-      213: -1980944092873345411
-    second: toxic_waste_7
+      213: 6124698253077029035
+    second: IDLE_7
   - first:
-      213: -1228513614847854764
-    second: toxic_waste_8
+      213: 900705793506851975
+    second: IDLE_8
   - first:
-      213: 5903862000492882855
-    second: toxic_waste_9
-  - first:
-      213: 7377954492167114916
-    second: toxic_waste_10
-  - first:
-      213: 1358308260036360862
-    second: toxic_waste_11
-  - first:
-      213: -6048597109046714800
-    second: toxic_waste_12
-  - first:
-      213: 5415525484969091318
-    second: toxic_waste_13
-  - first:
-      213: 8625426581384450349
-    second: toxic_waste_14
+      213: -705124532602476047
+    second: IDLE_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: toxic_waste_0
+      name: IDLE_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 127
-        width: 30
-        height: 50
+        x: 35
+        y: 14
+        width: 22
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,174 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3ebbe0875e261ff0800000000000000
-      internalID: -65814191190327750
+      spriteID: 49525dc25f7f05b00800000000000000
+      internalID: 815424164945274260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_1
+      name: IDLE_1
       rect:
         serializedVersion: 2
-        x: 49
-        y: 127
-        width: 30
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 342df2693e7eca130800000000000000
-      internalID: 3579490768516010563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_2
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 127
-        width: 30
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab7765986c27dc060800000000000000
-      internalID: 6975357594900002746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_3
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 159
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfaf591cc0a9adc10800000000000000
-      internalID: 2079143557563022077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_4
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 159
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2450d73230e9c60c0800000000000000
-      internalID: -4581112984625150654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_5
-      rect:
-        serializedVersion: 2
-        x: 145
-        y: 159
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 24a341b69ddd13400800000000000000
-      internalID: 302266575884663362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_6
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 143
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a256b3af757a4db30800000000000000
-      internalID: 4311254739602597162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_7
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 143
-        width: 34
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d763060d7d54284e0800000000000000
-      internalID: -1980944092873345411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toxic_waste_8
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 95
+        x: 131
+        y: 14
         width: 23
-        height: 32
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4573341506173fee0800000000000000
-      internalID: -1228513614847854764
+      spriteID: 813cc64c4d9fd3cf0800000000000000
+      internalID: -270785710348516584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_9
+      name: IDLE_2
       rect:
         serializedVersion: 2
-        x: 52
-        y: 95
+        x: 227
+        y: 14
         width: 23
-        height: 32
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -355,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ab2e4e953bbee150800000000000000
-      internalID: 5903862000492882855
+      spriteID: 41f3fe79b926e2570800000000000000
+      internalID: 8443794771774750484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_10
+      name: IDLE_3
       rect:
         serializedVersion: 2
-        x: 84
-        y: 95
+        x: 323
+        y: 14
         width: 23
-        height: 26
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -377,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a05e924582c36660800000000000000
-      internalID: 7377954492167114916
+      spriteID: ccc89ef21e1d9a810800000000000000
+      internalID: 1777182293076053196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_11
+      name: IDLE_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 111
-        width: 49
-        height: 29
+        x: 418
+        y: 14
+        width: 23
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,20 +230,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9a32f67a2ea9d210800000000000000
-      internalID: 1358308260036360862
+      spriteID: 4ac335d169fd9d450800000000000000
+      internalID: 6114163804962241700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_12
+      name: IDLE_5
       rect:
         serializedVersion: 2
-        x: 113
-        y: 127
-        width: 14
-        height: 15
+        x: 513
+        y: 14
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,20 +252,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05ed0d5e9f01f0ca0800000000000000
-      internalID: -6048597109046714800
+      spriteID: 598f06f4d2206bc90800000000000000
+      internalID: -7154528564402915179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_13
+      name: IDLE_6
       rect:
         serializedVersion: 2
-        x: 31
-        y: 47
-        width: 130
-        height: 52
+        x: 609
+        y: 14
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -443,20 +274,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f068a36cbfc72b40800000000000000
-      internalID: 5415525484969091318
+      spriteID: 2bce10201bd4a6f80800000000000000
+      internalID: -8112586356116296526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: toxic_waste_14
+      name: IDLE_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 176
-        height: 20
+        x: 705
+        y: 14
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,8 +296,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d21d1abb6cba3b770800000000000000
-      internalID: 8625426581384450349
+      spriteID: ba0ac137c9c4ff450800000000000000
+      internalID: 6124698253077029035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_8
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 14
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78cbc15a523ff7c00800000000000000
+      internalID: 900705793506851975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IDLE_9
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 14
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9e0d739f4e636f0800000000000000
+      internalID: -705124532602476047
       vertices: []
       indices: 
       edges: []
@@ -485,21 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      toxic_waste_0: -65814191190327750
-      toxic_waste_1: 3579490768516010563
-      toxic_waste_10: 7377954492167114916
-      toxic_waste_11: 1358308260036360862
-      toxic_waste_12: -6048597109046714800
-      toxic_waste_13: 5415525484969091318
-      toxic_waste_14: 8625426581384450349
-      toxic_waste_2: 6975357594900002746
-      toxic_waste_3: 2079143557563022077
-      toxic_waste_4: -4581112984625150654
-      toxic_waste_5: 302266575884663362
-      toxic_waste_6: 4311254739602597162
-      toxic_waste_7: -1980944092873345411
-      toxic_waste_8: -1228513614847854764
-      toxic_waste_9: 5903862000492882855
+      IDLE_0: 815424164945274260
+      IDLE_1: -270785710348516584
+      IDLE_2: 8443794771774750484
+      IDLE_3: 1777182293076053196
+      IDLE_4: 6114163804962241700
+      IDLE_5: -7154528564402915179
+      IDLE_6: -8112586356116296526
+      IDLE_7: 6124698253077029035
+      IDLE_8: 900705793506851975
+      IDLE_9: -705124532602476047
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

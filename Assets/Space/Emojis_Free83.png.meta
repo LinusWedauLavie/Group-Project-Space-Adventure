@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e620aeaa99f7e4d44b632f6629a4c634
+guid: 2a84aebf56fbd7842bd57102f9dea598
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7232779202566939752
-    second: 2 doors_0
-  - first:
-      213: 1777794342925791369
-    second: 2 doors_1
+      213: -953875316764645360
+    second: Emojis_Free83_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClosedDoor
+      name: Emojis_Free83_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 75
-        width: 34
-        height: 51
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89b1a2cd2a100ab90800000000000000
-      internalID: -7232779202566939752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OpenDoor
-      rect:
-        serializedVersion: 2
-        x: 114
-        y: 75
-        width: 34
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9807ac5298efba810800000000000000
-      internalID: 1777794342925791369
+      spriteID: 018ea38047723c2f0800000000000000
+      internalID: -953875316764645360
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: acf4195b577913c42978f8f564366f55
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ClosedDoor: -7232779202566939752
-      OpenDoor: 1777794342925791369
+      Emojis_Free83_0: -953875316764645360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

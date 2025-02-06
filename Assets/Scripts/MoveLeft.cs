@@ -6,7 +6,7 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
 {
     GameObject interactable;
     public float speed;
-    bool hasMoved;
+    public bool hasMoved;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

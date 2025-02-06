@@ -3848,7 +3848,7 @@ GameObject:
   - component: {fileID: 4886659318613117530}
   - component: {fileID: 91316793805076022}
   - component: {fileID: 7359417738600553299}
-  - component: {fileID: 2215006518558902897}
+  - component: {fileID: 7359417738600553300}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3902,23 +3902,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
---- !u!114 &2215006518558902897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1374945476847834220, guid: 62d1e4bc8588cb74494d4b27368769b8, type: 3}
-  m_PrefabInstance: {fileID: 4387835614793122648}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632305621354442191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a2010f8e258dff41afc3145b3d375c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
-  pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
-  doorOpen: 0
-  door: {fileID: 1932387570}
-  sceneName: Bridge
 --- !u!1001 &4387835614793122648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4019,7 +4002,8 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4115,6 +4099,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7359417738600553300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632305621354442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfce56413fca35e4e977d7c7708aa428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
+  pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
+  doorOpen: 0
+  doorUnlock: {fileID: 1932387570}
+  sceneName: Bridge
 --- !u!1 &9059992670996653034
 GameObject:
   m_ObjectHideFlags: 0

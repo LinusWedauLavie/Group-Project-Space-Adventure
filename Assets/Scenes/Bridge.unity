@@ -1596,7 +1596,7 @@ MonoBehaviour:
   normalImage: {fileID: -7232779202566939752, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
   pressedImage: {fileID: 1777794342925791369, guid: e620aeaa99f7e4d44b632f6629a4c634, type: 3}
   doorOpen: 0
-  sceneName: 
+  sceneName: Lab
 --- !u!114 &923051391
 MonoBehaviour:
   m_ObjectHideFlags: 0

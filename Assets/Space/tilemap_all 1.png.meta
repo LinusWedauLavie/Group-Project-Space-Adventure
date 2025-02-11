@@ -790,7 +790,7 @@ TextureImporter:
         width: 81
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 2, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3114,7 +3114,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tilemap_all 1_110
+      name: tilemap_all Leiter
       rect:
         serializedVersion: 2
         x: 359
@@ -5080,7 +5080,7 @@ TextureImporter:
         width: 80
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5102,7 +5102,7 @@ TextureImporter:
         width: 80
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5124,7 +5124,7 @@ TextureImporter:
         width: 80
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5146,7 +5146,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5168,7 +5168,7 @@ TextureImporter:
         width: 49
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 1, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5190,7 +5190,7 @@ TextureImporter:
         width: 48
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5212,7 +5212,7 @@ TextureImporter:
         width: 48
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5221,6 +5221,28 @@ TextureImporter:
       bones: []
       spriteID: a8c16ab02415efb4aa7079219a70a6d1
       internalID: -1750326197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilemap_all Leiter Ganz
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 255
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e2959bd8c22484fa3e190a581d944b
+      internalID: -1892630747
       vertices: []
       indices: 
       edges: []
@@ -5253,7 +5275,6 @@ TextureImporter:
       tilemap_all 1_108: -1586361782193818051
       tilemap_all 1_109: -824319648182014297
       tilemap_all 1_11: -6029236252515885624
-      tilemap_all 1_110: -7644291814707179181
       tilemap_all 1_111: 6986342683204203770
       tilemap_all 1_112: -5028097097186899394
       tilemap_all 1_113: -3323046401405080646
@@ -5445,6 +5466,8 @@ TextureImporter:
       tilemap_all 1_97: -4846440763090223711
       tilemap_all 1_98: -1159364161192960148
       tilemap_all 1_99: -6594884457211812551
+      tilemap_all Leiter: -7644291814707179181
+      tilemap_all Leiter Ganz: -1892630747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

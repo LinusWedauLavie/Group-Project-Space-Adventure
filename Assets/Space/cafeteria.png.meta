@@ -163,13 +163,13 @@ TextureImporter:
       name: cafeteria_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 47
-        width: 66
-        height: 114
+        x: 63
+        y: 111
+        width: 20
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 3, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -187,7 +187,7 @@ TextureImporter:
         serializedVersion: 2
         x: 95
         y: 143
-        width: 66
+        width: 49
         height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -383,10 +383,10 @@ TextureImporter:
       name: cafeteria_10
       rect:
         serializedVersion: 2
-        x: 241
+        x: 257
         y: 95
-        width: 31
-        height: 25
+        width: 15
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,6 +643,182 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: cafeteria_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 143
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4adec26ed34ee54aa958c16a40ff775
+      internalID: 916862532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 110
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b182e618d8e2c4eb2e3fffd3925a50
+      internalID: -467945862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_24
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47738e4010dd9654e92ab7b163919909
+      internalID: -562788091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f552eb4eb3e02419a1c13214883119
+      internalID: 2144643677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 111
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e47b73c0b7d2b4ca33b8975ff8e4f5
+      internalID: 405223528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_27
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 48
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e99b9301b80cd4f874d6085a70d5c5
+      internalID: -1495127327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 68
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9c1a6c0c07efb4aa17690ae3246888
+      internalID: 1885762634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cafeteria_29
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 69
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d456ab8a9527441a5b17b190bb4c3f
+      internalID: -1811953955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -672,6 +848,14 @@ TextureImporter:
       cafeteria_2: -445939477707631067
       cafeteria_20: -5617317441609680501
       cafeteria_21: 985850165
+      cafeteria_22: 916862532
+      cafeteria_23: -467945862
+      cafeteria_24: -562788091
+      cafeteria_25: 2144643677
+      cafeteria_26: 405223528
+      cafeteria_27: -1495127327
+      cafeteria_28: 1885762634
+      cafeteria_29: -1811953955
       cafeteria_3: 2805472308874344462
       cafeteria_4: 4559803148857435530
       cafeteria_5: -5413915762578233910

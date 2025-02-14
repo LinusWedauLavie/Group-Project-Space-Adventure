@@ -39,7 +39,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
         if(doorUnlockeda.doorUnlocked == true)
         {
             buttonImage.sprite = pressedImage;
-             audioSource.Play();
+            audioSource.Play();
         }        
     }
         public void OnPointerExit(PointerEventData eventData)

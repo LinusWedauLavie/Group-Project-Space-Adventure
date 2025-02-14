@@ -12,7 +12,6 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
     //public Scene scene;
     public string sceneName;  
     public AudioSource audioSource;
-    public AudioClip audioClip;
     void Start()
     {
         buttonImage = GetComponent<Image>();
@@ -23,20 +22,23 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
         buttonImage.sprite = pressedImage;
         doorOpen = true;
         SceneManager.LoadScene(sceneName);
-        audioSource.clip = audioClip;
         audioSource.Play();
               
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        buttonImage.sprite = pressedImage;       
+        buttonImage.sprite = pressedImage;  
+        audioSource.Play();
+     
     }
         public void OnPointerExit(PointerEventData eventData)
     {
         if (doorOpen == false)
         {
             buttonImage.sprite = normalImage;
+            
+
         }        
     }
 }

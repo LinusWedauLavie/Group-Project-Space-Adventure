@@ -13,6 +13,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
     //public Scene scene;
     public string sceneName;  
     private UnlockDoor doorUnlockeda;
+    public AudioSource audioSource;
  
     void Start()
     {
@@ -27,7 +28,9 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
         {
             buttonImage.sprite = pressedImage;
             doorOpen = true;
+            audioSource.Play();
             SceneManager.LoadScene(sceneName);
+            
         }       
     }
 
@@ -36,6 +39,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
         if(doorUnlockeda.doorUnlocked == true)
         {
             buttonImage.sprite = pressedImage;
+             audioSource.Play();
         }        
     }
         public void OnPointerExit(PointerEventData eventData)

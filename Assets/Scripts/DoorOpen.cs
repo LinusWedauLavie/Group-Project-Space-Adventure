@@ -11,12 +11,11 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
     private Image buttonImage;
     //public Scene scene;
     public string sceneName;  
-    private UnlockDoor doorUnlockeda;
- 
+    public AudioSource audioSource;
+    public AudioClip audioClip;
     void Start()
     {
         buttonImage = GetComponent<Image>();
-       
     }
  
     public void OnPointerClick(PointerEventData eventData)
@@ -24,6 +23,8 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
         buttonImage.sprite = pressedImage;
         doorOpen = true;
         SceneManager.LoadScene(sceneName);
+        audioSource.clip = audioClip;
+        audioSource.Play();
               
     }
 

@@ -10,7 +10,6 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
     public bool doorOpen = false;
     public GameObject doorUnlock;
     private Image buttonImage;
-    //public Scene scene;
     public string sceneName;  
     private UnlockDoor doorUnlockeda;
     public AudioSource audioSource;

@@ -10,8 +10,6 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
     bool clicked = false;
     public bool doorUnlocked;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         buttonImage = GetComponent<Image>();

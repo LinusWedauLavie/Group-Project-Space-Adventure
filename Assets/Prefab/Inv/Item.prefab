@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7592883675248715688, guid: a504dd38e5bdfef47b4b973bc21c3acc, type: 3}
+  m_Sprite: {fileID: -9022913262071093832, guid: 2f64182adf526ee41a6ab0e33658cdf8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -89,4 +89,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 6490487821421788226}
+  item: {fileID: 0}
   parentAfterDrag: {fileID: 0}

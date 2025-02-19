@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3148303880cf8340925e0bd02a14839, type: 3}
-  m_Name: Chainsaw
+  m_Name: Screwdriver
   m_EditorClassIdentifier: 
-  tile: {fileID: 11400000, guid: e0f79827bbf0f554ab695238906149b9, type: 2}
+  tile: {fileID: 0}
   type: 2
   actionType: 0
   range: {x: 5, y: 4}
-  image: {fileID: 2513086883955787816, guid: ddb15ba7227d57642b90180a4da17a70, type: 3}
+  image: {fileID: -7592883675248715688, guid: a504dd38e5bdfef47b4b973bc21c3acc, type: 3}

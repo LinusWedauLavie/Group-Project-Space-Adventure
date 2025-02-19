@@ -7,15 +7,19 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject item; 
+    public GameObject ableToPickUp;
+    private MoveObjectLeft ableToPickUps;
     void Start()
     {
-        
+        ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
     }
-
     public void OnPointerClick(PointerEventData eventData)
     {        
-        Console.WriteLine("YAY");
-        Destroy(gameObject);
+       if(ableToPickUps)
+       {
+            Destroy(gameObject);
+       }
+        
     }
     
 }

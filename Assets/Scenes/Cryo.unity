@@ -2596,7 +2596,7 @@ GameObject:
   - component: {fileID: 774230519}
   - component: {fileID: 774230518}
   - component: {fileID: 774230517}
-  - component: {fileID: 774230520}
+  - component: {fileID: 774230522}
   - component: {fileID: 774230521}
   m_Layer: 0
   m_Name: Player
@@ -2697,21 +2697,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774230520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774230516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905e669e04df82946bbb425356ad441f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 5, y: 2}
-  targetPosition: {x: 0, y: 0}
-  relativePosition: {x: -2, y: -3}
 --- !u!50 &774230521
 Rigidbody2D:
   serializedVersion: 5
@@ -2739,6 +2724,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!114 &774230522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774230516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5cb68cd4045d7f408c27ece5319068b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 5, y: 2}
+  targetPosition: {x: 0, y: 0}
+  relativePosition: {x: 0, y: 0}
 --- !u!1 &851787404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6851,6 +6851,7 @@ MonoBehaviour:
   - {fileID: 188980123}
   - {fileID: 1686594661}
   inventoryItemPrefab: {fileID: 525087515669831796, guid: b436e77725735b243bb30efb4b2df1f0, type: 3}
+  itemPickup: {fileID: 2908817137711896328}
 --- !u!4 &1921405464
 Transform:
   m_ObjectHideFlags: 0
@@ -7420,8 +7421,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1896222226297654897, guid: 298d631ca93e93043a41137573559d1a, type: 3}
       propertyPath: ableToPickUp
-      value: 
-      objectReference: {fileID: 18464564}
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5292212159237075344, guid: 298d631ca93e93043a41137573559d1a, type: 3}
       propertyPath: m_Name
       value: ScrewdriverButton
@@ -7520,6 +7521,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6596408546277591556, guid: 298d631ca93e93043a41137573559d1a, type: 3}
   m_PrefabInstance: {fileID: 2396817259960223621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2908817137711896328 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1896222226297654897, guid: 298d631ca93e93043a41137573559d1a, type: 3}
+  m_PrefabInstance: {fileID: 2396817259960223621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b121f8ef9a8263f4da17196e10e1cbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4387835614793122648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7528,10 +7540,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 593186825645259033, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
+      propertyPath: itemPickup
+      value: 
+      objectReference: {fileID: 2908817137711896328}
     - target: {fileID: 4915699961918171765, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 5149798179392206582, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
+      objectReference: {fileID: 711072148874886437, guid: c9e9d36bab1f1144388ec824d2c33275, type: 3}
     - target: {fileID: 5007239636391797154, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 295.4

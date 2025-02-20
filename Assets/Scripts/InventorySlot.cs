@@ -9,7 +9,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
     public UnityEngine.UI.Image image; 
     public Color selectedColor, notSelectedColor;
     public int slotNumber;
-    public int currentSlotNumber;
+    public int currentSlotNumber = -1;
     
 
     private void Awake()
@@ -39,7 +39,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log(slotNumber);
-        slotNumber = currentSlotNumber;       
+        currentSlotNumber = slotNumber;       
        
     }
 

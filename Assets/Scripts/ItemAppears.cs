@@ -14,14 +14,17 @@ public class ItemAppears : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         buttonImage = GetComponent<Image>();
-       // item = GetComponent<GameObject>();
+       
 
 
     }
      public void OnPointerClick(PointerEventData eventData)
     {
         buttonImage.sprite = pressedImage;
-        doorOpen = true;
-        Instantiate(item, new Vector2(item.transform.position.x ,item.transform.position.y), Quaternion.identity);
+        if(doorOpen == false)
+        {
+            doorOpen = true;
+            Instantiate(item, new Vector2(item.transform.position.x ,item.transform.position.y), Quaternion.identity);
+        }
     }
 }

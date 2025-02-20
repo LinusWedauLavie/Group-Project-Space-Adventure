@@ -12,13 +12,15 @@ public class InventoryManager : MonoBehaviour
     public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
 
-    int selectedSlot = 0;
+    int selectedSlot = 3;
     int number = 0;
-
+    public ItemPickup itemPickup;
+    public InventorySlot inventorySlot;
    
     void Update()
     {
- 
+        //ChangedSelectedSlot(inventorySlot.currentSlotNumber);
+
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
            number += 1;
@@ -79,12 +81,12 @@ public class InventoryManager : MonoBehaviour
     }
     void Start()
     {
-        ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
-
+        
     }
+    
     public void AddItem(Item item)
     {
-        if(ableToPickUps == true)
+        if(itemPickup.ableToPickUp == true)
         {
         for (int i = 0; i < inventorySlots.Length; i++)
         {
@@ -100,9 +102,12 @@ public class InventoryManager : MonoBehaviour
     }
     void SpawnNewItem(Item item, InventorySlot slot)
     {
+        if(itemPickup.ableToPickUp == true)
+        {
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
         InventoryItem inventoryItem = newItemGo.GetComponent<InventoryItem>();
         inventoryItem.InitialiseItem(item);
+        }
     }
 
 

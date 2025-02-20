@@ -7,9 +7,11 @@ public class Mouse_Control : MonoBehaviour {
 	/// 1 - The speed of the ship
 	/// </summary>
 	public Vector2 speed = new Vector2(5f, 2f);
-    //public Animation run;
-    //public Animation idle;
+    public Animation run;
+    public Animation idle;
     bool mouseClick = false;
+    private Animator animator;
+    private Rigidbody2D rb;
 
 	//The position you clicked
 	public Vector2 targetPosition;
@@ -18,7 +20,7 @@ public class Mouse_Control : MonoBehaviour {
 	
 	// 2 - Store the movement
 	private Vector2 movement;
-        private Rigidbody2D rigidbodyComponent;
+    private Rigidbody2D rigidbodyComponent;
 	
 	void Update()
 	{
@@ -27,7 +29,8 @@ public class Mouse_Control : MonoBehaviour {
 		{	
 			targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseClick = true;
-		}
+			
+		}	
 
 		//4 - Find the relative poistion of the target based upon the current position 
 		// Update each frame to account for any movement
@@ -35,11 +38,10 @@ public class Mouse_Control : MonoBehaviour {
 		    relativePosition = new Vector2(
 			targetPosition.x - gameObject.transform.position.x,
 			targetPosition.y - gameObject.transform.position.y );
-            if(targetPosition.x < rigidbodyComponent.transform.position.x)
-            {
-                //Animation.Instantiate<Animation>(run);
-            }
+            
         }
+		float move = Input.GetAxis("Horizontal");
+		animator.SetFloat("Speed", Mathf.Abs(move));
 	}
 
 	

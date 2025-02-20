@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
 {
+public ItemPickup itemPickup;
+
     GameObject interactable;
     public float speed;
     public bool hasMoved = false;
@@ -13,9 +15,10 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
     {      
         if( hasMoved == false ) 
         {
-             transform.Translate(Vector3.left * speed );
-             hasMoved = true;
-             ableToPickUp = true;
+            transform.Translate(Vector3.left * speed );
+            hasMoved = true;
+            ableToPickUp = true;
+            itemPickup.ableToPickUp = true;
         }
        
     }

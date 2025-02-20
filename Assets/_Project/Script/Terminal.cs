@@ -1,25 +1,69 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
  
-public class Terminal : MonoBehaviour, IPointerClickHandler
+public class Terminal : MonoBehaviour
 {
         private Image buttonImage;
         public Camera cam;
-        Vector3 startCamPos;
- 
+
+    public Transform startCamPos;
+    public Transform targetTransform;
+    public float transitionSpeed = 2.0f;
+    public float maxZPosition = -5.0f;
+
     void Start()
     {
         buttonImage = GetComponent<Image>();
-        startCamPos = cam.transform.position;
+        startCamPos = cam.transform;
     }
  
-    public void OnPointerClick(PointerEventData eventData)
+    public void ClickedTerminal()
     {
-        cam.transform.position = new Vector3(0, 3.7f, -6);
+            StartCoroutine(OpenMap());
+    }
+    public void BackAwayFromPlanetMap()
+    {
+        
+
+        StartCoroutine(CloseMap());
     }
 
+    IEnumerator OpenMap()
+    {
+        yield return new WaitForEndOfFrame();
 
 
+        Vector3 targetpos5less = new Vector3(0, targetTransform.position.y, targetTransform.position.z + maxZPosition);
+        Vector3 newPosition = Vector3.Lerp(cam.transform.position, targetpos5less, Time.deltaTime * transitionSpeed);
+
+        cam.transform.position = newPosition;
+        cam.transform.rotation = Quaternion.Slerp(transform.rotation, targetTransform.rotation, Time.deltaTime * transitionSpeed);
+
+        if (cam.transform.position.z < -5.8f)
+        {
+            StartCoroutine(OpenMap());
+        }
+
+    }
+
+    IEnumerator CloseMap()
+    {
+        yield return new WaitForEndOfFrame();
+
+
+        Vector3 targetpos5less = new Vector3(0, 0, startCamPos.position.z + maxZPosition+4);
+        Vector3 newPosition = Vector3.Lerp(cam.transform.position, targetpos5less, Time.deltaTime * transitionSpeed);
+
+        cam.transform.position = newPosition;
+        cam.transform.rotation = Quaternion.Slerp(transform.rotation, startCamPos.rotation, Time.deltaTime * transitionSpeed);
+
+        if (cam.transform.position.z > -13.8f)
+        {
+            StartCoroutine(CloseMap());
+        }
+
+    }
 }

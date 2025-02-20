@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
- 
+
 public class Terminal : MonoBehaviour
 {
         private Image buttonImage;
+        public GameObject forcefields;
         public Camera cam;
 
     public Transform startCamPos;

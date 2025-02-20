@@ -3,15 +3,16 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
  
-public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler, IPointerExitHandler 
+public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnterHandler, IPointerExitHandler 
 {
     public Sprite normalImage;
     public Sprite pressedImage;
-    public bool doorOpen = false;
+    public Sprite hoverImage;
     private Image buttonImage;
-    //public Scene scene;
-    public string sceneName;  
     public AudioSource audioSource;
+    bool wireCut = false; 
+    bool wrongWireCut = false; 
+    public bool rightWire; 
     void Start()
     {
         buttonImage = GetComponent<Image>();
@@ -20,24 +21,20 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
     public void OnPointerClick(PointerEventData eventData)
     {      
         buttonImage.sprite = pressedImage;
-        doorOpen = true;
+        wireCut = true; 
         audioSource.Play();
-        SceneManager.LoadScene(sceneName);     
-              
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        buttonImage.sprite = pressedImage;  
-        audioSource.Play();
-     
+        if(wireCut == false){
+        buttonImage.sprite = hoverImage; 
+        } 
     }
         public void OnPointerExit(PointerEventData eventData)
-    {
-        if (doorOpen == false)
-        {
-            buttonImage.sprite = normalImage;           
-
-        }        
+    {    
+        if(wireCut == false){
+        buttonImage.sprite = normalImage;
+        }
     }
 }

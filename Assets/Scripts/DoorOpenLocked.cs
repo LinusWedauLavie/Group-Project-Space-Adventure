@@ -29,6 +29,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
             doorOpen = true;
             audioSource.Play();
             SceneManager.LoadScene(sceneName);
+            //SceneManager.LoadScene("Test", LoadSceneMode.Additive);
             
         }       
     }

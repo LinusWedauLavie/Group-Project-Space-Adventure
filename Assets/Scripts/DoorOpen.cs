@@ -21,8 +21,10 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
     {      
         buttonImage.sprite = pressedImage;
         doorOpen = true;
-        SceneManager.LoadScene(sceneName);
         audioSource.Play();
+        SceneManager.LoadScene(sceneName);
+        //SceneManager.LoadScene("Test", LoadSceneMode.Additive);
+        
               
     }
 

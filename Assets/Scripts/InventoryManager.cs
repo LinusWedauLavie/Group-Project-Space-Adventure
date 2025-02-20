@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -10,6 +11,72 @@ public class InventoryManager : MonoBehaviour
 
     public InventorySlot[] inventorySlots;
     public GameObject inventoryItemPrefab;
+
+    int selectedSlot = 0;
+    int number = 0;
+
+   
+    void Update()
+    {
+ 
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+           number += 1;
+           if(number > 31)
+            {
+                number = 31;
+            }
+            ChangedSelectedSlot(number);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            number -= 1;
+            if(number < 0)
+            {
+                number = 0;
+            }
+            ChangedSelectedSlot(number);
+        }
+        else if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            number -= 8;
+            if(number < 0)
+            {
+                number = 0;
+            }
+            ChangedSelectedSlot(number);
+        }
+        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            number += 8;
+            if(number > 31)
+            {
+                number = 31;
+            }
+            ChangedSelectedSlot(number);
+        }
+
+
+        /*if( Input.inputString != null)
+        {
+            bool isNumber = int.TryParse(Input.inputString, out int number);
+            if (isNumber && number > 0 && number < 32){
+                ChangedSelectedSlot(number - 1) ;
+            }
+        }*/
+    }
+
+
+    public void ChangedSelectedSlot (int newValue)
+    {
+        if (selectedSlot >= 0)
+        {
+            inventorySlots[selectedSlot].Deselect();
+        }
+
+        inventorySlots[newValue].Select();
+        selectedSlot = newValue;
+    }
     void Start()
     {
         ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
@@ -37,4 +104,6 @@ public class InventoryManager : MonoBehaviour
         InventoryItem inventoryItem = newItemGo.GetComponent<InventoryItem>();
         inventoryItem.InitialiseItem(item);
     }
+
+
 }

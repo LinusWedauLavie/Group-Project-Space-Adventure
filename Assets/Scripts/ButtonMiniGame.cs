@@ -17,19 +17,32 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
     {
         buttonImage = GetComponent<Image>();
     }
- 
-    private void Update() 
+        private int index;
+    private CableMiniGame cableMiniGame;
+
+    // This method is called by the parent script
+    public void SetIndex(int i, CableMiniGame parent)
     {
-        if (wireCut && wrongWireCut)
-        {
-            wireCut = false;
-        }
+        index = i;
+        cableMiniGame = parent;
+        // Send the index to the main script
     }
+        public void OnButtonPress()
+    {
+        if (cableMiniGame != null)
+        {
+            cableMiniGame.StoreButtonIndex(index);
+        }
+    } 
     public void OnPointerClick(PointerEventData eventData)
     {      
-        buttonImage.sprite = pressedImage;
-        wireCut = true; 
-        //audioSource.Play();
+        if (index == 0 || index == 1 || index == 4 || index == 5 || index == 8) 
+        {
+            buttonImage.sprite = pressedImage;
+            wireCut = true; 
+            //audioSource.Play();
+        }
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -44,4 +57,6 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
         buttonImage.sprite = normalImage;
         }
     }
+
+
 }

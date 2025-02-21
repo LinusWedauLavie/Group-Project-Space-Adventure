@@ -173,7 +173,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &115699015
 MonoBehaviour:
@@ -311,7 +311,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &151534156
 MonoBehaviour:
@@ -449,7 +449,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &158572551
 MonoBehaviour:
@@ -587,7 +587,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &191815508
 MonoBehaviour:
@@ -725,7 +725,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 1
   rightWire: 0
 --- !u!114 &279720247
 MonoBehaviour:
@@ -958,7 +958,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &318635784
 Rigidbody2D:
@@ -1120,7 +1120,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &609317670
 MonoBehaviour:
@@ -2440,7 +2440,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &774345104
 Rigidbody2D:
@@ -2481,6 +2481,7 @@ GameObject:
   - component: {fileID: 868616147}
   - component: {fileID: 868616146}
   - component: {fileID: 868616148}
+  - component: {fileID: 868616149}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -2565,6 +2566,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
+--- !u!114 &868616149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868616144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d5ab5eabacc0d46a4b2667777ab324, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cables:
+  - {fileID: 279720246}
+  - {fileID: 191815507}
+  - {fileID: 609317669}
+  - {fileID: 158572550}
+  - {fileID: 151534155}
+  - {fileID: 986888258}
+  - {fileID: 115699014}
 --- !u!1 &986888256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,7 +2640,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!114 &986888259
 MonoBehaviour:
@@ -3105,7 +3126,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &1665051412
 Rigidbody2D:
@@ -3340,7 +3361,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &1828170312
 Rigidbody2D:
@@ -3518,7 +3539,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &1874175207
 Rigidbody2D:
@@ -3696,7 +3717,7 @@ MonoBehaviour:
   normalImage: {fileID: 634522359460242333, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 3970926704081086100, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &2047283428
 Rigidbody2D:
@@ -3874,7 +3895,7 @@ MonoBehaviour:
   normalImage: {fileID: -8756668022249885823, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   pressedImage: {fileID: 7782048109922929004, guid: 38597440b85f12e4f8dee1aa21f0da91, type: 3}
   hoverImage: {fileID: 0}
-  audioSource: {fileID: 0}
+  wrongWireCut: 0
   rightWire: 0
 --- !u!50 &2085098966
 Rigidbody2D:

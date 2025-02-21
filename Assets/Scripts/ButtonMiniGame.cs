@@ -9,20 +9,27 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
     public Sprite pressedImage;
     public Sprite hoverImage;
     private Image buttonImage;
-    public AudioSource audioSource;
+   // public AudioSource audioSource;
     bool wireCut = false; 
-    bool wrongWireCut = false; 
+    public bool wrongWireCut = false; 
     public bool rightWire; 
     void Start()
     {
         buttonImage = GetComponent<Image>();
     }
  
+    private void Update() 
+    {
+        if (wireCut && wrongWireCut)
+        {
+            wireCut = false;
+        }
+    }
     public void OnPointerClick(PointerEventData eventData)
     {      
         buttonImage.sprite = pressedImage;
         wireCut = true; 
-        audioSource.Play();
+        //audioSource.Play();
     }
 
     public void OnPointerEnter(PointerEventData eventData)

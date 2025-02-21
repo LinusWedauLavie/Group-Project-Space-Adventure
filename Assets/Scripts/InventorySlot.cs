@@ -5,15 +5,15 @@ using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
 {
-
+    InventoryManager inventoryManager;
     public UnityEngine.UI.Image image; 
     public Color selectedColor, notSelectedColor;
     public int slotNumber;
-    public int currentSlotNumber = -1;
     
 
     private void Awake()
     {
+        inventoryManager = FindFirstObjectByType<InventoryManager>();
         Deselect();
     }
     public void Select()
@@ -37,10 +37,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler, IPointerClickHandler
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    {
-        Debug.Log(slotNumber);
-        currentSlotNumber = slotNumber;       
-       
+    {     
+       inventoryManager.ChangedSelectedSlot(slotNumber);
     }
 
 

@@ -20,7 +20,7 @@ public class InventoryManager : MonoBehaviour
     void Update()
     {
         //ChangedSelectedSlot(inventorySlot.currentSlotNumber);
-
+/*
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
            number += 1;
@@ -58,7 +58,7 @@ public class InventoryManager : MonoBehaviour
             ChangedSelectedSlot(number);
         }
 
-
+*/
         /*if( Input.inputString != null)
         {
             bool isNumber = int.TryParse(Input.inputString, out int number);
@@ -86,7 +86,7 @@ public class InventoryManager : MonoBehaviour
     
     public void AddItem(Item item)
     {
-        if(itemPickup.ableToPickUp == true)
+        //if(itemPickup.ableToPickUp == true)
         {
         for (int i = 0; i < inventorySlots.Length; i++)
         {
@@ -102,7 +102,7 @@ public class InventoryManager : MonoBehaviour
     }
     void SpawnNewItem(Item item, InventorySlot slot)
     {
-        if(itemPickup.ableToPickUp == true)
+        //if(itemPickup.ableToPickUp == true)
         {
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);
         InventoryItem inventoryItem = newItemGo.GetComponent<InventoryItem>();

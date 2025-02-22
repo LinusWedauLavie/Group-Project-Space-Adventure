@@ -1005,7 +1005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &318863967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1069,8 +1069,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318863966}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.33, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.3300171, z: 0}
   m_LocalScale: {x: 15, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3165,7 +3165,7 @@ Transform:
   m_GameObject: {fileID: 793607116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3338,7 +3338,7 @@ Transform:
   m_GameObject: {fileID: 848560958}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.36666667, y: 2.64, z: 0}
+  m_LocalPosition: {x: 0.3, y: 2.64, z: 0}
   m_LocalScale: {x: 0.35999998, y: 0.023999998, z: 0.36}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -3632,7 +3632,7 @@ Transform:
   m_GameObject: {fileID: 1004015796}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.06666667, y: 2.64, z: 0}
+  m_LocalPosition: {x: -0.1, y: 2.64, z: 0}
   m_LocalScale: {x: 0.35999998, y: 0.023999998, z: 0.36}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4688,7 +4688,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 5649252525801818681, guid: 4a660eec0729d7f448c5cd45730c6fb1, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.46126127, a: 0.19215687}
+  m_Color: {r: 0, g: 1, b: 0.46126127, a: 0.3254902}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6023,7 +6023,7 @@ Transform:
   m_GameObject: {fileID: 1891429161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.33333334, y: 2.64, z: 0}
+  m_LocalPosition: {x: -0.3, y: 2.64, z: 0}
   m_LocalScale: {x: 0.35999998, y: 0.023999998, z: 0.36}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6051,7 +6051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1896004293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6083,11 +6083,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc80e1d3ad25ee4cb435bc80c387777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forcefieldRendererUp: {fileID: 1242055777}
+  forcefieldRendererDown: {fileID: 1339701940}
+  alphaValue: 0.03
   cam: {fileID: 953667324}
-  startCamPos: {fileID: 0}
   targetTransform: {fileID: 793607117}
   transitionSpeed: 4
   maxZPosition: -5.5
+  GoBackFromMapButton: {fileID: 1896004292}
+  GoBackFromMapButtonArrows: {fileID: 318863966}
+  ActivateTerminalButton: {fileID: 1964246647}
 --- !u!114 &1896004295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6715,11 +6720,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bc80e1d3ad25ee4cb435bc80c387777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forcefieldRendererUp: {fileID: 1242055777}
+  forcefieldRendererDown: {fileID: 1339701940}
+  alphaValue: 0.33
   cam: {fileID: 953667324}
-  startCamPos: {fileID: 0}
   targetTransform: {fileID: 793607117}
   transitionSpeed: 2
   maxZPosition: -5.5
+  GoBackFromMapButton: {fileID: 1896004292}
+  GoBackFromMapButtonArrows: {fileID: 318863966}
+  ActivateTerminalButton: {fileID: 1964246647}
 --- !u!1 &2025866995
 GameObject:
   m_ObjectHideFlags: 0

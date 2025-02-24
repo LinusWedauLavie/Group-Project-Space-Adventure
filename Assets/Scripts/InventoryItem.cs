@@ -8,7 +8,8 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public UnityEngine.UI.Image image; 
     [HideInInspector] public Item item;
     [HideInInspector] public Transform parentAfterDrag;
-    
+    internal int count;
+
     public void InitialiseItem(Item newItem)
     {
         item = newItem;

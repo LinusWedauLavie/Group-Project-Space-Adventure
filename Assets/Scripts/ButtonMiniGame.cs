@@ -47,14 +47,16 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(wireCut == false){
-        buttonImage.sprite = hoverImage; 
+        if(wireCut == false)
+        {
+            buttonImage.sprite = hoverImage; 
         } 
     }
         public void OnPointerExit(PointerEventData eventData)
     {    
-        if(wireCut == false){
-        buttonImage.sprite = normalImage;
+        if(wireCut == false)
+        {
+            buttonImage.sprite = normalImage;
         }
     }
 

@@ -12,18 +12,20 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
     private Image buttonImage;
     public string sceneName;  
     private UnlockDoor doorUnlockeda;
+    public CableMiniGame cableMiniGame;
     public AudioSource audioSource;
  
     void Start()
     {
         buttonImage = GetComponent<Image>();
         doorUnlockeda = doorUnlock.GetComponent<UnlockDoor>();
+        cableMiniGame = cableMiniGame.GetComponent<CableMiniGame>();
        
     }
  
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(doorUnlockeda.doorUnlocked == true)
+        if(cableMiniGame.rightSolution == true)
         {
             buttonImage.sprite = pressedImage;
             doorOpen = true;
@@ -36,7 +38,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(doorUnlockeda.doorUnlocked == true)
+        if(cableMiniGame.rightSolution == true)
         {
             buttonImage.sprite = pressedImage;
             audioSource.Play();

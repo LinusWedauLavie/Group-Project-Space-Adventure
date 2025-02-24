@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 
 public class InventoryManager : MonoBehaviour
 {
+    public static InventoryManager instance;
+    
     public UnityEngine.UI.Image image; 
     [HideInInspector] public Item item;
 
@@ -13,10 +15,14 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryItemPrefab;
 
     int selectedSlot = 3;
-    int number = 0;
+    //int number = 0;
     //public ItemPickup itemPickup;
     public InventorySlot inventorySlot;
-   
+
+    void Awake()
+    {
+        instance = this;
+    }
     void Update()
     {
         //ChangedSelectedSlot(inventorySlot.currentSlotNumber);
@@ -103,6 +109,26 @@ public class InventoryManager : MonoBehaviour
         InventoryItem inventoryItem = newItemGo.GetComponent<InventoryItem>();
         inventoryItem.InitialiseItem(item);
     }
+    
+    public Item GetSelectedItem(bool use)
+    {
+        InventorySlot slot = inventorySlots[selectedSlot];
+        InventoryItem itemInSlot = slot.GetComponentInChildren<InventoryItem>();
+        if(itemInSlot != null)        
+        {
+            Item item = itemInSlot.item;
 
+            if ( use == true){
+                itemInSlot.count--;
+                if(itemInSlot.count <= 0)
+                {
+                    Destroy(itemInSlot. gameObject);
+                }
+            }
+
+            return item;
+        }
+        return null;
+    }
 
 }

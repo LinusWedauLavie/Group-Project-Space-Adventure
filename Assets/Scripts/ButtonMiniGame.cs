@@ -17,7 +17,7 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
     {
         buttonImage = GetComponent<Image>();
     }
-        private int index;
+    private int index;
     private CableMiniGame cableMiniGame;
 
     // This method is called by the parent script
@@ -42,7 +42,6 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
             wireCut = true; 
             //audioSource.Play();
         }
-
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -58,6 +57,11 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
         {
             buttonImage.sprite = normalImage;
         }
+    }
+    public void Reset() 
+    {
+        wireCut = false;
+        buttonImage.sprite = normalImage;
     }
 
 

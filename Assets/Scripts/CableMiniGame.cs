@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CableMiniGame : MonoBehaviour
 {
@@ -20,22 +21,34 @@ public class CableMiniGame : MonoBehaviour
             buttons[i].SetIndex(i, this);
         }
     }
-   
+    void Update()
+    {
+        int[] arr = {0,0,0,0,0,0,0,0,0};
+        if (wrongSolution == true)
+        {
+            buttonPositions = arr;
+            wrongSolution = false;
+        }
+    }
+
     // Method to receive the button's index and store it
     public void StoreButtonIndex(int index)
     {
         buttonPositions[index] = index;
+        
         int cableSum = buttonPositions.Sum();
         if (index == 2 || index == 3|| index == 6|| index == 7)
         {
             Debug.Log("Boom");
-            wrongSolution = true;
+           wrongSolution = true;
         }
-        else if (cableSum == 18)
+        if (cableSum == 18 && buttonPositions[0] == 0 && buttonPositions[1] == 1 && buttonPositions[4] == 4 && buttonPositions[5] == 5 && buttonPositions[8] == 8)
         {
             Debug.Log("Yay");
+            wrongSolution = false;
             rightSolution = true; 
         }
+        
     }
 
     

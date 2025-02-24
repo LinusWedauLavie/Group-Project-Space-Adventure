@@ -864,6 +864,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1324339669}
     m_Modifications:
+    - target: {fileID: 1896222226297654897, guid: dd175464ef4c4474085397fc28a86894, type: 3}
+      propertyPath: ableToPickUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5292212159237075344, guid: dd175464ef4c4474085397fc28a86894, type: 3}
       propertyPath: m_Name
       value: ChainsawButton

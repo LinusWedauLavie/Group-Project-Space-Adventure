@@ -16,7 +16,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {        
-       if(ableToPickUp)
+       if(ableToPickUp != false)
        {
            Destroy(gameObject);
        }

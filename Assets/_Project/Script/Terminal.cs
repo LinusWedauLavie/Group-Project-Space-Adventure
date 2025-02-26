@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class Terminal : MonoBehaviour
 {
-        private Image buttonImage;
 
     public SpriteRenderer forcefieldRendererUp, forcefieldRendererDown;
 
@@ -24,7 +23,6 @@ public class Terminal : MonoBehaviour
 
     void Start()
     {
-        buttonImage = GetComponent<Image>();
         startCamPos = cam.transform;
         normalColor = forcefieldRendererUp.color;
     }

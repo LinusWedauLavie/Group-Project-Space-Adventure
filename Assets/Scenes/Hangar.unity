@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 50874604}
   - component: {fileID: 50874603}
   - component: {fileID: 50874602}
+  - component: {fileID: 50874605}
   m_Layer: 0
   m_Name: Icy-64x64_0
   m_TagString: Untagged
@@ -327,6 +328,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50874600}
   m_CullTransparentMesh: 1
+--- !u!114 &50874605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50874600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &54424506
 GameObject:
   m_ObjectHideFlags: 0
@@ -687,6 +710,7 @@ GameObject:
   - component: {fileID: 202424755}
   - component: {fileID: 202424754}
   - component: {fileID: 202424753}
+  - component: {fileID: 202424756}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -796,45 +820,13 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202424751}
   m_CullTransparentMesh: 1
---- !u!1 &210523587
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 210523588}
-  - component: {fileID: 210523589}
-  m_Layer: 0
-  m_Name: RessourceManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &210523588
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210523587}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &210523589
+--- !u!114 &202424756
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210523587}
+  m_GameObject: {fileID: 202424751}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
@@ -949,6 +941,7 @@ GameObject:
   - component: {fileID: 282243255}
   - component: {fileID: 282243254}
   - component: {fileID: 282243253}
+  - component: {fileID: 282243256}
   m_Layer: 0
   m_Name: Black_hole
   m_TagString: Untagged
@@ -1058,6 +1051,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282243250}
   m_CullTransparentMesh: 1
+--- !u!114 &282243256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282243250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &299200749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,6 +1350,7 @@ GameObject:
   - component: {fileID: 440731632}
   - component: {fileID: 440731631}
   - component: {fileID: 440731630}
+  - component: {fileID: 440731633}
   m_Layer: 0
   m_Name: Baren
   m_TagString: Untagged
@@ -1445,6 +1461,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440731628}
   m_CullTransparentMesh: 1
+--- !u!114 &440731633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440731628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &464568646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3727,6 +3765,7 @@ GameObject:
   - component: {fileID: 793607120}
   - component: {fileID: 793607119}
   - component: {fileID: 793607118}
+  - component: {fileID: 793607121}
   m_Layer: 0
   m_Name: Sun-64x64_0
   m_TagString: Untagged
@@ -3836,6 +3875,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793607116}
   m_CullTransparentMesh: 1
+--- !u!114 &793607121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793607116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &845817234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3848,6 +3909,7 @@ GameObject:
   - component: {fileID: 845817238}
   - component: {fileID: 845817237}
   - component: {fileID: 845817236}
+  - component: {fileID: 845817239}
   m_Layer: 0
   m_Name: Jupiter-64x64_0
   m_TagString: Untagged
@@ -3957,6 +4019,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845817234}
   m_CullTransparentMesh: 1
+--- !u!114 &845817239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845817234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &848560958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,6 +4334,7 @@ GameObject:
   - component: {fileID: 982441821}
   - component: {fileID: 982441820}
   - component: {fileID: 982441819}
+  - component: {fileID: 982441822}
   m_Layer: 0
   m_Name: Terrestrial-64x64_0
   m_TagString: Untagged
@@ -4360,6 +4445,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982441817}
   m_CullTransparentMesh: 1
+--- !u!114 &982441822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982441817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1004015796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,6 +4948,7 @@ GameObject:
   - component: {fileID: 1118839873}
   - component: {fileID: 1118839872}
   - component: {fileID: 1118839871}
+  - component: {fileID: 1118839874}
   m_Layer: 0
   m_Name: Terran
   m_TagString: Untagged
@@ -4951,6 +5059,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118839869}
   m_CullTransparentMesh: 1
+--- !u!114 &1118839874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118839869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1158333045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,6 +5468,7 @@ GameObject:
   - component: {fileID: 1328561099}
   - component: {fileID: 1328561098}
   - component: {fileID: 1328561097}
+  - component: {fileID: 1328561100}
   m_Layer: 0
   m_Name: Hot-64x64_0
   m_TagString: Untagged
@@ -5447,6 +5578,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328561095}
   m_CullTransparentMesh: 1
+--- !u!114 &1328561100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328561095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1339701939
 GameObject:
   m_ObjectHideFlags: 0
@@ -7160,7 +7313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896004292}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -7649,7 +7802,7 @@ GameObject:
   - component: {fileID: 1964246649}
   - component: {fileID: 1964246652}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ActivateTerminalButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7976,6 +8129,7 @@ GameObject:
   - component: {fileID: 2069615962}
   - component: {fileID: 2069615961}
   - component: {fileID: 2069615960}
+  - component: {fileID: 2069615963}
   m_Layer: 0
   m_Name: Crystal-64x64_0
   m_TagString: Untagged
@@ -8085,6 +8239,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069615958}
   m_CullTransparentMesh: 1
+--- !u!114 &2069615963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069615958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
+  Chemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2079612666
 GameObject:
   m_ObjectHideFlags: 0
@@ -8259,6 +8435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetInfoPanel: {fileID: 2109130103}
+  ActivateTerminalButton: {fileID: 1964246647}
+  GoBackFromMapButton: {fileID: 1896004292}
   IcePlanet: {fileID: 757927145}
   BlackholePlanet: {fileID: 282243250}
   SunPlanet: {fileID: 793607116}
@@ -8570,4 +8748,3 @@ SceneRoots:
   - {fileID: 1956128997}
   - {fileID: 513664152}
   - {fileID: 318863968}
-  - {fileID: 210523588}

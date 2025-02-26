@@ -27,6 +27,8 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler,IPointerEnterH
     {
         if(cableMiniGame.rightSolution == true)
         {
+            FindAnyObjectByType<SaveRoomStates>().GetCryoRoomStates();
+            Debug.Log("BOom");
             buttonImage.sprite = pressedImage;
             doorOpen = true;
             audioSource.Play();

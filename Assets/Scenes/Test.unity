@@ -276,6 +276,7 @@ MonoBehaviour:
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &115699015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +629,7 @@ MonoBehaviour:
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &151534156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +780,7 @@ MonoBehaviour:
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &158572551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,6 +931,7 @@ MonoBehaviour:
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &191815508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,6 +1421,7 @@ GameObject:
   - component: {fileID: 279720249}
   - component: {fileID: 279720248}
   - component: {fileID: 279720247}
+  - component: {fileID: 279720250}
   - component: {fileID: 279720246}
   m_Layer: 5
   m_Name: Button
@@ -1461,6 +1466,7 @@ MonoBehaviour:
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &279720247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,6 +1561,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279720244}
   m_CullTransparentMesh: 1
+--- !u!114 &279720250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279720244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a702bd252e036241acb34a138ec6d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItem: {fileID: 11400000, guid: 56c18fa4700e0d04095556ce688327c5, type: 2}
 --- !u!1 &286800488
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2618,7 @@ MonoBehaviour:
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &609317670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3725,6 +3745,8 @@ MonoBehaviour:
   - {fileID: 1787077830}
   - {fileID: 1097529781}
   buttonPositions: 
+  rightSolution: 0
+  wrongSolution: 0
 --- !u!224 &869652967 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3812945187283815764, guid: d8cd687df06c96d44b3f26eab591e459, type: 3}
@@ -3951,6 +3973,7 @@ MonoBehaviour:
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &986888259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4149,6 +4172,7 @@ MonoBehaviour:
   hoverImage: {fileID: 9069671179884641152, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &1097529782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5967,6 +5991,7 @@ MonoBehaviour:
   hoverImage: {fileID: 1526195662091622452, guid: 4f070b99db7f56744b396ca4e624f623, type: 3}
   wrongWireCut: 0
   rightWire: 0
+  rightItem: 0
 --- !u!114 &1787077831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6605,7 +6630,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selected Item
+  m_text: 'Get
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6741,7 +6768,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Selected Item
+  m_text: 'Use
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

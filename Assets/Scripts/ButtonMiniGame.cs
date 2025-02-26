@@ -13,12 +13,27 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
     bool wireCut = false; 
     public bool wrongWireCut = false; 
     public bool rightWire; 
+    public bool rightItem = false; 
+    public Item currentItem;
     void Start()
     {
         buttonImage = GetComponent<Image>();
+       
     }
     private int index;
     private CableMiniGame cableMiniGame;
+    void Update()
+    {
+        currentItem = InventoryManager.instance.GetSelectedItem(false);
+        if (NecessaryItemCheck.instance.neededItem == currentItem )      
+        {
+            rightItem = true;
+        }
+        if (NecessaryItemCheck.instance.neededItem != currentItem )      
+        {
+            rightItem = false;
+        }
+    }
 
     // This method is called by the parent script
     public void SetIndex(int i, CableMiniGame parent)
@@ -29,14 +44,14 @@ public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnter
     }
         public void OnButtonPress()
     {
-        if (cableMiniGame != null)
+        if (cableMiniGame != null && rightItem == true)
         {
             cableMiniGame.StoreButtonIndex(index);
         }
     } 
     public void OnPointerClick(PointerEventData eventData)
     {      
-        if (index == 0 || index == 1 || index == 4 || index == 5 || index == 8) 
+        if (rightItem == true && index == 0 || rightItem == true && index == 1 ||rightItem == true && index == 4 ||rightItem == true && index == 5 || rightItem == true && index == 8) 
         {
             buttonImage.sprite = pressedImage;
             wireCut = true; 

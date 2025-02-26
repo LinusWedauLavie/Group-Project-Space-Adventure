@@ -9,19 +9,29 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
     private Image buttonImage;
     bool clicked = false;
     public bool doorUnlocked;
+    public Item item; 
+    Item currentItem;
+    public Button button;
 
     void Start()
     {
         buttonImage = GetComponent<Image>();
     }
+    void Update()
+    {
+        currentItem = InventoryManager.instance.GetSelectedItem(false);
+
+    }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(clicked == false)
-        {
+        if(clicked == false && NecessaryItemCheck.instance.neededItem == currentItem)
+        { 
             buttonImage.sprite = pressedImage;            
             clicked = true;
-            doorUnlocked = true;
+            button.interactable = true;
+            //doorUnlocked = true;
+            InventoryManager.instance.GetSelectedItem(true);
         }       
     }
 }

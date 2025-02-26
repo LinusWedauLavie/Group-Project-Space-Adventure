@@ -25,53 +25,7 @@ public class InventoryManager : MonoBehaviour
     }
     void Update()
     {
-        //ChangedSelectedSlot(inventorySlot.currentSlotNumber);
-/*
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-           number += 1;
-           if(number > 31)
-            {
-                number = 31;
-            }
-            ChangedSelectedSlot(number);
-        }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            number -= 1;
-            if(number < 0)
-            {
-                number = 0;
-            }
-            ChangedSelectedSlot(number);
-        }
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            number -= 8;
-            if(number < 0)
-            {
-                number = 0;
-            }
-            ChangedSelectedSlot(number);
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            number += 8;
-            if(number > 31)
-            {
-                number = 31;
-            }
-            ChangedSelectedSlot(number);
-        }
-
-*/
-        /*if( Input.inputString != null)
-        {
-            bool isNumber = int.TryParse(Input.inputString, out int number);
-            if (isNumber && number > 0 && number < 32){
-                ChangedSelectedSlot(number - 1) ;
-            }
-        }*/
+       
     }
 
 

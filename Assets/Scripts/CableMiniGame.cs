@@ -47,6 +47,7 @@ public class CableMiniGame : MonoBehaviour
             Debug.Log("Yay");
             wrongSolution = false;
             rightSolution = true; 
+            InventoryManager.instance.GetSelectedItem(true);
         }
         
     }

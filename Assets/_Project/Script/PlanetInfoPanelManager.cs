@@ -4,16 +4,19 @@ using UnityEngine;
 public class PlanetInfoPanelManager : MonoBehaviour
 {
 
+
     public GameObject planetInfoPanel, IcePlanet, BlackholePlanet, SunPlanet, BarenPlanet, LavaPlanet, TerranPlanet, CrystalPlanet, HotPlanet, IcyPlanet, RadiatedPlanet, TerrestrialPlanet, JupiterPlanet;
     
     public TextMeshProUGUI planetTextHeader , planetDescriptionText, planetRessourcessText, planetTextPlaceholderOne, planetTextPlaceholderTwo, planetTextPlaceholderThree;
 
     public void ShowIcePlanetStats()
     {
+        ProduceRessources IcePlanetressources = IcePlanet.GetComponent<ProduceRessources>();
+
         planetInfoPanel.SetActive(true);
         planetTextHeader.text= "Ice Planet";
         planetDescriptionText.text= "Ice Planet Description";
-        planetRessourcessText.text= "Ice Planet Eisen oder so: 100";
+        planetRessourcessText.text= "Ice Planet: " + "-Chemikalien: " + IcePlanetressources.Chemikalien.Value; //" + "\n Uran: " + produceRessources.Uran.Value + "\n Chemikalien: " + produceRessources.Chemikalien.Value;
 
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x-1.5f, IcePlanet.transform.position.y+1.2f, 0);
     }
@@ -100,10 +103,12 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
     public void ShowRadiatedPlanetStats()
     {
+ProduceRessources RadiatedPlanetressources = RadiatedPlanet.GetComponent<ProduceRessources>();
+
         planetInfoPanel.SetActive(true);
         planetTextHeader.text= "Radiated Planet";
         planetDescriptionText.text= "Radiated Planet Description";
-        planetRessourcessText.text= "Radiated Planet Eisen oder so: 100";
+        planetRessourcessText.text= "Radiated Planet " + "\n -Uran: " + RadiatedPlanetressources.Uran.Value;
 
         planetInfoPanel.transform.position = new Vector3(RadiatedPlanet.transform.position.x-1.5f, RadiatedPlanet.transform.position.y-1.2f, 0);
     }

@@ -5,21 +5,21 @@ public class DemoScript : MonoBehaviour
     public InventoryManager inventoryManager;
     public Item[] itemsToPickUp;
 
-    void Start()
+    public void PickupItem(int id)
     {
         if (inventoryManager == null)
         {
             inventoryManager = FindFirstObjectByType<InventoryManager>();
         }
-    }
-
-    public void PickupItem(int id)
-    {
         inventoryManager.AddItem(itemsToPickUp[id]);
     }
 
     public void GetSelectedItem()
     {
+        if (inventoryManager == null)
+        {
+            inventoryManager = FindFirstObjectByType<InventoryManager>();
+        }
         Item recievedItem = inventoryManager.GetSelectedItem(false);
         if (recievedItem != null)
         {
@@ -33,6 +33,10 @@ public class DemoScript : MonoBehaviour
 
     public void UseSelectedItem()
     {
+        if (inventoryManager == null)
+        {
+            inventoryManager = FindFirstObjectByType<InventoryManager>();
+        }
         Item recievedItem = inventoryManager.GetSelectedItem(true);
         if (recievedItem != null)
         {

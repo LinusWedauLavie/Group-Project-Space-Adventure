@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public UnityEngine.UI.Image image; 
-    [HideInInspector] public Item item;
-    [HideInInspector] public Transform parentAfterDrag;
+    public Item item;
+    public Transform parentAfterDrag;
     internal int count;
 
     public void InitialiseItem(Item newItem)
@@ -20,6 +20,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
+        
         transform.SetAsLastSibling();
         image.raycastTarget = false;
     }

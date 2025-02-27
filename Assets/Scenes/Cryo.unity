@@ -8142,6 +8142,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10083,7 +10087,7 @@ GameObject:
   - component: {fileID: 2031595218}
   - component: {fileID: 2031595217}
   m_Layer: 0
-  m_Name: DoNotDestroy2
+  m_Name: SaveState
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10101,10 +10105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa362678ad1f8a24e93a4a1baf069b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasMovedSave: 0
-  ChainsawGotten: 0
-  screwDriverGotten: 0
-  doorOpen: 0
+  SaveCryroCompleted: 0
+  coin1Collected: 0
 --- !u!4 &2031595218
 Transform:
   m_ObjectHideFlags: 0

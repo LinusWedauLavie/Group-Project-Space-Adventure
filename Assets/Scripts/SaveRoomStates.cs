@@ -5,6 +5,7 @@ public class SaveRoomStates : MonoBehaviour
     static SaveRoomStates instance;
 
     public bool SaveCryroCompleted;
+    public bool coin1Collected;
 
 
     void Awake()
@@ -24,5 +25,6 @@ public class SaveRoomStates : MonoBehaviour
         //hasMovedSave = GetComponent<MoveObjectLeft>().MoveObjectLeft.hasMoved;
         SaveCryroCompleted = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
         Debug.Log(SaveCryroCompleted);
+        
     }
 }

@@ -4,8 +4,10 @@ using UnityEngine.UI;
 
 public class ItemAppears : MonoBehaviour, IPointerClickHandler
 {
-   // public SpriteRenderer sprite;
-    public GameObject item; 
+    // public SpriteRenderer sprite;
+    SaveRoomStates saveRoomStates;
+
+    public GameObject item;
     public Sprite normalImage;
     public Sprite pressedImage;
     bool doorOpen = false;
@@ -14,17 +16,24 @@ public class ItemAppears : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         buttonImage = GetComponent<Image>();
-       
 
-
-    }
-     public void OnPointerClick(PointerEventData eventData)
-    {
-        buttonImage.sprite = pressedImage;
-        if(doorOpen == false)
+        saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+        if (saveRoomStates.SaveCryroCompleted)
         {
             doorOpen = true;
-            Instantiate(item, new Vector2(item.transform.position.x ,item.transform.position.y), Quaternion.identity);
+            buttonImage.sprite = pressedImage;
+            Button button = GetComponent<Button>();
+            button.enabled = false;
+        }
+
+    }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        buttonImage.sprite = pressedImage;
+        if (doorOpen == false)
+        {
+            doorOpen = true;
+            Instantiate(item, new Vector2(item.transform.position.x, item.transform.position.y), Quaternion.identity);
         }
     }
 }

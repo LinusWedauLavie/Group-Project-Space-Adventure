@@ -5,22 +5,38 @@ using UnityEngine.UI;
 
 public class ItemPickup : MonoBehaviour, IPointerClickHandler
 {
+    SaveRoomStates saveRoomStates;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public GameObject item; 
+    public GameObject item;
     public bool ableToPickUp;
     //public GameObject ableToPickUp;
     //private MoveObjectLeft ableToPickUps;
     void Start()
     {
-       // ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
+        saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+        if (saveRoomStates.SaveCryroCompleted && !CompareTag("Coin"))
+        {
+            gameObject.SetActive(false);
+
+        }
+        if (saveRoomStates.coin1Collected && CompareTag("Coin"))
+        {
+            gameObject.SetActive(false);
+        }
+        // ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
     }
     public void OnPointerClick(PointerEventData eventData)
-    {        
-       if(ableToPickUp != false)
-       {
-           Destroy(gameObject);
-       }
-        
+    {
+        if (ableToPickUp != false)
+        {
+            if (CompareTag("Coin"))
+            {
+                saveRoomStates.coin1Collected = true;
+            }
+            Destroy(gameObject);
+        }
+
     }
-    
+
 }

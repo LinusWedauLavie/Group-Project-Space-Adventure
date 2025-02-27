@@ -5,6 +5,14 @@ public class DemoScript : MonoBehaviour
     public InventoryManager inventoryManager;
     public Item[] itemsToPickUp;
 
+    void Start()
+    {
+        if (inventoryManager == null)
+        {
+            inventoryManager = FindFirstObjectByType<InventoryManager>();
+        }
+    }
+
     public void PickupItem(int id)
     {
         inventoryManager.AddItem(itemsToPickUp[id]);

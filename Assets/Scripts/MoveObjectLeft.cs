@@ -17,6 +17,8 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
         if (saveRoomStates.SaveCryroCompleted)
         {
             hasMoved = true;
+            Button button = GetComponent<Button>();
+            button.enabled = false;
             Debug.Log("if");
             transform.Translate(Vector3.left * speed);
         }

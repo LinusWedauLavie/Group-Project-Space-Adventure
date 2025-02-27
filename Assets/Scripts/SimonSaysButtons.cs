@@ -3,7 +3,7 @@ using UnityEngine;
 public class SimonSaysButtons : MonoBehaviour
 {
     public string direction;
-    private SimonSays simonSays;
+    public  SimonSays simonSays;
     void Start()
     {
         

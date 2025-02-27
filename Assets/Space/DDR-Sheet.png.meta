@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 815d8491744ffdf47b22c33d0533e8e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3841971362363417165
+    second: DDR-Sheet_0
+  - first:
+      213: -62082803937879186
+    second: DDR-Sheet_1
+  - first:
+      213: -7827887005852183564
+    second: DDR-Sheet_2
+  - first:
+      213: 7675449446081911305
+    second: DDR-Sheet_3
+  - first:
+      213: -8494667643681952215
+    second: DDR-Sheet_4
+  - first:
+      213: 642973391372327536
+    second: DDR-Sheet_5
+  - first:
+      213: 4974440202951550973
+    second: DDR-Sheet_6
+  - first:
+      213: 6159394856215665573
+    second: DDR-Sheet_7
+  - first:
+      213: -1263016941012582571
+    second: DDR-Sheet_8
+  - first:
+      213: -3618118535765495979
+    second: DDR-Sheet_9
+  - first:
+      213: 1313588073529974016
+    second: DDR-Sheet_10
+  - first:
+      213: -2987265467129864555
+    second: DDR-Sheet_11
+  - first:
+      213: -2927532825820159573
+    second: DDR-Sheet_12
+  - first:
+      213: -1208928851896105098
+    second: DDR-Sheet_13
+  - first:
+      213: 5459982315553783845
+    second: DDR-Sheet_14
+  - first:
+      213: 212955998025145178
+    second: DDR-Sheet_15
+  - first:
+      213: 6210589326660885817
+    second: DDR-Sheet_16
+  - first:
+      213: -5317808793803261541
+    second: DDR-Sheet_17
+  - first:
+      213: -3164666547145115457
+    second: DDR-Sheet_18
+  - first:
+      213: -1081443016316246150
+    second: DDR-Sheet_19
+  - first:
+      213: 2253188656618537851
+    second: DDR-Sheet_20
+  - first:
+      213: -3005675141100678014
+    second: DDR-Sheet_21
+  - first:
+      213: -3932466713700583900
+    second: DDR-Sheet_22
+  - first:
+      213: -9027394798547100301
+    second: DDR-Sheet_23
+  - first:
+      213: 3227951005182859957
+    second: DDR-Sheet_24
+  - first:
+      213: 3533467771920331190
+    second: DDR-Sheet_25
+  - first:
+      213: 1555904534417432675
+    second: DDR-Sheet_26
+  - first:
+      213: 5345420806160600063
+    second: DDR-Sheet_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 7
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DDR-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bdda1dc6639eaac0800000000000000
+      internalID: -3841971362363417165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b5f9cc400732ff0800000000000000
+      internalID: -62082803937879186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3d84afd32cd5390800000000000000
+      internalID: -7827887005852183564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a5e2dda9ca48a60800000000000000
+      internalID: 7675449446081911305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e2555e8c0ec1a80800000000000000
+      internalID: -8494667643681952215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a96c094ec4ce800800000000000000
+      internalID: 642973391372327536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df769554203c80540800000000000000
+      internalID: 4974440202951550973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab5a14ecf09a7550800000000000000
+      internalID: 6159394856215665573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ff4ada8ccd87ee0800000000000000
+      internalID: -1263016941012582571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fe0708c5cd9cdc0800000000000000
+      internalID: -3618118535765495979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d91f7a46dca3210800000000000000
+      internalID: 1313588073529974016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59edee582e91b86d0800000000000000
+      internalID: -2987265467129864555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1a1b8d7605f57d0800000000000000
+      internalID: -2927532825820159573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67703084d95093fe0800000000000000
+      internalID: -1208928851896105098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5208f7edcf0c5cb40800000000000000
+      internalID: 5459982315553783845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bd3171a5294f200800000000000000
+      internalID: 212955998025145178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d54756612703650800000000000000
+      internalID: 6210589326660885817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9978e5b3195336b0800000000000000
+      internalID: -5317808793803261541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb87ad0ea88d414d0800000000000000
+      internalID: -3164666547145115457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77a4af6e41fdf0f0800000000000000
+      internalID: -1081443016316246150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7300b1352fe44f10800000000000000
+      internalID: 2253188656618537851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284d8784262b946d0800000000000000
+      internalID: -3005675141100678014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42634d6eb521d69c0800000000000000
+      internalID: -3932466713700583900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d1469824048b280800000000000000
+      internalID: -9027394798547100301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba1a48365cfbcc20800000000000000
+      internalID: 3227951005182859957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b13a9aa736690130800000000000000
+      internalID: 3533467771920331190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360ee563eeea79510800000000000000
+      internalID: 1555904534417432675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DDR-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 8
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb4f26e6efbe2a40800000000000000
+      internalID: 5345420806160600063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DDR-Sheet_0: -3841971362363417165
+      DDR-Sheet_1: -62082803937879186
+      DDR-Sheet_10: 1313588073529974016
+      DDR-Sheet_11: -2987265467129864555
+      DDR-Sheet_12: -2927532825820159573
+      DDR-Sheet_13: -1208928851896105098
+      DDR-Sheet_14: 5459982315553783845
+      DDR-Sheet_15: 212955998025145178
+      DDR-Sheet_16: 6210589326660885817
+      DDR-Sheet_17: -5317808793803261541
+      DDR-Sheet_18: -3164666547145115457
+      DDR-Sheet_19: -1081443016316246150
+      DDR-Sheet_2: -7827887005852183564
+      DDR-Sheet_20: 2253188656618537851
+      DDR-Sheet_21: -3005675141100678014
+      DDR-Sheet_22: -3932466713700583900
+      DDR-Sheet_23: -9027394798547100301
+      DDR-Sheet_24: 3227951005182859957
+      DDR-Sheet_25: 3533467771920331190
+      DDR-Sheet_26: 1555904534417432675
+      DDR-Sheet_27: 5345420806160600063
+      DDR-Sheet_3: 7675449446081911305
+      DDR-Sheet_4: -8494667643681952215
+      DDR-Sheet_5: 642973391372327536
+      DDR-Sheet_6: 4974440202951550973
+      DDR-Sheet_7: 6159394856215665573
+      DDR-Sheet_8: -1263016941012582571
+      DDR-Sheet_9: -3618118535765495979
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,16 +10,19 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
     bool clicked = false;
     public bool doorUnlocked;
     public Item item; 
-    Item currentItem;
+    public Item currentItem;
     public Button button;
+
+    public InventoryManager inventoryManager ;
 
     void Start()
     {
         buttonImage = GetComponent<Image>();
+        inventoryManager = FindAnyObjectByType<InventoryManager>();
     }
     void Update()
     {
-        currentItem = InventoryManager.instance.GetSelectedItem(false);
+        currentItem = inventoryManager.GetSelectedItem(false);
 
     }
 

@@ -18,6 +18,9 @@ public class Terminal : MonoBehaviour
     public Transform targetTransform;
     public float transitionSpeed = 2.0f;
     public float maxZPosition = -5.0f;
+    public float StartCamSize = 8;
+    public float LowestCamSize = 3.2f; 
+
 
     public GameObject GoBackFromMapButton, GoBackFromMapButtonArrows, ActivateTerminalButton;
 
@@ -25,8 +28,9 @@ public class Terminal : MonoBehaviour
     {
         startCamPos = cam.transform;
         normalColor = forcefieldRendererUp.color;
+
     }
- 
+
     public void ClickedTerminal()
     {
         color = normalColor;
@@ -51,6 +55,9 @@ public class Terminal : MonoBehaviour
 
         Vector3 targetpos5less = new Vector3(0, targetTransform.position.y, targetTransform.position.z + maxZPosition);
         Vector3 newPosition = Vector3.Lerp(cam.transform.position, targetpos5less, Time.deltaTime * transitionSpeed);
+
+        cam.orthographicSize += (LowestCamSize - cam.orthographicSize) * (Time.deltaTime * transitionSpeed);
+
 
         cam.transform.position = newPosition;
         cam.transform.rotation = Quaternion.Slerp(transform.rotation, targetTransform.rotation, Time.deltaTime * transitionSpeed);
@@ -87,6 +94,8 @@ public class Terminal : MonoBehaviour
 
         Vector3 targetpos5less = new Vector3(0, 0, startCamPos.position.z + maxZPosition + 4);
         Vector3 newPosition = Vector3.Lerp(cam.transform.position, targetpos5less, Time.deltaTime * transitionSpeed);
+
+        cam.orthographicSize += (StartCamSize - cam.orthographicSize) * (Time.deltaTime * transitionSpeed);
 
         cam.transform.position = newPosition;
         cam.transform.rotation = Quaternion.Slerp(transform.rotation, startCamPos.rotation, Time.deltaTime * transitionSpeed);

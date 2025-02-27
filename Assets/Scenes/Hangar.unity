@@ -4136,8 +4136,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 3.7
+  orthographic: 1
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7301,8 +7301,10 @@ MonoBehaviour:
   alphaValue: 0.03
   cam: {fileID: 953667324}
   targetTransform: {fileID: 0}
-  transitionSpeed: 4
+  transitionSpeed: 3
   maxZPosition: -5.5
+  StartCamSize: 8
+  LowestCamSize: 3.2
   GoBackFromMapButton: {fileID: 1896004292}
   GoBackFromMapButtonArrows: {fileID: 318863966}
   ActivateTerminalButton: {fileID: 1964246647}
@@ -7639,7 +7641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1956128995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7940,6 +7942,8 @@ MonoBehaviour:
   targetTransform: {fileID: 793607117}
   transitionSpeed: 2
   maxZPosition: -5.5
+  StartCamSize: 8
+  LowestCamSize: 3.2
   GoBackFromMapButton: {fileID: 1896004292}
   GoBackFromMapButtonArrows: {fileID: 318863966}
   ActivateTerminalButton: {fileID: 1964246647}
@@ -8728,6 +8732,7 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1956128997}
   - {fileID: 953667325}
   - {fileID: 1938865300}
   - {fileID: 1158333047}
@@ -8745,6 +8750,5 @@ SceneRoots:
   - {fileID: 968938642}
   - {fileID: 1721798848}
   - {fileID: 2079612670}
-  - {fileID: 1956128997}
   - {fileID: 513664152}
   - {fileID: 318863968}

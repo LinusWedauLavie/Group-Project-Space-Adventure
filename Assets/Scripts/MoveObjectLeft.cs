@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
 {
     public ItemPickup itemPickup;
+    SaveRoomStates saveRoomStates;
 
     GameObject interactable;
     public float speed;
@@ -12,12 +13,16 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
     public bool ableToPickUp = false;
     public void Start()
     {
-        hasMoved = FindAnyObjectByType<SaveRoomStates>().hasMovedSave;
-        if (hasMoved)
+        saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+        if (saveRoomStates.SaveCryroCompleted)
         {
+            hasMoved = true;
+            Debug.Log("if");
             transform.Translate(Vector3.left * speed);
         }
+        Debug.Log("kjsdafsdjfdjkf");
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (hasMoved == false)

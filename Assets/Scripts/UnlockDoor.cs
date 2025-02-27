@@ -22,6 +22,11 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
     }
     void Update()
     {
+        if(inventoryManager == null)
+        {
+            inventoryManager = FindAnyObjectByType<InventoryManager>();
+        }
+
         currentItem = inventoryManager.GetSelectedItem(false);
 
     }

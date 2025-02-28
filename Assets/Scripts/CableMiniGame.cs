@@ -44,7 +44,6 @@ public class CableMiniGame : MonoBehaviour
         }
         if (cableSum == 18 && buttonPositions[0] == 0 && buttonPositions[1] == 1 && buttonPositions[4] == 4 && buttonPositions[5] == 5 && buttonPositions[8] == 8)
         {
-            Debug.Log("Yay");
             wrongSolution = false;
             rightSolution = true; 
             InventoryManager.instance.GetSelectedItem(true);

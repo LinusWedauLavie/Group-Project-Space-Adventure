@@ -3,6 +3,7 @@ using UnityEngine;
 public class SimonSaysButtons : MonoBehaviour
 {
     public string direction;
+    public int value;
     public  SimonSays simonSays;
     void Start()
     {
@@ -14,7 +15,7 @@ public class SimonSaysButtons : MonoBehaviour
     }
     public void OnButtonPress()
     {
-        simonSays.StoreButtonIndex(direction);
+        simonSays.StoreButtonIndex(value);
     }
     
 }

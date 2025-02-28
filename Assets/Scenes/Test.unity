@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: down
+  value: 4
   simonSays: {fileID: 1574180799}
 --- !u!1 &115699012
 GameObject:
@@ -1800,6 +1801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: up
+  value: 1
   simonSays: {fileID: 1574180799}
 --- !u!1001 &236556623
 PrefabInstance:
@@ -2363,6 +2365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: right
+  value: 3
   simonSays: {fileID: 1574180799}
 --- !u!1001 &321457553
 PrefabInstance:
@@ -3516,14 +3519,8 @@ MonoBehaviour:
   - {fileID: 1796693942}
   - {fileID: 311043986}
   - {fileID: 84201678}
-  solution:
-  - up
-  - down
-  - up
-  - down
-  - left
-  - right
-  currentInput: []
+  solution: 000000000000000000000000000000000000000000000000
+  currentInput: 
   animator: {fileID: 544930193}
 --- !u!95 &544930193
 Animator:
@@ -6876,14 +6873,8 @@ MonoBehaviour:
   - {fileID: 1796693942}
   - {fileID: 311043986}
   - {fileID: 84201678}
-  solution:
-  - up
-  - down
-  - up
-  - down
-  - left
-  - right
-  currentInput: []
+  solution: 010000000400000001000000040000000200000003000000
+  currentInput: 000000000000000000000000000000000000000000000000
   animator: {fileID: 1574180797}
 --- !u!1001 &1654083934
 PrefabInstance:
@@ -7768,6 +7759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: left
+  value: 2
   simonSays: {fileID: 1574180799}
 --- !u!1 &1802139395
 GameObject:

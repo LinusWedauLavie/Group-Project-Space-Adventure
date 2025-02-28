@@ -6,11 +6,12 @@ using UnityEngine;
 public class SimonSays : MonoBehaviour
 {
     public SimonSaysButtons[] buttons;
-    public string[] solution = {"up", "down", "up", "down", "left", "right"};
-    public string[] currentInput= {"a", "a", "a", "a", "a", "a"};
+    public int[] solution = {1,4,1,4,2,3};
+    public int[] currentInput = new int[5];
     bool noMistake = true;
     public Animator animator;
     int i = 0;
+    bool done = false; 
     void Start()
     {
        animator = GetComponent<Animator>();
@@ -40,26 +41,30 @@ public class SimonSays : MonoBehaviour
         }*/
         noMistake = true;
     }
-    public void StoreButtonIndex(string direction)
+    public void StoreButtonIndex(int value)
     {   
         
-        Debug.Log(direction);
-        while(noMistake == true)
-        {           
-            currentInput[1] = direction;
-          
-            for(int counter = 0; counter >= 6; counter++)
+        Debug.Log(value);               
+        
+            for(i = 0; i < 6; i++)
             {
+                currentInput[i] = value;
                 if (currentInput[i] == solution[i])
-                {
-                    counter++;
-                    animator.SetInteger("Passed", counter);
+                {           
+                    Debug.Log("B"+ (i));
+                    Debug.Log("C"+ value);
+                    i += 1;
+                    animator.SetInteger("Passed", i);
                 }  
                 else
                 {
                     noMistake = false;
                 }
             }
-        }
+            if(currentInput[5] == solution[5])
+            {   
+                done = true; 
+            }
+        
     }
 }

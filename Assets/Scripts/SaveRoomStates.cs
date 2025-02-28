@@ -24,7 +24,6 @@ public class SaveRoomStates : MonoBehaviour
     {
         //hasMovedSave = GetComponent<MoveObjectLeft>().MoveObjectLeft.hasMoved;
         SaveCryroCompleted = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
-        Debug.Log(SaveCryroCompleted);
         
     }
 }

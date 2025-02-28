@@ -19,10 +19,8 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
             hasMoved = true;
             Button button = GetComponent<Button>();
             button.enabled = false;
-            Debug.Log("if");
             transform.Translate(Vector3.left * speed);
         }
-        Debug.Log("kjsdafsdjfdjkf");
     }
 
     public void OnPointerClick(PointerEventData eventData)

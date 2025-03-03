@@ -20,4 +20,8 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Cryo");
     }
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }

@@ -8,7 +8,13 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public UnityEngine.UI.Image image; 
     public Item item;
     public Transform parentAfterDrag;
+    GameObject InventoryCanvas;
     internal int count;
+
+void Start()
+{
+    InventoryCanvas = GameObject.Find("InventoryCanvas");
+}
 
     public void InitialiseItem(Item newItem)
     {
@@ -19,7 +25,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
+        transform.SetParent(InventoryCanvas.transform);
         
         transform.SetAsLastSibling();
         image.raycastTarget = false;

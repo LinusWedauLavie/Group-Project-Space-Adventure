@@ -1835,6 +1835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4668721144560240234, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
+      propertyPath: sceneName
+      value: TheStorage
+      objectReference: {fileID: 0}
     - target: {fileID: 5569048098290781319, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

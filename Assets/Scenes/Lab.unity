@@ -1381,6 +1381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6193000459208218025, guid: 3a70b71d50314994a9d8c513b10e4b8a, type: 3}
+      propertyPath: sceneName
+      value: Medbay
+      objectReference: {fileID: 0}
     - target: {fileID: 9128660693882673854, guid: 3a70b71d50314994a9d8c513b10e4b8a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

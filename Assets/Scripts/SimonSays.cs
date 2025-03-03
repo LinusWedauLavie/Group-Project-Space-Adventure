@@ -67,61 +67,6 @@ public class SimonSays : MonoBehaviour
             animator.SetInteger("Passed", 0);
         }
 
-        /*
-        Debug.Log(value);
-        currentInput[i] = value;
-        if (currentInput[i] == solution[i])
-        {
-            i += 1;
-            animator.SetInteger("Passed", i);
-            tries = 0;
-            Debug.Log("i: " + i);
-
-
-            if (i >= solution.Length)
-            {
-                done = true;
-            }
-
-        }
-        else
-        {
-            tries++;
-        }
-
-
-
-        if (tries>=i+1)
-        {
-            i = 0;
-
-            animator.SetInteger("Passed", i);
-            for (int j = 0; j < solution.Length; j++)
-            {
-                currentInput[j] = 0;
-            }
-        }
-        */
-            /*
-                for( ; i < 6; i++)
-                {
-                    currentInput[i] = value;
-                    if (currentInput[i] == solution[i])
-                    {           
-                        Debug.Log("B"+ (i));
-                        Debug.Log("C"+ value);
-                        i += 1;
-                        animator.SetInteger("Passed", i);
-                    }  
-                    else
-                    {
-                        noMistake = false;
-                    }
-                }
-                if(currentInput[5] == solution[5])
-                {   
-                    done = true; 
-                }
-            */
+      
     }
 }

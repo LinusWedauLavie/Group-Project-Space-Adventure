@@ -5,7 +5,9 @@ public class SaveRoomStates : MonoBehaviour
     static SaveRoomStates instance;
 
     public bool SaveCryroCompleted;
-    public bool coin1Collected;
+    public bool coinCryoCollected;
+
+    public bool SaveCabineCompleted;
 
 
     void Awake()
@@ -20,7 +22,11 @@ public class SaveRoomStates : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-    public void GetCryoRoomStates()
+    public void GetCabinesRoomState()
+    {
+        SaveCabineCompleted = FindAnyObjectByType<SimonSays>().done;
+    }
+    public void GetCryoRoomState()
     {
         //hasMovedSave = GetComponent<MoveObjectLeft>().MoveObjectLeft.hasMoved;
         SaveCryroCompleted = FindAnyObjectByType<MoveObjectLeft>().hasMoved;

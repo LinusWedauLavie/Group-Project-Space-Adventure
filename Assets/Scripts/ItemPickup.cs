@@ -18,9 +18,8 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
         if (saveRoomStates.SaveCryroCompleted && !CompareTag("Coin"))
         {
             gameObject.SetActive(false);
-
         }
-        if (saveRoomStates.coin1Collected && CompareTag("Coin"))
+        if (saveRoomStates.coinCryoCollected && CompareTag("Coin"))
         {
             gameObject.SetActive(false);
         }
@@ -32,7 +31,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
         {
             if (CompareTag("Coin"))
             {
-                saveRoomStates.coin1Collected = true;
+                saveRoomStates.coinCryoCollected = true;
             }
             Destroy(gameObject);
         }

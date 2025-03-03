@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 8910d6edc104b4b40847c81f0c2a42c9
+  - enabled: 1
+    path: Assets/Scenes/Medbay.unity
+    guid: a2870d76f33741c4d9185d3c205d097a
+  - enabled: 1
+    path: Assets/Scenes/TheStorage.unity
+    guid: 9cc5f135f2e1ea54db3948dff54cecf7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

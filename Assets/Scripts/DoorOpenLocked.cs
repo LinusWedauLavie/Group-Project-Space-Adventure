@@ -33,12 +33,11 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler, IPointerEnter
     {
         if (cableMiniGame.rightSolution == true)
         {
-            FindAnyObjectByType<SaveRoomStates>().GetCryoRoomStates();
+            FindAnyObjectByType<SaveRoomStates>().GetCryoRoomState();
             buttonImage.sprite = pressedImage;
             doorOpen = true;
             audioSource.Play();
             SceneManager.LoadScene(sceneName);
-            //SceneManager.LoadScene("Test", LoadSceneMode.Additive);
 
         }
     }

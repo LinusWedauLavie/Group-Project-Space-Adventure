@@ -35,7 +35,7 @@ public class SimonSays : MonoBehaviour
 
     public void StoreButtonIndex(int value)
     {
-        if (done)
+        if (done == false)
         {
 
             animator.SetInteger("Passed", 7);

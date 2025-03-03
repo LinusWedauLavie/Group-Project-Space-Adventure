@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cabines.unity
     guid: b60605022d7a1264187a4534638521bf
   - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 455ff965e0f2c484fa433a2936cc76a4
+  - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 8910d6edc104b4b40847c81f0c2a42c9
   m_configObjects:

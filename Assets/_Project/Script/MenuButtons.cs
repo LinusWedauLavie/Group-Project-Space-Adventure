@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,5 +24,13 @@ public class MenuButtons : MonoBehaviour
     public void EndGame()
     {
         Application.Quit();
+    }
+    public void BackToStart()
+    {   
+        SceneManager.LoadScene("Menu");
+    }
+    public void Settings()
+    {   
+        SceneManager.LoadScene("Settings");
     }
 }

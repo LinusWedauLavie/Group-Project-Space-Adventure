@@ -43,6 +43,7 @@ public class SimonSays : MonoBehaviour
                 {
                     done = true;
                     Debug.Log("Done!");
+                    animator.SetInteger("Passed", 8);
                 }
             }
             else

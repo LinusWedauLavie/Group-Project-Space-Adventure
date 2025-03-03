@@ -3522,6 +3522,9 @@ MonoBehaviour:
   solution: 000000000000000000000000000000000000000000000000
   currentInput: 
   animator: {fileID: 544930193}
+  currentRound: 1
+  i: 0
+  tries: 0
 --- !u!95 &544930193
 Animator:
   serializedVersion: 7
@@ -6876,6 +6879,9 @@ MonoBehaviour:
   solution: 010000000400000001000000040000000200000003000000
   currentInput: 000000000000000000000000000000000000000000000000
   animator: {fileID: 1574180797}
+  currentRound: 1
+  i: 0
+  tries: 0
 --- !u!1001 &1654083934
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 7
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,10 +118,10 @@ TextureImporter:
       name: DDR_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 50
-        height: 50
+        x: 7
+        y: 50
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +140,10 @@ TextureImporter:
       name: DDR_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 49
-        width: 50
-        height: 50
+        x: 59
+        y: 50
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: DDR_2
       rect:
         serializedVersion: 2
-        x: 58
-        y: 49
-        width: 50
-        height: 50
+        x: 113
+        y: 50
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: DDR_3
       rect:
         serializedVersion: 2
-        x: 60
-        y: 0
-        width: 50
-        height: 50
+        x: 6
+        y: 1
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: DDR_4
       rect:
         serializedVersion: 2
-        x: 112
-        y: 49
-        width: 50
-        height: 50
+        x: 61
+        y: 1
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: DDR_5
       rect:
         serializedVersion: 2
-        x: 113
-        y: 0
-        width: 50
-        height: 50
+        x: 114
+        y: 1
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6010a888a36e066419ec4359994cb6c2
     internalID: 0
     vertices: []
     indices: 

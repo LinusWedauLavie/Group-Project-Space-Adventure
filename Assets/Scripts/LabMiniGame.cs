@@ -12,13 +12,24 @@ public class LabMiniGame : MonoBehaviour
     public Sprite full;
     int level = 0;
     UnityEngine.UI.Image buttonImage;
+    public InventoryManager inventoryManager;
+    public Item currentItem;
+    
 
     void Start()
     {
         buttonImage = GetComponent<UnityEngine.UI.Image>();
+        inventoryManager = FindAnyObjectByType<InventoryManager>();
     }
     void Update()
     {
+        if (inventoryManager == null)
+        {
+            inventoryManager = FindAnyObjectByType<InventoryManager>();
+        }
+
+        currentItem = inventoryManager.GetSelectedItem(false);
+
         if(level == 0)
         {   
             buttonImage.sprite = empty; 

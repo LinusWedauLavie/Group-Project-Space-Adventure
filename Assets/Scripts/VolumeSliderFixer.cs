@@ -16,6 +16,10 @@ public class VolumeSliderFixer : MonoBehaviour
         slider = FindAnyObjectByType<Slider>();
         sauce = FindAnyObjectByType<AudioSource>();
 
+        sauce.volume = au.volume;
+
+        soundValue.Value = sauce.volume;
+
         slider.value = soundValue.Value;
     }
 
@@ -26,7 +30,7 @@ public class VolumeSliderFixer : MonoBehaviour
             sauce = FindAnyObjectByType<AudioSource>();
             au = FindAnyObjectByType<AudioManager>();
         }
-
+        au.volume = slider.value;
         sauce.volume = slider.value;
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class AudioManager : MonoBehaviour
 {
     static AudioManager instance;
+    public float volume;
 
     void Awake()
     {
@@ -19,7 +20,7 @@ public class AudioManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-
+        volume = GetComponentInChildren<AudioSource>().volume;
     }
 
 }

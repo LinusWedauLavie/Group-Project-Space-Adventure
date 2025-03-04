@@ -35,7 +35,7 @@ public class LabMiniGameRecipe : MonoBehaviour
         
         if (neededItem[0] == currentItem )      
         {
-            InventoryManager.instance.GetSelectedItem(true);      
+            InventoryManager.instance.GetSelectedItem(false);      
             rightSolution= true;
         }
     }

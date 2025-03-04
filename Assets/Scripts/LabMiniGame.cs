@@ -54,7 +54,7 @@ public class LabMiniGame : MonoBehaviour
         }
         else if (level == 5)
         {   
-            buttonImage.sprite = twoLayers; 
+            buttonImage.sprite = twoLayersone; 
         }
         else if (level == 6)
         {   
@@ -68,7 +68,7 @@ public class LabMiniGame : MonoBehaviour
         currentItem = InventoryManager.instance.GetSelectedItem(false);
         if (neededItem[level] == currentItem )      
         {
-            InventoryManager.instance.GetSelectedItem(true);
+            InventoryManager.instance.GetSelectedItem(false);
             level += 1;
         }
         else if (neededItem[level] != currentItem )      

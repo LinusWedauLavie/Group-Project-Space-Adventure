@@ -14,7 +14,7 @@ public class MoveObjectLeft : MonoBehaviour, IPointerClickHandler
     public void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.SaveCryroCompleted)
+        if (saveRoomStates.cryoCompletedSave)
         {
             hasMoved = true;
             Button button = GetComponent<Button>();

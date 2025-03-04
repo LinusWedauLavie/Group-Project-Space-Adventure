@@ -18,7 +18,7 @@ public class ItemAppears : MonoBehaviour, IPointerClickHandler
         buttonImage = GetComponent<Image>();
 
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.SaveCryroCompleted)
+        if (saveRoomStates.cryoCompletedSave)
         {
             doorOpen = true;
             buttonImage.sprite = pressedImage;

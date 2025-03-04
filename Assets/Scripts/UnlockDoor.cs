@@ -21,7 +21,7 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
         buttonImage = GetComponent<Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.SaveCryroCompleted)
+        if (saveRoomStates.cryoCompletedSave)
         {
             buttonImage.sprite = pressedImage;
             clicked = true;
@@ -43,7 +43,7 @@ public class UnlockDoor : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (clicked == false && NecessaryItemCheck.instance.neededItem == currentItem && saveRoomStates.SaveCryroCompleted == false)
+        if (clicked == false && NecessaryItemCheck.instance.neededItem == currentItem && saveRoomStates.cryoCompletedSave == false)
         {
             buttonImage.sprite = pressedImage;
             clicked = true;

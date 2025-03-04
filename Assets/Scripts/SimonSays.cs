@@ -1,3 +1,4 @@
+using System;
 using Microsoft.Unity.VisualStudio.Editor;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
@@ -21,69 +22,58 @@ public class SimonSays : MonoBehaviour
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if(saveRoomStates!= null){
-            Debug.Log("Existenz");
-        }
         animator = GetComponent<Animator>();
-        if (saveRoomStates.SaveCabineCompleted)
-        {
-            Debug.Log("dsfjksdhfsdhfgsdfgsdjf");
-            done = true;
-            simonSaysEnterButton.enabled = false;
-        }
     }
 
     public void StoreButtonIndex(int value)
     {
-        if (done == false)
+
+
+        animator.SetInteger("Passed", 7);
+
+        currentInput[i] = value;
+        if (currentInput[i] == solution[i])
         {
-
-            animator.SetInteger("Passed", 7);
-
-            currentInput[i] = value;
-            if (currentInput[i] == solution[i])
+            if (currentRound == i + 1)
             {
-                if (currentRound == i + 1)
-                {
-                    animator.SetInteger("Passed", currentRound);
-                    currentRound += 1;
-                    i = 0;
-                    for (int j = 0; j < solution.Length; j++)
-                    {
-                        currentInput[j] = 0;
-                    }
-                    if (currentRound == 7)
-                    {
-                        done = true;
-                        saveRoomStates.GetCabinesRoomState();
-                        simonSaysEnterButton.enabled = false;
-                        Debug.Log("Done!");
-
-                        animator.SetInteger("Passed", 8);
-                    }
-                }
-                else
-                {
-                    i += 1;
-                }
-            }
-            else
-            {
-                Reset();
-            }
-
-            void Reset()
-            {
-                currentRound = 1;
+                animator.SetInteger("Passed", currentRound);
+                currentRound += 1;
                 i = 0;
                 for (int j = 0; j < solution.Length; j++)
                 {
                     currentInput[j] = 0;
                 }
-                animator.SetInteger("Passed", 0);
-            }
+                if (currentRound == 7)
+                {
+                    done = true;
+                    saveRoomStates.GetCabinesRoomState();
+                    simonSaysEnterButton.enabled = false;
 
+                    animator.SetInteger("Passed", 8);
+                }
+            }
+            else
+            {
+                i += 1;
+            }
         }
+        else
+        {
+            Reset();
+        }
+
+        void Reset()
+        {
+            currentRound = 1;
+            i = 0;
+            for (int j = 0; j < solution.Length; j++)
+            {
+                currentInput[j] = 0;
+            }
+            animator.SetInteger("Passed", 0);
+        }
+
+
 
     }
 }

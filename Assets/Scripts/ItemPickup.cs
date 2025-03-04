@@ -15,7 +15,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.SaveCryroCompleted && !CompareTag("Coin"))
+        if (saveRoomStates.cryoCompletedSave && !CompareTag("Coin"))
         {
             gameObject.SetActive(false);
         }

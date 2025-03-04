@@ -4,10 +4,10 @@ public class SaveRoomStates : MonoBehaviour
 {
     static SaveRoomStates instance;
 
-    public bool SaveCryroCompleted;
+    public bool cryoCompletedSave;
     public bool coinCryoCollected;
 
-    public bool SaveCabineCompleted;
+    public bool cabineCompletedSave;
 
 
     void Awake()
@@ -24,12 +24,10 @@ public class SaveRoomStates : MonoBehaviour
     }
     public void GetCabinesRoomState()
     {
-        SaveCabineCompleted = FindAnyObjectByType<SimonSays>().done;
+        cabineCompletedSave = FindAnyObjectByType<SimonSays>().done;
     }
     public void GetCryoRoomState()
     {
-        //hasMovedSave = GetComponent<MoveObjectLeft>().MoveObjectLeft.hasMoved;
-        SaveCryroCompleted = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
-        
+        cryoCompletedSave = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
     }
 }

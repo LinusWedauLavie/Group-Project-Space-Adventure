@@ -23,7 +23,7 @@ public class DoorOpenLocked : MonoBehaviour, IPointerClickHandler, IPointerEnter
         cableMiniGame = cableMiniGame.GetComponent<CableMiniGame>();
 
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.SaveCryroCompleted)
+        if (saveRoomStates.cryoCompletedSave)
         {
             cableMiniGame.rightSolution=true;
         }

@@ -10105,8 +10105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa362678ad1f8a24e93a4a1baf069b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaveCryroCompleted: 0
-  coin1Collected: 0
+  cryoCompletedSave: 0
+  coinCryoCollected: 0
+  cabineCompletedSave: 0
 --- !u!4 &2031595218
 Transform:
   m_ObjectHideFlags: 0

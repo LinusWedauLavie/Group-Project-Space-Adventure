@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8866d46c66ef167479ff5fae73c27c7d
+guid: 6da1dfddc492292419a758c019c14fb2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Reagenzglas
+  - name: Reagenzglas3
     originalName: 
     pivot: {x: 0.5, y: -0.055555556}
     alignment: 9
@@ -135,7 +135,7 @@ ScriptedImporter:
       y: 4
       width: 38
       height: 54
-    spriteID: 5746d7fba83c4004fa57b44b34e64f2a
+    spriteID: abb7df8b61fcc0a4f9ec807883a7abc6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,13 +147,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 2091180225
-    name: Reagenzglas
+    guid: -1869361758
+    name: Reagenzglas3
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Reagenzglas
+    - name: Reagenzglas3
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -161,7 +161,7 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 64
-      spriteId: 5746d7fba83c4004fa57b44b34e64f2a
+      spriteId: abb7df8b61fcc0a4f9ec807883a7abc6
     linkedCells: []
     parentIndex: -1
   platformSettings:

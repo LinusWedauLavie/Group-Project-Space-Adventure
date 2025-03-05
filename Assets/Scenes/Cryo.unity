@@ -5000,6 +5000,7 @@ MonoBehaviour:
   speed: {x: 5, y: 2}
   targetPosition: {x: 0, y: 0}
   relativePosition: {x: 0, y: 0}
+  player: {fileID: 0}
 --- !u!114 &817348627 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5482335915874956046, guid: d8cd687df06c96d44b3f26eab591e459, type: 3}
@@ -9331,7 +9332,7 @@ GameObject:
   - component: {fileID: 1886125834}
   - component: {fileID: 1886125833}
   m_Layer: 5
-  m_Name: Inventory
+  m_Name: InventoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -7,11 +7,10 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
 {
     SaveRoomStates saveRoomStates;
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject item;
     public bool ableToPickUp;
-    //public GameObject ableToPickUp;
-    //private MoveObjectLeft ableToPickUps;
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
@@ -23,7 +22,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
         {
             gameObject.SetActive(false);
         }
-        // ableToPickUps = ableToPickUp.GetComponent<MoveObjectLeft>();
+        
     }
     public void OnPointerClick(PointerEventData eventData)
     {

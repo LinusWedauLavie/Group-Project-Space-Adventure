@@ -10923,6 +10923,14 @@ PrefabInstance:
       propertyPath: button
       value: 
       objectReference: {fileID: 11378507}
+    - target: {fileID: 2557947085115314041, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
+      propertyPath: doorUnlocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4392515956032663282, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
+      propertyPath: doorOpen
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4392515956032663282, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
       propertyPath: cableMiniGame
       value: 

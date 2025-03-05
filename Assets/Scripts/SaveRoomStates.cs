@@ -3,6 +3,7 @@ using UnityEngine;
 public class SaveRoomStates : MonoBehaviour
 {
     static SaveRoomStates instance;
+    public bool firstLoad = true;
 
     public bool cryoCompletedSave;
     public bool coinCryoCollected;

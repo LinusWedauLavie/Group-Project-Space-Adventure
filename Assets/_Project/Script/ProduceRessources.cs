@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class ProduceRessources : MonoBehaviour
 {
-
-    [SerializeField] public Observable<float> Uran, Chemikalien;
+ public float PlanetUran, PlanetChemikalien, PlanetWeltraumSchrott, PlanetLegierungen, PlanetMundspülung, PlanetZitronensäure, PlanetTerraSchlangenGift; //Spawnchancen für die Rohstoffe
+    
 
 
     void Start()
-    {
-
-    }
-    public void StartValues()
     {
 
     }

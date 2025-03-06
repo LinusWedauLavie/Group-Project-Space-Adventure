@@ -19,9 +19,37 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ProduceRessources IcePlanetressources = IcePlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
-        planetTextHeader.text = "Ice Planet";
-        planetDescriptionText.text = "Ice Planet Description";
-        planetRessourcessText.text = "Ice Planet: " + "-Chemikalien: " + IcePlanetressources.Chemikalien.Value; //" + "\n Uran: " + produceRessources.Uran.Value + "\n Chemikalien: " + produceRessources.Chemikalien.Value;
+        planetTextHeader.text = "Icy";
+        planetDescriptionText.text = "Die höchste auf Icy gemessene Temperatur beträgt -150 Grad Celsius, \nabgesehen von mikroorganismen im Wasser nahe des Planetenkerns unterstützt dieser Planet kaum leben. \nEinige Ungewöhnliche Rohstoffe sind hier zu finden.";
+        planetRessourcessText.text = "Ressourcen: ";
+        if (IcePlanetressources.PlanetUran > 0)
+        {
+            planetRessourcessText.text += "\n -Uran: " + IcePlanetressources.PlanetUran;
+        }
+        if (IcePlanetressources.PlanetChemikalien > 0)
+        {
+            planetRessourcessText.text += "\n -Chemikalien: " + IcePlanetressources.PlanetChemikalien;
+        }
+        if (IcePlanetressources.PlanetWeltraumSchrott > 0)
+        {
+            planetRessourcessText.text += "\n -WeltraumSchrott: " + IcePlanetressources.PlanetWeltraumSchrott;
+        }
+        if (IcePlanetressources.PlanetLegierungen > 0)
+        {
+            planetRessourcessText.text += "\n -Legierungen: " + IcePlanetressources.PlanetLegierungen;
+        }
+        if (IcePlanetressources.PlanetMundspülung > 0)
+        {
+            planetRessourcessText.text += "\n -Mundspülung: " + IcePlanetressources.PlanetMundspülung;
+        }
+        if (IcePlanetressources.PlanetZitronensäure > 0)
+        {
+            planetRessourcessText.text += "\n -Zitronensäure: " + IcePlanetressources.PlanetZitronensäure;
+        }
+        if (IcePlanetressources.PlanetTerraSchlangenGift > 0)
+        {
+            planetRessourcessText.text += "\n -TerraSchlangenGift: " + IcePlanetressources.PlanetTerraSchlangenGift;
+        }
 
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x - 1.5f, IcePlanet.transform.position.y + 1.2f, 0);
     }
@@ -165,7 +193,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Radiated Planet";
         planetDescriptionText.text = "Radiated Planet Description";
-        planetRessourcessText.text = "Radiated Planet " + "\n -Uran: " + RadiatedPlanetressources.Uran.Value;
+        planetRessourcessText.text = "Radiated Planet " + "\n -Uran: " + RadiatedPlanetressources.PlanetUran;
 
         planetInfoPanel.transform.position = new Vector3(RadiatedPlanet.transform.position.x - 1.5f, RadiatedPlanet.transform.position.y - 1.2f, 0);
     }

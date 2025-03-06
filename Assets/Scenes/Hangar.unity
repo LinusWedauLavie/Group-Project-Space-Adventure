@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 50874602}
   - component: {fileID: 50874605}
   m_Layer: 0
-  m_Name: Icy-64x64_0
+  m_Name: Storm E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,16 +340,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &54424506
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +358,7 @@ GameObject:
   - component: {fileID: 54424507}
   - component: {fileID: 54424508}
   m_Layer: 0
-  m_Name: Moon-64x64_0
+  m_Name: X-07 Luna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +709,7 @@ GameObject:
   - component: {fileID: 202424753}
   - component: {fileID: 202424756}
   m_Layer: 0
-  m_Name: Lava
+  m_Name: X-03 Molten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,16 +829,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &281134457
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +847,7 @@ GameObject:
   - component: {fileID: 281134458}
   - component: {fileID: 281134459}
   m_Layer: 0
-  m_Name: Moon-64x64_0 (2)
+  m_Name: Cheese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +913,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 7322366678792585261, guid: 761b095e69f1c7b48994348e3bd67ae8, type: 3}
-  m_Color: {r: 0.59607846, g: 0.59607846, b: 0.59607846, a: 0.5019608}
+  m_Color: {r: 0.754717, g: 0.6562241, b: 0.45923817, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -943,7 +937,7 @@ GameObject:
   - component: {fileID: 282243253}
   - component: {fileID: 282243256}
   m_Layer: 0
-  m_Name: Black_hole
+  m_Name: Goats Grand Maw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,16 +1057,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &299200749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1343,7 @@ GameObject:
   - component: {fileID: 440731630}
   - component: {fileID: 440731633}
   m_Layer: 0
-  m_Name: Baren
+  m_Name: Delta Lambtauri
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1473,16 +1464,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &464568646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1758,7 +1746,7 @@ GameObject:
   - component: {fileID: 503102501}
   - component: {fileID: 503102504}
   m_Layer: 0
-  m_Name: Radiated-64x64_0
+  m_Name: Effing Failure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1879,16 +1867,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 100.1
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &504359224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,8 +2150,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 0.14
+  m_fontSizeBase: 0.14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2203,7 +2188,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.05, y: -0.25, z: 0.05, w: 0.7}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2301,15 +2286,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 0.14
+  m_fontSizeBase: 0.14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2339,7 +2324,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.05, y: 0.82, z: 0.05, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2454,7 +2439,7 @@ GameObject:
   - component: {fileID: 757927150}
   - component: {fileID: 757927151}
   m_Layer: 5
-  m_Name: Ice
+  m_Name: Icy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2574,16 +2559,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 100
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 2.43
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &759980956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3769,7 +3751,7 @@ GameObject:
   - component: {fileID: 793607118}
   - component: {fileID: 793607121}
   m_Layer: 0
-  m_Name: Sun-64x64_0
+  m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3889,16 +3871,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &845817234
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,7 +3892,7 @@ GameObject:
   - component: {fileID: 845817236}
   - component: {fileID: 845817239}
   m_Layer: 0
-  m_Name: Jupiter-64x64_0
+  m_Name: Jupitwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4033,16 +4012,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &848560958
 GameObject:
   m_ObjectHideFlags: 0
@@ -4464,7 +4440,7 @@ GameObject:
   - component: {fileID: 982441819}
   - component: {fileID: 982441822}
   m_Layer: 0
-  m_Name: Terrestrial-64x64_0
+  m_Name: Terrarium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4585,16 +4561,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &1004015796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4991,7 +4964,7 @@ GameObject:
   - component: {fileID: 1118839871}
   - component: {fileID: 1118839874}
   m_Layer: 0
-  m_Name: Terran
+  m_Name: Verfluchter Terran
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5112,16 +5085,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &1242055776
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,7 +5394,7 @@ GameObject:
   - component: {fileID: 1328561097}
   - component: {fileID: 1328561100}
   m_Layer: 0
-  m_Name: Hot-64x64_0
+  m_Name: Lavaeater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5544,16 +5514,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &1339701939
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,7 +5744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.01, y: 0.058}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1373944798
@@ -6449,7 +6416,7 @@ GameObject:
   - component: {fileID: 1494700352}
   - component: {fileID: 1494700353}
   m_Layer: 0
-  m_Name: Moon-64x64_0 (1)
+  m_Name: Verlassender Kaisermond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7026,13 +6993,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.2
-  m_fontSizeBase: 0.2
+  m_fontSize: 0.18
+  m_fontSizeBase: 0.18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -7064,7 +7031,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0.05, y: 0.05, z: 0.05, w: 2.75}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8089,7 +8056,7 @@ GameObject:
   - component: {fileID: 2069615960}
   - component: {fileID: 2069615963}
   m_Layer: 0
-  m_Name: Crystal-64x64_0
+  m_Name: Great Sparkle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8209,16 +8176,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uran:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
-  Chemikalien:
-    value: 0
-    onValueChanged:
-      m_PersistentCalls:
-        m_Calls: []
+  PlanetUran: 0
+  PlanetChemikalien: 0
+  PlanetWeltraumSchrott: 0
+  PlanetLegierungen: 0
+  "PlanetMundsp\xFClung": 0
+  "PlanetZitronens\xE4ure": 0
+  PlanetTerraSchlangenGift: 0
 --- !u!1 &2079612666
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,7 +8696,7 @@ GameObject:
   - component: {fileID: 2128171232}
   - component: {fileID: 2128171233}
   m_Layer: 0
-  m_Name: Moon-64x64_0 (1)
+  m_Name: Failure #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

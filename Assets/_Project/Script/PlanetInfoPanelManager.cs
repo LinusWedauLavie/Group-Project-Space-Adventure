@@ -22,6 +22,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         planetTextHeader.text = "Icy";
         planetDescriptionText.text = "Die höchste auf Icy gemessene Temperatur beträgt -150 Grad Celsius, \nabgesehen von mikroorganismen im Wasser nahe des Planetenkerns unterstützt dieser Planet kaum leben. \nEinige Ungewöhnliche Rohstoffe sind hier zu finden.";
         planetRessourcessText.text = "Ressourcen: ";
+        
         if (IcePlanetressources.PlanetUran > 0)
         {
             planetRessourcessText.text += "\n -Uran: " + IcePlanetressources.PlanetUran;
@@ -33,6 +34,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         if (IcePlanetressources.PlanetWeltraumSchrott > 0)
         {
             planetRessourcessText.text += "\n -WeltraumSchrott: " + IcePlanetressources.PlanetWeltraumSchrott;
+        }
+        if (IcePlanetressources.PlanetMetallErz > 0)
+        {
+            planetRessourcessText.text += "\n -MetallErz: " + IcePlanetressources.PlanetMetallErz;
         }
         if (IcePlanetressources.PlanetLegierungen > 0)
         {

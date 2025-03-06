@@ -9,7 +9,7 @@ public class LabMiniGameRecipe : MonoBehaviour
     public InventoryManager inventoryManager;
     public Item currentItem;
     public Item[] neededItem;
-    public bool rightSolution; 
+    public bool rightSolution = false; 
     void Start()
     {
         buttonImage = GetComponent<UnityEngine.UI.Image>();

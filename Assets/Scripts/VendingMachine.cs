@@ -20,9 +20,12 @@ public class VendingMachine : MonoBehaviour
     int totalCoins = 0;
     public Button card; 
     public Button decoyCard;
+    public DialogueBox dialogueBox;
+    bool lineSaid = false; 
     void Start()
     {
         displayText.text += "";
+        dialogueBox = FindFirstObjectByType<DialogueBox>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,10 @@ public class VendingMachine : MonoBehaviour
         else if (displayText.text.Length > 2 && correct == false || displayText.text == "0"&& correct == false|| number > 18&& correct == false )
         {   
             displayText.text = "のｔ アヴァイァｂぇ";
+            if(lineSaid == false)
+            {   
+                dialogueBox.ShowText("Ich kann doch kein Scheiß Französisch");
+            }
            
         }
         else if(correct == false)

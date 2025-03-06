@@ -4931,7 +4931,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 815424164945274260, guid: 201bf84f1bacf9145b6d137e90e2d1c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10690,6 +10690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2031595218}
     m_Modifications:
+    - target: {fileID: 660871990658895676, guid: ac6b0dc870f478940a254bf614335631, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 799425291598022811, guid: ac6b0dc870f478940a254bf614335631, type: 3}
       propertyPath: m_Name
       value: Player

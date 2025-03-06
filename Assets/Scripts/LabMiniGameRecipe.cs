@@ -19,7 +19,7 @@ public class LabMiniGameRecipe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentItem = InventoryManager.instance.GetSelectedItem(false);
+        currentItem = inventoryManager.GetSelectedItem(false);
         if (rightSolution == true)
         {   
             buttonImage.sprite = recipeFull;

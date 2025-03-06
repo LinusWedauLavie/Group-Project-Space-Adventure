@@ -14,17 +14,17 @@ public class ClickCharacterMove : MonoBehaviour
 	public Vector2 relativePosition;
 	private Vector2 movement;
 	private Rigidbody2D rigidbodyComponent;
-    SaveRoomStates saveRoomStates;
-    void Awake()
-    {
-        saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
+	SaveRoomStates saveRoomStates;
+	void Awake()
+	{
+		saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
 		SceneManager.activeSceneChanged += OnSceneChanged;
-    }
+	}
 	public GameObject player;
 	string activeSceneName;
 	void Start()
 	{
-		
+
 		animator = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -83,67 +83,61 @@ public class ClickCharacterMove : MonoBehaviour
 			GetComponent<Rigidbody2D>().linearVelocity = movement;
 
 		}
-		
+
 	}
-	
-	SetPlayerPosition setPlayerPosition;
+
+	SetPlayerPosition setPlayerPosition = new SetPlayerPosition();
 	public void OnSceneChanged(Scene current, Scene next)
 	{
-		activeSceneName = setPlayerPosition.GetActiveRoomScene();
-		setPlayerPosition.SetGroundPosition(activeSceneName, player, saveRoomStates);
+		setPlayerPosition.SetGroundPosition(SceneManager.GetActiveScene().name, player, saveRoomStates);
 	}
+
 }
 
 
 
-public class SetPlayerPosition : MonoBehaviour
+public class SetPlayerPosition
 {
-	Vector2 bridgeGroundPosition = new Vector2(-0.34f, -2.6f);
-	Vector2 cabinesGroundPosition = new Vector2(-5.2f, -2.6f);
-	Vector2 canteenGroundPosition = new Vector2(3f, -2f);
-	Vector2 cryoGroundPosition = new Vector2(-7.5f, -2.5f);
-	Vector2 hangarGroundPosition = new Vector2(-1f, -4.4f);
-	Vector2 labGroundPosition = new Vector2(0f, -2.75f);
-	Vector2 medbayGroundPosition = new Vector2(6.6f, -2.5f);
-	Vector2 storageGroundPosition = new Vector2(-2.1f, 0f);
-	Scene activeRoomScene;
-	public string GetActiveRoomScene()
-	{
-		activeRoomScene = SceneManager.GetActiveScene();
-		return activeRoomScene.name;
-	}
+	Vector2 bridgeGroundPosition = new Vector2(-0.34f, -3.8f);
+	Vector2 cabinesGroundPosition = new Vector2(5.5f, -3.63f);
+	Vector2 canteenGroundPosition = new Vector2(1f, 1.72f);
+	Vector2 cryoGroundPosition = new Vector2(-7.5f, -3.76f);
+	Vector2 hangarGroundPosition = new Vector2(-1f, -5.51f);
+	Vector2 labGroundPosition = new Vector2(0f, -3.8f);
+	Vector2 medbayGroundPosition = new Vector2(6.6f, -3.8f);
+	Vector2 storageGroundPosition = new Vector2(-2.1f, -1.344f);
 
 	public void SetGroundPosition(string activeSceneName, GameObject player, SaveRoomStates saveRoomStates)
 	{
-		switch(activeSceneName)
+		switch (activeSceneName)
 		{
 			case "Bridge":
 				player.transform.position = bridgeGroundPosition;
-			break;
+				break;
 			case "Cabines":
 				player.transform.position = cabinesGroundPosition;
-			break;
+				break;
 			case "Canteen":
 				player.transform.position = canteenGroundPosition;
-			break;
+				break;
 			case "Cryo":
-				if(saveRoomStates.firstLoad == false)
+				if (saveRoomStates.firstLoad == false)
 				{
 					player.transform.position = cryoGroundPosition;
 				}
-			break;
+				break;
 			case "Hangar":
 				player.transform.position = hangarGroundPosition;
-			break;
+				break;
 			case "Lab":
 				player.transform.position = labGroundPosition;
-			break;
+				break;
 			case "Medbay":
 				player.transform.position = medbayGroundPosition;
-			break;
+				break;
 			case "TheStorage":
 				player.transform.position = storageGroundPosition;
-			break;
+				break;
 
 		}
 	}

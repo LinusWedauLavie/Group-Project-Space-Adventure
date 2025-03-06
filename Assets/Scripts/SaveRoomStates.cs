@@ -30,5 +30,6 @@ public class SaveRoomStates : MonoBehaviour
     public void GetCryoRoomState()
     {
         cryoCompletedSave = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
+        firstLoad = false;
     }
 }

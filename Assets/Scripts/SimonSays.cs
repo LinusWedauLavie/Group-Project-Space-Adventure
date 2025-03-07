@@ -17,12 +17,22 @@ public class SimonSays : MonoBehaviour
     public int i = 0;
     public int tries = 0;
     public bool done = false;
+    public Button memoryCard;
     public Button simonSaysEnterButton;
 
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
         animator = GetComponent<Animator>();
+        memoryCard.gameObject.SetActive(false) ;    
+    }
+
+    void Update()
+    {
+        if(done)
+        {   
+            memoryCard.gameObject.SetActive(true) ;    
+        }
     }
 
     public void StoreButtonIndex(int value)

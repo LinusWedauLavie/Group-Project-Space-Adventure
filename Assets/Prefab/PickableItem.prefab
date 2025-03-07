@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4517094324226385919}
   - component: {fileID: 3313427452283635746}
   - component: {fileID: 3098688840847201813}
+  - component: {fileID: 8941931790922675781}
   m_Layer: 5
   m_Name: PickableItem
   m_TagString: Untagged
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
         m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
         m_MethodName: PickupItem
         m_Mode: 3
@@ -132,15 +133,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4517094324226385919}
-        m_TargetAssemblyTypeName: UnityEngine.CanvasRenderer, UnityEngine
-        m_MethodName: Clear
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &8941931790922675781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5149798179392206582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b121f8ef9a8263f4da17196e10e1cbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 5149798179392206582}
+  ableToPickUp: 1

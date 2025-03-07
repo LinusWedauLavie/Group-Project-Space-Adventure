@@ -999,10 +999,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlanetUran: 0
-  PlanetChemikalien: 0
+  PlanetChemikalien: 40
   PlanetWeltraumSchrott: 0
   PlanetMetallErz: 0
-  PlanetLegierungen: 0
+  PlanetLegierungen: 25
   "PlanetMundsp\xFClung": 0
   "PlanetZitronens\xE4ure": 0
   PlanetTerraSchlangenGift: 0
@@ -4199,10 +4199,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlanetUran: 0
-  PlanetChemikalien: 100
-  PlanetWeltraumSchrott: 0
+  PlanetChemikalien: 120
+  PlanetWeltraumSchrott: 15
   PlanetMetallErz: 0
-  PlanetLegierungen: 15
+  PlanetLegierungen: 0
   "PlanetMundsp\xFClung": 0
   "PlanetZitronens\xE4ure": 0
   PlanetTerraSchlangenGift: 0

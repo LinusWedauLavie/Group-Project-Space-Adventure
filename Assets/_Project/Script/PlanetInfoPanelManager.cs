@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PlanetInfoPanelManager : MonoBehaviour
 {
-    public GameObject planetInfoPanel, ActivateTerminalButton, GoBackFromMapButton, IcePlanet, BlackholePlanet, SunPlanet, BarenPlanet, LavaPlanet, TerranPlanet, CrystalPlanet, HotPlanet, IcyPlanet, RadiatedPlanet, TerrestrialPlanet, JupiterPlanet;
+    public GameObject planetInfoPanel, ActivateTerminalButton, GoBackFromMapButton, DroneInfoPanel, IcePlanet, BlackholePlanet, SunPlanet, BarenPlanet, LavaPlanet, TerranPlanet, CrystalPlanet, HotPlanet, IcyPlanet, RadiatedPlanet, TerrestrialPlanet, JupiterPlanet;
 
     public TextMeshProUGUI planetTextHeader, planetDescriptionText, planetRessourcessText, planetTextPlaceholderOne, planetTextPlaceholderTwo, planetTextPlaceholderThree;
 
@@ -23,6 +23,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x - 1.5f, IcePlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = 3* 1.85434f;
+        DroneInfoPanel.transform.position = newPosition;
+        //DroneInfoPanel.transform.position = new Vector3(-1.85434f, 0.89626f, 0);
     }
 
     public void ShowBlackholePlanetStats()

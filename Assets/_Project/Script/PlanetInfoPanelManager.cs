@@ -24,9 +24,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x - 1.5f, IcePlanet.transform.position.y + 1.2f, 0);
         Vector3 newPosition = DroneInfoPanel.transform.position;
-        newPosition.x = 3* 1.85434f;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x +=  -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
-        //DroneInfoPanel.transform.position = new Vector3(-1.85434f, 0.89626f, 0);
     }
 
     public void ShowBlackholePlanetStats()
@@ -44,6 +44,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(BlackholePlanet.transform.position.x + 1.5f, BlackholePlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowSunPlanetStats()
@@ -61,6 +65,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(SunPlanet.transform.position.x - 1.5f, SunPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowBarenPlanetStats()
@@ -78,6 +86,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(BarenPlanet.transform.position.x + 1.5f, BarenPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowLavaPlanetStats()
@@ -95,6 +107,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(LavaPlanet.transform.position.x + 1.5f, LavaPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowTerranPlanetStats()
@@ -112,6 +128,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(TerranPlanet.transform.position.x - 1.5f, TerranPlanet.transform.position.y + 1, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowCrystalPlanetStats()
@@ -129,6 +149,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(CrystalPlanet.transform.position.x - 1.5f, CrystalPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowHotPlanetStats()
@@ -146,6 +170,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(HotPlanet.transform.position.x + 1.5f, HotPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowIcyPlanetStats()
@@ -163,6 +191,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(IcyPlanet.transform.position.x + 1.5f, IcyPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowRadiatedPlanetStats()
@@ -180,6 +212,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(RadiatedPlanet.transform.position.x - 1.5f, RadiatedPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowTerrestrialPlanetStats()
@@ -197,6 +233,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(TerrestrialPlanet.transform.position.x - 1.5f, TerrestrialPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowJupiterPlanetStats()
@@ -214,6 +254,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(JupiterPlanet.transform.position.x + 1.5f, JupiterPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     private void ShowRessources(ProduceRessources Planetressources)

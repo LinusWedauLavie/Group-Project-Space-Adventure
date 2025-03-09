@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProduceRessources : MonoBehaviour
 {
@@ -43,8 +44,16 @@ public class ProduceRessources : MonoBehaviour
 
     IEnumerator StartDrill()
     {
-
-        yield return new WaitForSeconds(3);
+        FindAnyObjectByType<Slider>().value=0;
+        yield return new WaitForSeconds(0.8f);
+        FindAnyObjectByType<Slider>().value += 25;
+        yield return new WaitForSeconds(0.8f);
+        FindAnyObjectByType<Slider>().value += 25;
+        yield return new WaitForSeconds(0.8f);
+        FindAnyObjectByType<Slider>().value += 25;
+        yield return new WaitForSeconds(0.8f);
+        FindAnyObjectByType<Slider>().value += 25;
+        yield return new WaitForSeconds(0.2f);
         int random1 = Random.Range(1, 100);
         if (random1 <= PlanetUran.Value)
         {

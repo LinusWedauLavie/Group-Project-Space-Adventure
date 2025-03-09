@@ -9,6 +9,7 @@ public class ProduceRessources : MonoBehaviour
     RohstoffLager rohstoffLager;
     PlanetInfoPanelManager planetInfoPanelManager;
     bool isDrilling;
+    Slider slider;
 
     private void Start()
     {
@@ -27,12 +28,13 @@ public class ProduceRessources : MonoBehaviour
         {
             rohstoffLager.MiningDrones.Value++;
             isDrilling = false;
+            FindAnyObjectByType<Slider>().value = 0;
             StopAllCoroutines();
         }
     }
 
 
-    public void UpdatePlanetRessourceValues()
+    public void UpdatePlanetRessourceValues() //Auch beispiel für richtigen planet check
     {
         if (FindAnyObjectByType<PlanetInfoPanelManager>() == null) { return; }
         if(FindAnyObjectByType<PlanetInfoPanelManager>().Planetressources == this)
@@ -42,17 +44,21 @@ public class ProduceRessources : MonoBehaviour
         
     }
 
-    IEnumerator StartDrill()
+    IEnumerator StartDrill() //Muss noch checken ob es beim richtigen planet ist :<
     {
-        FindAnyObjectByType<Slider>().value=0;
-        yield return new WaitForSeconds(0.8f);
-        FindAnyObjectByType<Slider>().value += 25;
-        yield return new WaitForSeconds(0.8f);
-        FindAnyObjectByType<Slider>().value += 25;
-        yield return new WaitForSeconds(0.8f);
-        FindAnyObjectByType<Slider>().value += 25;
-        yield return new WaitForSeconds(0.8f);
-        FindAnyObjectByType<Slider>().value += 25;
+           slider= FindAnyObjectByType<Slider>();
+        slider.value = 0;
+
+        while (slider.value < 100)
+        {
+            yield return new WaitForSeconds(0.8f);
+            if (slider == null)
+            {
+                slider=FindAnyObjectByType<Slider>();
+            }
+            slider.value+=25;
+        }
+
         yield return new WaitForSeconds(0.2f);
         int random1 = Random.Range(1, 100);
         if (random1 <= PlanetUran.Value)

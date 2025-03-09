@@ -356,14 +356,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 25
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 1
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 50874605}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &54424506
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +591,7 @@ GameObject:
   - component: {fileID: 58968276}
   - component: {fileID: 58968275}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DroneAmountTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Planet klicken um Abbau zu starten\nAbbaudronen \xFCbrig: 1"
+  m_text: "Planet klicken um Abbau zu starten / stoppen\nAbbaudronen \xFCbrig: 2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -998,14 +1126,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 40
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 25
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 202424756}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &281134457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,14 +1499,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 15
-  PlanetWeltraumSchrott: 500
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 282243256}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &299200749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,14 +2124,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 15
-  PlanetChemikalien: 0
-  PlanetWeltraumSchrott: 5
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 1
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 440731633}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &464568646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,14 +2672,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 150
-  PlanetChemikalien: 0
-  PlanetWeltraumSchrott: 30
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 1
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 503102504}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &504359224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,14 +3510,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 5
-  PlanetChemikalien: 30
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 100
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 757927151}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &759980956
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,14 +4967,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 120
-  PlanetWeltraumSchrott: 15
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 793607121}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &845817234
 GameObject:
   m_ObjectHideFlags: 0
@@ -4357,14 +5253,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 55
-  PlanetWeltraumSchrott: 15
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 845817239}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &848560958
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,14 +6039,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 15
-  PlanetChemikalien: 20
-  PlanetWeltraumSchrott: 5
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 1
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 982441822}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1004015796
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,14 +6708,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 5
-  PlanetChemikalien: 10
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 0
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 1
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1118839874}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1242055776
 GameObject:
   m_ObjectHideFlags: 0
@@ -6120,14 +7400,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 50
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 5
-  "PlanetMundsp\xFClung": 0
-  "PlanetZitronens\xE4ure": 1
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1328561100}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1339701939
 GameObject:
   m_ObjectHideFlags: 0
@@ -8114,7 +9522,23 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls: []
-  miningDrones: 1
+  MiningDrones:
+    value: 2
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateDronesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1901700956
 Transform:
   m_ObjectHideFlags: 0
@@ -8999,14 +10423,142 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40366b11f22a37d48bb16d72e7188876, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetUran: 0
-  PlanetChemikalien: 0
-  PlanetWeltraumSchrott: 0
-  PlanetMetallErz: 0
-  PlanetLegierungen: 25
-  "PlanetMundsp\xFClung": 1
-  "PlanetZitronens\xE4ure": 0
-  PlanetTerraSchlangenGift: 0
+  PlanetUran:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetChemikalien:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetWeltraumSchrott:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetMetallErz:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetLegierungen:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetMundsp\xFClung":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  "PlanetZitronens\xE4ure":
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  PlanetTerraSchlangenGift:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2069615963}
+          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
+          m_MethodName: UpdatePlanetRessourceValues
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2079612666
 GameObject:
   m_ObjectHideFlags: 0
@@ -9342,9 +10894,7 @@ MonoBehaviour:
   planetTextHeader: {fileID: 1778234436}
   planetDescriptionText: {fileID: 540757935}
   planetRessourcessText: {fileID: 589104209}
-  planetTextPlaceholderOne: {fileID: 0}
-  planetTextPlaceholderTwo: {fileID: 0}
-  planetTextPlaceholderThree: {fileID: 0}
+  Planetressources: {fileID: 0}
 --- !u!222 &2109130107
 CanvasRenderer:
   m_ObjectHideFlags: 0

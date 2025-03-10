@@ -30,6 +30,7 @@ public class DialogueBox : MonoBehaviour
 
     public void ShowText(string dialogue)
     {   
+        targetTime = 5f;
         subtitles.text = dialogue;
         if (targetTime <= 0.0f)
         {

@@ -7799,7 +7799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 37.9646
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalScale.x
@@ -7827,7 +7827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.95316476
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7839,15 +7839,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.3024515
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1495.7925
+      value: -1495.7919
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -956.0773
+      value: -956.0787
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7859,7 +7859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908817137003928838, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -35.21
       objectReference: {fileID: 0}
     - target: {fileID: 3313427452283635746, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_Sprite

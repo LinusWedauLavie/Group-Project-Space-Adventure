@@ -10535,6 +10535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa362678ad1f8a24e93a4a1baf069b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  memoryCards: 0
   firstLoad: 1
   cryoCompletedSave: 0
   coinCryoCollected: 0
@@ -11191,6 +11192,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6098292040461797183}
     m_Modifications:
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 246948385}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1804519278853157536, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: inventoryManager
       value: 
@@ -11423,6 +11456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 2557947085115314041, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 27cd2fedb86ddb740972311438c97cff, type: 2}
     - target: {fileID: 2557947085115314041, guid: 2de90b751f5c4274e91dd960286d77a3, type: 3}
       propertyPath: button
       value: 

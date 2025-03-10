@@ -26,19 +26,51 @@ public class MedbayScan : MonoBehaviour
         
         for ( timer = 10; timer > 0; timer-- )
         {
-            if (timer <= 0)
+        if (timer == 0)
         {
-            timer = 0;
+            
         }        
-        if(timer == 5)
+        else if (timer == 9) 
         {   
-            text.text ="Slay";
+            text.text = "Tuberculosis";
         }
-        if(timer == 8f)
+        else if (timer == 8) 
         {   
-            text.text ="Way";
+            text.text = "Malaria";
         }
-        yield return new WaitForSeconds(0.8f);
+        else if (timer == 7) 
+        {   
+            text.text = "Leprosy";
+        }
+        else if (timer == 6) 
+        {   
+            text.text = "Cholera";
+        }
+        else if (timer == 5) 
+        {   
+            text.text = "Plague";
+        }
+        else if (timer == 4) 
+        {   
+            text.text = "HIV/AIDS";
+        }
+        else if (timer == 3) 
+        {   
+            text.text = "Dengue";
+        }
+        else if (timer == 2) 
+        {   
+            text.text = "Ebola";
+        }
+        else if (timer == 1) 
+        {   
+            text.text = "All Clear!";
+        }
+        else if(timer == 10)
+        {   
+            text.text ="Loading...";
+        }
+        yield return new WaitForSeconds(0.2f);
         }
         
     }

@@ -3779,12 +3779,12 @@ GameObject:
   - component: {fileID: 690751999}
   - component: {fileID: 690751998}
   m_Layer: 5
-  m_Name: UpgradeBackground
+  m_Name: UpgradePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &690751997
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10686,6 +10686,7 @@ MonoBehaviour:
   forcefieldRendererDown: {fileID: 1339701940}
   alphaValue: 0.03
   cam: {fileID: 953667324}
+  UpgradesPanel: {fileID: 690751996}
   targetTransform: {fileID: 0}
   transitionSpeed: 3
   maxZPosition: -5.5
@@ -11428,6 +11429,7 @@ MonoBehaviour:
   forcefieldRendererDown: {fileID: 1339701940}
   alphaValue: 0.33
   cam: {fileID: 953667324}
+  UpgradesPanel: {fileID: 690751996}
   targetTransform: {fileID: 793607117}
   transitionSpeed: 2
   maxZPosition: -5.5
@@ -12301,7 +12303,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2109130104
 RectTransform:
   m_ObjectHideFlags: 0

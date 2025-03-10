@@ -13,13 +13,14 @@ public class Terminal : MonoBehaviour
     public float alphaValue = 0.33f; //beim anderen 0.03 oder so
 
     public Camera cam;
+    public GameObject UpgradesPanel;
 
     Transform startCamPos;
     public Transform targetTransform;
     public float transitionSpeed = 2.0f;
     public float maxZPosition = -5.0f;
     public float StartCamSize = 8;
-    public float LowestCamSize = 3.2f; 
+    public float LowestCamSize = 3.2f;
 
 
     public GameObject GoBackFromMapButton, GoBackFromMapButtonArrows, ActivateTerminalButton;
@@ -45,6 +46,7 @@ public class Terminal : MonoBehaviour
         alphaValue = 0.03f;
         GoBackFromMapButtonArrows.SetActive(false);
         GoBackFromMapButton.GetComponent<Button>().enabled = false;
+        UpgradesPanel.SetActive(false);
         StartCoroutine(CloseMap());
     }
 
@@ -83,6 +85,8 @@ public class Terminal : MonoBehaviour
             GoBackFromMapButton.SetActive(true);
             GoBackFromMapButtonArrows.SetActive(true);
             GoBackFromMapButton.GetComponent<Button>().enabled = true;
+            UpgradesPanel.SetActive(true);
+
         }
 
     }

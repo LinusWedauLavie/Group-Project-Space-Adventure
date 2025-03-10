@@ -4,17 +4,18 @@ using UnityEngine.UI;
 
 public class PlanetInfoPanelManager : MonoBehaviour
 {
-    public GameObject planetInfoPanel, ActivateTerminalButton, GoBackFromMapButton, IcePlanet, BlackholePlanet, SunPlanet, BarenPlanet, LavaPlanet, TerranPlanet, CrystalPlanet, HotPlanet, IcyPlanet, RadiatedPlanet, TerrestrialPlanet, JupiterPlanet;
+    public GameObject planetInfoPanel, ActivateTerminalButton, GoBackFromMapButton, DroneInfoPanel, IcePlanet, BlackholePlanet, SunPlanet, BarenPlanet, LavaPlanet, TerranPlanet, CrystalPlanet, HotPlanet, IcyPlanet, RadiatedPlanet, TerrestrialPlanet, JupiterPlanet;
 
-    public TextMeshProUGUI planetTextHeader, planetDescriptionText, planetRessourcessText, planetTextPlaceholderOne, planetTextPlaceholderTwo, planetTextPlaceholderThree;
+    public TextMeshProUGUI planetTextHeader, planetDescriptionText, planetRessourcessText;
 
+    public ProduceRessources Planetressources;
     public void ShowIcePlanetStats()
     {
         if (TerminalIsNOTActive())
         {
             return;
         }
-        ProduceRessources Planetressources = IcePlanet.GetComponent<ProduceRessources>();
+        Planetressources = IcePlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Icy";
@@ -23,6 +24,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x - 1.5f, IcePlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x +=  -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowBlackholePlanetStats()
@@ -31,7 +36,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = BlackholePlanet.GetComponent<ProduceRessources>();
+        Planetressources = BlackholePlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Goats Grand Maw";
@@ -40,6 +45,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(BlackholePlanet.transform.position.x + 1.5f, BlackholePlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowSunPlanetStats()
@@ -48,7 +57,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = SunPlanet.GetComponent<ProduceRessources>();
+        Planetressources = SunPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Orange";
@@ -57,6 +66,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(SunPlanet.transform.position.x - 1.5f, SunPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowBarenPlanetStats()
@@ -65,7 +78,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = BarenPlanet.GetComponent<ProduceRessources>();
+        Planetressources = BarenPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Delta Lambtauri";
@@ -74,6 +87,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(BarenPlanet.transform.position.x + 1.5f, BarenPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowLavaPlanetStats()
@@ -82,7 +99,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = LavaPlanet.GetComponent<ProduceRessources>();
+        Planetressources = LavaPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "X-03 Molten";
@@ -91,6 +108,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(LavaPlanet.transform.position.x + 1.5f, LavaPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowTerranPlanetStats()
@@ -99,7 +120,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = TerranPlanet.GetComponent<ProduceRessources>();
+        Planetressources = TerranPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Verfluchter Terran";
@@ -108,6 +129,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(TerranPlanet.transform.position.x - 1.5f, TerranPlanet.transform.position.y + 1, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowCrystalPlanetStats()
@@ -116,7 +141,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = CrystalPlanet.GetComponent<ProduceRessources>();
+        Planetressources = CrystalPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Great Sparkle";
@@ -125,6 +150,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(CrystalPlanet.transform.position.x - 1.5f, CrystalPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowHotPlanetStats()
@@ -133,7 +162,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = HotPlanet.GetComponent<ProduceRessources>();
+        Planetressources = HotPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Lavaeater";
@@ -142,6 +171,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(HotPlanet.transform.position.x + 1.5f, HotPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowIcyPlanetStats()
@@ -150,7 +183,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = IcyPlanet.GetComponent<ProduceRessources>();
+        Planetressources = IcyPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Storm E";
@@ -159,6 +192,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(IcyPlanet.transform.position.x + 1.5f, IcyPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowRadiatedPlanetStats()
@@ -167,7 +204,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = RadiatedPlanet.GetComponent<ProduceRessources>();
+        Planetressources = RadiatedPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Effing Failure";
@@ -176,6 +213,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(RadiatedPlanet.transform.position.x - 1.5f, RadiatedPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowTerrestrialPlanetStats()
@@ -184,7 +225,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = TerrestrialPlanet.GetComponent<ProduceRessources>();
+        Planetressources = TerrestrialPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Terrarium";
@@ -193,6 +234,10 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(TerrestrialPlanet.transform.position.x - 1.5f, TerrestrialPlanet.transform.position.y - 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += -1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
     public void ShowJupiterPlanetStats()
@@ -201,7 +246,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
         {
             return;
         }
-        ProduceRessources Planetressources = JupiterPlanet.GetComponent<ProduceRessources>();
+        Planetressources = JupiterPlanet.GetComponent<ProduceRessources>();
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Jupitwo";
@@ -210,42 +255,46 @@ public class PlanetInfoPanelManager : MonoBehaviour
         ShowRessources(Planetressources);
 
         planetInfoPanel.transform.position = new Vector3(JupiterPlanet.transform.position.x + 1.5f, JupiterPlanet.transform.position.y + 1.2f, 0);
+        Vector3 newPosition = DroneInfoPanel.transform.position;
+        newPosition.x = GetComponentInParent<Transform>().transform.position.x;
+        newPosition.x += 1.85435f;
+        DroneInfoPanel.transform.position = newPosition;
     }
 
-    private void ShowRessources(ProduceRessources Planetressources)
+    public void ShowRessources(ProduceRessources Planetressources)
     {
         planetRessourcessText.text = "Ressourcen: ";
-        if (Planetressources.PlanetUran > 0)
+        if (Planetressources.PlanetUran.Value > 0)
         {
-            planetRessourcessText.text += "\n -Uran: " + Planetressources.PlanetUran;
+            planetRessourcessText.text += "\n -Uran: " + Planetressources.PlanetUran.Value;
         }
-        if (Planetressources.PlanetChemikalien > 0)
+        if (Planetressources.PlanetChemikalien.Value > 0)
         {
-            planetRessourcessText.text += "\n -Chemikalien: " + Planetressources.PlanetChemikalien;
+            planetRessourcessText.text += "\n -Chemikalien: " + Planetressources.PlanetChemikalien.Value;
         }
-        if (Planetressources.PlanetWeltraumSchrott > 0)
+        if (Planetressources.PlanetWeltraumSchrott.Value > 0)
         {
-            planetRessourcessText.text += "\n -WeltraumSchrott: " + Planetressources.PlanetWeltraumSchrott;
+            planetRessourcessText.text += "\n -WeltraumSchrott: " + Planetressources.PlanetWeltraumSchrott.Value;
         }
-        if (Planetressources.PlanetMetallErz > 0)
+        if (Planetressources.PlanetMetallErz.Value > 0)
         {
-            planetRessourcessText.text += "\n -MetallErz: " + Planetressources.PlanetMetallErz;
+            planetRessourcessText.text += "\n -MetallErz: " + Planetressources.PlanetMetallErz.Value;
         }
-        if (Planetressources.PlanetLegierungen > 0)
+        if (Planetressources.PlanetLegierungen.Value > 0)
         {
-            planetRessourcessText.text += "\n -Legierungen: " + Planetressources.PlanetLegierungen;
+            planetRessourcessText.text += "\n -Legierungen: " + Planetressources.PlanetLegierungen.Value;
         }
-        if (Planetressources.PlanetMundspülung > 0)
+        if (Planetressources.PlanetMundspülung.Value > 0)
         {
-            planetRessourcessText.text += "\n -Mundspülung: " + Planetressources.PlanetMundspülung;
+            planetRessourcessText.text += "\n -Mundspülung: " + Planetressources.PlanetMundspülung.Value;
         }
-        if (Planetressources.PlanetZitronensäure > 0)
+        if (Planetressources.PlanetZitronensäure.Value > 0)
         {
-            planetRessourcessText.text += "\n -Zitronensäure: " + Planetressources.PlanetZitronensäure;
+            planetRessourcessText.text += "\n -Zitronensäure: " + Planetressources.PlanetZitronensäure.Value;
         }
-        if (Planetressources.PlanetTerraSchlangenGift > 0)
+        if (Planetressources.PlanetTerraSchlangenGift.Value > 0)
         {
-            planetRessourcessText.text += "\n -TerraSchlangenGift: " + Planetressources.PlanetTerraSchlangenGift;
+            planetRessourcessText.text += "\n -TerraSchlangenGift: " + Planetressources.PlanetTerraSchlangenGift.Value;
         }
     }
 

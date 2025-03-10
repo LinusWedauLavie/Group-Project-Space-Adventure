@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class RohstoffLager : MonoBehaviour
@@ -5,8 +6,9 @@ public class RohstoffLager : MonoBehaviour
     [SerializeField] public Observable<float> Uran, Chemikalien, WeltraumSchrott, MetallErz, Legierungen, Mundspülung, Zitronensäure, TerraSchlangenGift; // Als items Mundspülung, Zitronensäure, TerraSchlangenGift
     static RohstoffLager instance;
 
-    public int miningDrones = 1;
+    [SerializeField] public Observable<int> MiningDrones;
 
+    TextMeshProUGUI DronesInStorageText;
 
 
     void Awake()
@@ -19,7 +21,7 @@ public class RohstoffLager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("RohstoffLager created");
+            //Debug.Log("RohstoffLager created");
         }
     }
 
@@ -32,7 +34,13 @@ public class RohstoffLager : MonoBehaviour
     {
         Uran.Value = 5; Chemikalien.Value = 10; WeltraumSchrott.Value = 15;
         MetallErz.Value = 0; Legierungen.Value = 0; Mundspülung.Value = 0; Zitronensäure.Value = 0; TerraSchlangenGift.Value = 0;
+        MiningDrones.Value = 2;
     }
 
+    public void UpdateDronesInStorage()
+    {
+        if (DronesInStorageText == null) { DronesInStorageText= GameObject.Find("DroneAmountTooltip").GetComponent<TextMeshProUGUI>(); }
+        DronesInStorageText.text=  "Planet klicken um Abbau zu starten / stoppen\nAbbaudronen übrig: " + MiningDrones.Value;
+    }
 
 }

@@ -1,11 +1,15 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProduceRessources : MonoBehaviour
 {
- public float PlanetUran, PlanetChemikalien, PlanetWeltraumSchrott, PlanetMetallErz, PlanetLegierungen, PlanetMundspülung, PlanetZitronensäure, PlanetTerraSchlangenGift; //Spawnchancen für die Rohstoffe
+    [SerializeField] public Observable<float> PlanetUran, PlanetChemikalien, PlanetWeltraumSchrott, PlanetMetallErz, PlanetLegierungen, PlanetMundspülung, PlanetZitronensäure, PlanetTerraSchlangenGift; //Spawnchancen für die Rohstoffe
 
     RohstoffLager rohstoffLager;
+    PlanetInfoPanelManager planetInfoPanelManager;
+    bool isDrilling;
+    Slider slider;
 
     private void Start()
     {
@@ -14,58 +18,91 @@ public class ProduceRessources : MonoBehaviour
 
     public void PlanetDrillStartClicked()
     {
-        if (rohstoffLager.miningDrones>0)
+        if (rohstoffLager.MiningDrones.Value > 0 && isDrilling == false)
         {
-            rohstoffLager.miningDrones--;
+            rohstoffLager.MiningDrones.Value--;
+            isDrilling = true;
             StartCoroutine(StartDrill());
+        }
+        else if (isDrilling == true)
+        {
+            rohstoffLager.MiningDrones.Value++;
+            isDrilling = false;
+            FindAnyObjectByType<Slider>().value = 0;
+            StopAllCoroutines();
         }
     }
 
-    IEnumerator StartDrill()
+
+    public void UpdatePlanetRessourceValues() //Auch beispiel für richtigen planet check
     {
-        int random1 = Random.Range(1, 100);
-        if (random1 <= PlanetUran)
+        if (FindAnyObjectByType<PlanetInfoPanelManager>() == null) { return; }
+        if(FindAnyObjectByType<PlanetInfoPanelManager>().Planetressources == this)
         {
-            PlanetUran--;
+            FindAnyObjectByType<PlanetInfoPanelManager>().ShowRessources(this);
+        }
+        
+    }
+
+    IEnumerator StartDrill() //Muss noch checken ob es beim richtigen planet ist :<
+    {
+           slider= FindAnyObjectByType<Slider>();
+        slider.value = 0;
+
+        while (slider.value < 100)
+        {
+            yield return new WaitForSeconds(0.8f);
+            if (slider == null)
+            {
+                slider=FindAnyObjectByType<Slider>();
+            }
+            slider.value+=25;
+        }
+
+        yield return new WaitForSeconds(0.2f);
+        int random1 = Random.Range(1, 100);
+        if (random1 <= PlanetUran.Value)
+        {
+            PlanetUran.Value--;
             rohstoffLager.Uran.Value++;
         }
-        if (random1 <= PlanetChemikalien)
+        if (random1 <= PlanetChemikalien.Value)
         {
-            PlanetChemikalien--;
+            PlanetChemikalien.Value--;
             rohstoffLager.Chemikalien.Value++;
         }
-        if (random1 <= PlanetWeltraumSchrott)
+        if (random1 <= PlanetWeltraumSchrott.Value)
         {
-            PlanetWeltraumSchrott--;
+            PlanetWeltraumSchrott.Value--;
             rohstoffLager.WeltraumSchrott.Value++;
         }
-        if (random1 <= PlanetMetallErz)
+        if (random1 <= PlanetMetallErz.Value)
         {
-            PlanetMetallErz--;
+            PlanetMetallErz.Value--;
             rohstoffLager.MetallErz.Value++;
         }
-        if (random1 <= PlanetLegierungen)
+        if (random1 <= PlanetLegierungen.Value)
         {  
-            PlanetLegierungen--;
+            PlanetLegierungen.Value--;
             rohstoffLager.Legierungen.Value++;
         }
-        if (random1 <= PlanetMundspülung)
+        if (random1 <= PlanetMundspülung.Value)
         {
-            PlanetMundspülung--;
+            PlanetMundspülung.Value--;
             rohstoffLager.Mundspülung.Value++;
         }
-        if (random1 <= PlanetZitronensäure)
+        if (random1 <= PlanetZitronensäure.Value)
         {
-            PlanetZitronensäure--;
+            PlanetZitronensäure.Value--;
             rohstoffLager.Zitronensäure.Value++;
         }
-        if (random1 <= PlanetTerraSchlangenGift)
+        if (random1 <= PlanetTerraSchlangenGift.Value)
         {
-            PlanetTerraSchlangenGift--;
+            PlanetTerraSchlangenGift.Value--;
             rohstoffLager.TerraSchlangenGift.Value++;
         }
 
-        yield return new WaitForSeconds(3);
+
         StartCoroutine(StartDrill());
     }
 }

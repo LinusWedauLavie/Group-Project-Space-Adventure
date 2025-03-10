@@ -9,7 +9,7 @@ public class Ki_MemoryCard : MonoBehaviour
     public InventoryManager inventoryManager;
     public Item currentItem;
     public Item neededItem;
-    public int memoryCards = -1;
+    public int memoryCards = 0;
     public GameObject[] cardsUsed;  
     SaveRoomStates saveRoomStates;
     void Start()
@@ -18,9 +18,9 @@ public class Ki_MemoryCard : MonoBehaviour
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         
         memoryCards = saveRoomStates.memoryCards;
-        for(int i = 0; i <= memoryCards; i++)
+        for(int i = 0; i < memoryCards; i++)
         {
-            cardsUsed[memoryCards].SetActive(true);
+            cardsUsed[i].SetActive(true);
         }
     }
 
@@ -36,8 +36,8 @@ public class Ki_MemoryCard : MonoBehaviour
         if (neededItem == currentItem )      
         {
             inventoryManager.GetSelectedItem(true);       
-            memoryCards += 1;
             cardsUsed[memoryCards].SetActive(true);  
+            memoryCards += 1;
             saveRoomStates.GetBridgeState();  
 
         }

@@ -35,12 +35,6 @@ public class ProduceRessources : MonoBehaviour
         }
     }
 
-
-    public void UpdatePlanetRessourceValues() //Auch beispiel für richtigen planet check
-    {
-
-
-    }
     
 void Update()
 {

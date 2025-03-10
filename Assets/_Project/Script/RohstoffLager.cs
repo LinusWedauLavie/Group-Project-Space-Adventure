@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
 
@@ -8,7 +9,8 @@ public class RohstoffLager : MonoBehaviour
 
     [SerializeField] public Observable<int> MiningDrones;
 
-    TextMeshProUGUI DronesInStorageText;
+    TextMeshProUGUI DronesInStorageText, RessourceAmountText;
+
 
     [SerializeField] public int speedOfDrills=20; //upgrades 25, 35, 50
     [SerializeField] public int discoveryChance=100; //Wenn Random 1 - 100, kleiner Gleich besser. upgrades 70, 45, 20
@@ -44,6 +46,22 @@ public class RohstoffLager : MonoBehaviour
     {
         if (DronesInStorageText == null) { DronesInStorageText= GameObject.Find("DroneAmountTooltip").GetComponent<TextMeshProUGUI>(); }
         DronesInStorageText.text=  "Planet klicken um Abbau zu starten / stoppen\nAbbaudronen übrig: " + MiningDrones.Value;
+    }
+
+    public void UpdateRessourcesInStorage()
+    {
+        if (RessourceAmountText == null) 
+        {
+            if (GameObject.Find("RessourceAmountText") != null)
+            {
+                RessourceAmountText = GameObject.Find("RessourceAmountText").GetComponent<TextMeshProUGUI>();
+            }
+            else
+            {
+                return;
+            }
+        }
+          RessourceAmountText.text = "Uran: \n" + Uran.Value + "\nChemikalien: \n" + Chemikalien.Value + "\nWeltraum\nSchrott: \n" + WeltraumSchrott.Value + "\nMetallErz: \n" + MetallErz.Value + "\nLegierungen: \n" + Legierungen.Value; 
     }
 
 }

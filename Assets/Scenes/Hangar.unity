@@ -1026,7 +1026,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 145475986}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 690752000}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: MiningSpeedUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &145475986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2216,7 +2228,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Abbaugeschwindigkeit Upgrade
+  m_text: 'Abbaugeschwindigkeit Upgrade
+
+    Kosten: 20 Chemikalien'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 12c27379b39e44346813b13ec333d516, type: 2}
   m_sharedMaterial: {fileID: 21254508783018724, guid: 12c27379b39e44346813b13ec333d516, type: 2}
@@ -3778,6 +3792,7 @@ GameObject:
   - component: {fileID: 690751997}
   - component: {fileID: 690751999}
   - component: {fileID: 690751998}
+  - component: {fileID: 690752000}
   m_Layer: 5
   m_Name: UpgradePanel
   m_TagString: Untagged
@@ -3845,6 +3860,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690751996}
   m_CullTransparentMesh: 1
+--- !u!114 &690752000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690751996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710fd905b526fe648bd492f3cd41245e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &695974844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,7 +6988,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 997573530}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 690752000}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: DroneAmountUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &997573530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9708,7 +9747,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ressourcenchance Upgrade
+  m_text: 'Ressourcenchance Upgrade
+
+    Kosten: 20 Uran'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 12c27379b39e44346813b13ec333d516, type: 2}
   m_sharedMaterial: {fileID: 21254508783018724, guid: 12c27379b39e44346813b13ec333d516, type: 2}
@@ -10401,7 +10442,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Extra Drone Upgrade
+  m_text: 'Extra Drone Upgrade
+
+    Kosten: 20 Legierungen'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 12c27379b39e44346813b13ec333d516, type: 2}
   m_sharedMaterial: {fileID: 21254508783018724, guid: 12c27379b39e44346813b13ec333d516, type: 2}
@@ -10838,30 +10881,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Uran:
-    value: 0
+    value: 5
     onValueChanged:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateRessourcesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   Chemikalien:
-    value: 0
+    value: 10
     onValueChanged:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateRessourcesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   WeltraumSchrott:
-    value: 0
+    value: 15
     onValueChanged:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateRessourcesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   MetallErz:
     value: 0
     onValueChanged:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateRessourcesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   Legierungen:
     value: 0
     onValueChanged:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateRessourcesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   "Mundsp\xFClung":
     value: 0
     onValueChanged:
@@ -12266,7 +12369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2090167503}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 690752000}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: DiscoveryChanceUpgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2090167503
 MonoBehaviour:
   m_ObjectHideFlags: 0

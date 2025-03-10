@@ -13,42 +13,51 @@ public class MedbayScan : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
     public int timer;
+    bool scanDone = false;
+    public GameObject player;
+    public int communism = 0;
     
     void Start()
     {
-        StartCoroutine(WaitASec());
+        
     }
     
-
+    public void StartScan()
+    {
+        if (scanDone == false && communism == 2)
+        {
+            StartCoroutine(WaitASec());
+        }        
+    }
 
     public IEnumerator WaitASec()
     {
         
-        for ( timer = 10; timer > 0; timer-- )
+        for ( timer = 10; timer >= 0; timer-- )
         {
-        if (timer == 0)
+        if (timer == 1)
         {
-            
+            text.text = "Capitalist";
         }        
         else if (timer == 9) 
         {   
-            text.text = "Tuberculosis";
+            text.text = "Transgenderism";
         }
         else if (timer == 8) 
         {   
-            text.text = "Malaria";
+            text.text = "Depression";
         }
         else if (timer == 7) 
         {   
-            text.text = "Leprosy";
+            text.text = "Gay";
         }
         else if (timer == 6) 
         {   
-            text.text = "Cholera";
+            text.text = "Anxiety";
         }
         else if (timer == 5) 
         {   
-            text.text = "Plague";
+            text.text = "French";
         }
         else if (timer == 4) 
         {   
@@ -56,15 +65,16 @@ public class MedbayScan : MonoBehaviour
         }
         else if (timer == 3) 
         {   
-            text.text = "Dengue";
+            text.text = "Your Mum";
         }
         else if (timer == 2) 
         {   
-            text.text = "Ebola";
+            text.text = "Opperman";
         }
-        else if (timer == 1) 
+        else if (timer == 0) 
         {   
             text.text = "All Clear!";
+            scanDone = true;
         }
         else if(timer == 10)
         {   

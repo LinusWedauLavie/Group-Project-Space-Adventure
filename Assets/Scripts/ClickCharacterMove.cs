@@ -89,6 +89,7 @@ public class ClickCharacterMove : MonoBehaviour
 	SetPlayerPosition setPlayerPosition = new SetPlayerPosition();
 	public void OnSceneChanged(Scene current, Scene next)
 	{
+		player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
 		setPlayerPosition.SetGroundPosition(SceneManager.GetActiveScene().name, player, saveRoomStates);
 	}
 

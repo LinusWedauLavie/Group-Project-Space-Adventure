@@ -3,12 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Ki_Interface : MonoBehaviour, IPointerClickHandler
+public class Ki_Interface : MonoBehaviour
 {
     public GameObject kiCanvas;
-    bool clicked = false;
-    public Item item;
-    public Item currentItem;
     public Button button;
     SaveRoomStates saveRoomStates;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,16 +26,8 @@ public class Ki_Interface : MonoBehaviour, IPointerClickHandler
         //TODO machen das sich das Interface öffnet
     }
 
-        public void OnPointerClick(PointerEventData eventData)
-    {
-        if (clicked == false && NecessaryItemCheck.instance.neededItem == currentItem && saveRoomStates.cryoCompletedSave == false)
-        {
-            clicked = true;
-            button.interactable = true;
-            //doorUnlocked = true;
-            InventoryManager.instance.GetSelectedItem(true);
-        }
-    }
+
+    
 
     public void MemoryCardButtonClick(string buttonName)
     {

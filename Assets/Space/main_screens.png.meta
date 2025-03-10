@@ -375,10 +375,10 @@ TextureImporter:
       name: main_screens_11
       rect:
         serializedVersion: 2
-        x: 109
-        y: 107
-        width: 57
-        height: 36
+        x: 113
+        y: 111
+        width: 47
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,7 +402,7 @@ TextureImporter:
         width: 33
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

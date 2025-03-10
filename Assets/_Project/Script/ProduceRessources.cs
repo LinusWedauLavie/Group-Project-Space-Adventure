@@ -66,11 +66,11 @@ void Update()
         {
             yield return new WaitForSeconds(0.8f);
 
-            drillProgress.Value += 25;
+            drillProgress.Value += rohstoffLager.speedOfDrills;
         }
 
         yield return new WaitForSeconds(0.2f);
-        int random1 = Random.Range(1, 100);
+        int random1 = Random.Range(1, rohstoffLager.discoveryChance);
         if (random1 <= PlanetUran.Value)
         {
             PlanetUran.Value--;

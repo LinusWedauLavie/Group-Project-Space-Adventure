@@ -10,6 +10,9 @@ public class RohstoffLager : MonoBehaviour
 
     TextMeshProUGUI DronesInStorageText;
 
+    [SerializeField] public int speedOfDrills=20; //upgrades 25, 35, 50
+    [SerializeField] public int discoveryChance=100; //Wenn Random 1 - 100, kleiner Gleich besser. upgrades 70, 45, 20
+
 
     void Awake()
     {

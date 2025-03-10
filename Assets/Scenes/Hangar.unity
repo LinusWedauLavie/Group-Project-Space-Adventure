@@ -492,6 +492,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &54424506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1404,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &281134457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1782,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &299200749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2487,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &464568646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,6 +3040,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &504359224
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,6 +3883,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &759980956
 GameObject:
   m_ObjectHideFlags: 0
@@ -5315,6 +5345,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &845817234
 GameObject:
   m_ObjectHideFlags: 0
@@ -5601,6 +5636,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &848560958
 GameObject:
   m_ObjectHideFlags: 0
@@ -6499,6 +6539,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1004015796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7168,6 +7213,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1242055776
 GameObject:
   m_ObjectHideFlags: 0
@@ -7860,6 +7910,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1339701939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11110,6 +11165,11 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  drillProgress:
+    value: 0
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2079612666
 GameObject:
   m_ObjectHideFlags: 0

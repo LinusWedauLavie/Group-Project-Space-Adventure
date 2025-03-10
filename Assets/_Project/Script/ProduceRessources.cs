@@ -10,6 +10,8 @@ public class ProduceRessources : MonoBehaviour
     PlanetInfoPanelManager planetInfoPanelManager;
     bool isDrilling;
     Slider slider;
+    [SerializeField] public Observable<float> drillProgress;
+    bool showingRessources = false;
 
     private void Start()
     {
@@ -28,7 +30,7 @@ public class ProduceRessources : MonoBehaviour
         {
             rohstoffLager.MiningDrones.Value++;
             isDrilling = false;
-            FindAnyObjectByType<Slider>().value = 0;
+            drillProgress.Value = 0;
             StopAllCoroutines();
         }
     }
@@ -36,27 +38,35 @@ public class ProduceRessources : MonoBehaviour
 
     public void UpdatePlanetRessourceValues() //Auch beispiel für richtigen planet check
     {
-        if (FindAnyObjectByType<PlanetInfoPanelManager>() == null) { return; }
-        if(FindAnyObjectByType<PlanetInfoPanelManager>().Planetressources == this)
-        {
-            FindAnyObjectByType<PlanetInfoPanelManager>().ShowRessources(this);
-        }
-        
+
+
     }
+    
+void Update()
+{
+            planetInfoPanelManager = FindAnyObjectByType<PlanetInfoPanelManager>();
+        if (planetInfoPanelManager == null) { showingRessources = false; return; }
+        if (planetInfoPanelManager.Planetressources == this)
+        {
+            planetInfoPanelManager.ShowRessources(this);
+            showingRessources = true;
+            UpdateSlider();
+        }
+        else
+        {
+            showingRessources = false;
+        }
+}
 
     IEnumerator StartDrill() //Muss noch checken ob es beim richtigen planet ist :<
     {
-           slider= FindAnyObjectByType<Slider>();
-        slider.value = 0;
+        drillProgress.Value = 0;
 
-        while (slider.value < 100)
+        while (drillProgress.Value < 100)
         {
             yield return new WaitForSeconds(0.8f);
-            if (slider == null)
-            {
-                slider=FindAnyObjectByType<Slider>();
-            }
-            slider.value+=25;
+
+            drillProgress.Value += 25;
         }
 
         yield return new WaitForSeconds(0.2f);
@@ -82,7 +92,7 @@ public class ProduceRessources : MonoBehaviour
             rohstoffLager.MetallErz.Value++;
         }
         if (random1 <= PlanetLegierungen.Value)
-        {  
+        {
             PlanetLegierungen.Value--;
             rohstoffLager.Legierungen.Value++;
         }
@@ -105,4 +115,13 @@ public class ProduceRessources : MonoBehaviour
 
         StartCoroutine(StartDrill());
     }
+
+    public void UpdateSlider()
+    {
+        if (showingRessources == false) { return; }
+        if (slider == null) { slider = FindAnyObjectByType<Slider>(); }
+
+        slider.value = drillProgress.Value;
+    }
+
 }

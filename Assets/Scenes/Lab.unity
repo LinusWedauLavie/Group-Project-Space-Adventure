@@ -3654,6 +3654,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -38.926
       objectReference: {fileID: 0}
+    - target: {fileID: 3098688840847201813, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 58248410}
+    - target: {fileID: 3098688840847201813, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickupItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3098688840847201813, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3313427452283635746, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_Sprite
       value: 

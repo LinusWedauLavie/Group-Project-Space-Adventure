@@ -16,6 +16,7 @@ public class MedbayCommie : MonoBehaviour
     }
     public void OnButtonPressRecipe()
     {           
+        currentItem = inventoryManager.GetSelectedItem(false);
         if (neededItem == currentItem )      
         {
             InventoryManager.instance.GetSelectedItem(true);      

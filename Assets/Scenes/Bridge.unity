@@ -3529,7 +3529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
-  neededItem: {fileID: 0}
+  neededItem: {fileID: 11400000, guid: 0dc162ff2e505c34891cd1858cbc0c9a, type: 2}
   memoryCards: -1
   cardsUsed:
   - {fileID: 617018003}
@@ -4079,7 +4079,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4145,7 +4145,7 @@ MonoBehaviour:
   m_margin: {x: 95.58589, y: 27.192762, z: 95.34966, w: 21.71086}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1620881597

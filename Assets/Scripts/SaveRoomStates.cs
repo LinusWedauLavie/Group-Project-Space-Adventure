@@ -3,11 +3,13 @@ using UnityEngine;
 public class SaveRoomStates : MonoBehaviour
 {
     static SaveRoomStates instance;
+    //Bridge
+    public int memoryCards;
+    //Cryo
     public bool firstLoad = true;
-
     public bool cryoCompletedSave;
     public bool coinCryoCollected;
-
+    //Cabine
     public bool cabineCompletedSave;
 
 
@@ -22,6 +24,11 @@ public class SaveRoomStates : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    public void GetBridgeState()
+    {
+        memoryCards = FindAnyObjectByType<Ki_MemoryCard>().memoryCards;
     }
     public void GetCabinesRoomState()
     {

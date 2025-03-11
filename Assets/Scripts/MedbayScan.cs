@@ -13,12 +13,12 @@ public class MedbayScan : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
     public int timer;
-    bool scanDone = false;
+    public bool scanDone = false;
     public GameObject player;
     public int communism = 0;
     bool scanStart = false; 
     Vector2 Scanposition = new Vector2(-17f, -4f);
-    
+    public GameObject memoryCard;
     void Start()
     {
         player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
@@ -86,6 +86,7 @@ public class MedbayScan : MonoBehaviour
             text.text = "All Clear!";
             scanDone = true;
             scanStart = false;
+            memoryCard.SetActive(true);
         }
         else if(timer == 10)
         {   

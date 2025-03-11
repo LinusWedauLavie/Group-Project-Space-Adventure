@@ -325,6 +325,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4424054816812554686, guid: 1b5ae8ab29042b94eb1d4da6f85cc841, type: 3}
+      propertyPath: ableToPickUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5730919492227623632, guid: 1b5ae8ab29042b94eb1d4da6f85cc841, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1443,7 +1447,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1529,6 +1533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   full: {fileID: -5526051108940737978, guid: 333103c6f6109f74896f165cf23dc745, type: 3}
+  empty: {fileID: -6539274321791322823, guid: 66d6d0aa30917aa4ba914ce78e7fb94c, type: 3}
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
   neededItem: {fileID: 11400000, guid: 4a3198824e1a2774a8ae073ec6adfae9, type: 2}
@@ -2010,7 +2015,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 35
   m_TargetDisplay: 0
 --- !u!224 &1137136044
 RectTransform:
@@ -2389,7 +2394,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2475,6 +2480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   full: {fileID: -5856514148223850269, guid: fe9d7e745ea375745b0bfb0ffbe0a188, type: 3}
+  empty: {fileID: 3102814698783603345, guid: 5970bddb21e499e489a5d8a9242e0503, type: 3}
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
   neededItem: {fileID: 11400000, guid: c131271c149fbca4b86818975f44af80, type: 2}
@@ -3051,6 +3057,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 823625117}
     m_Modifications:
+    - target: {fileID: 647937961619102312, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
+      propertyPath: ableToPickUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

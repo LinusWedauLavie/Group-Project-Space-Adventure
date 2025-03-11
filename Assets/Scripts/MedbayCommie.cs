@@ -3,6 +3,7 @@ using UnityEngine;
 public class MedbayCommie : MonoBehaviour
 {
     public Sprite full;
+    public Sprite empty;
     public InventoryManager inventoryManager;
     public Item currentItem;
     public Item neededItem;
@@ -13,6 +14,7 @@ public class MedbayCommie : MonoBehaviour
     {
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
+        buttonImage.sprite = empty;
     }
     void Update()
     {

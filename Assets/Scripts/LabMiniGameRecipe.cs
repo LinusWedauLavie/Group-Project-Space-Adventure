@@ -14,6 +14,7 @@ public class LabMiniGameRecipe : MonoBehaviour
     {
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
+        buttonImage.sprite = recipeEmpty;
     }
 
     // Update is called once per frame
@@ -23,11 +24,7 @@ public class LabMiniGameRecipe : MonoBehaviour
         if (rightSolution == true)
         {   
             buttonImage.sprite = recipeFull;
-        }
-        else 
-        {   
-            buttonImage.sprite = recipeEmpty;
-        }
+        }      
         
     }
     public void OnButtonPressRecipe()

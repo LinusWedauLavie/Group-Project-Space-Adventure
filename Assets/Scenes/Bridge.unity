@@ -357,7 +357,7 @@ MonoBehaviour:
   m_text: Memory Card 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_text: Memory Card 6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1039,7 +1039,7 @@ MonoBehaviour:
   m_text: Memory Card 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1370,8 +1370,8 @@ Transform:
   m_GameObject: {fileID: 285528690}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.8, y: -6.105, z: 0}
-  m_LocalScale: {x: 1.4973779, y: 1.4973779, z: 1.4973779}
+  m_LocalPosition: {x: -10.0099, y: -5.7482, z: 0}
+  m_LocalScale: {x: 2.168952, y: 2.168952, z: 2.168952}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 38762255}
@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_text: Memory Card 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2829,7 +2829,7 @@ MonoBehaviour:
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3400,7 +3400,7 @@ MonoBehaviour:
   m_text: Memory Card 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3512,8 +3512,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252.93, y: -354.57}
-  m_SizeDelta: {x: 73.33, y: 152.3}
+  m_AnchoredPosition: {x: -280, y: -320.14}
+  m_SizeDelta: {x: 106.39, y: 221.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291461771
 MonoBehaviour:
@@ -3860,7 +3860,7 @@ Transform:
   m_GameObject: {fileID: 1338869963}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.37, y: -5.6099997, z: 0}
+  m_LocalPosition: {x: -10.529, y: -5.674, z: 0}
   m_LocalScale: {x: 1.5629, y: 1.5629, z: 1.5629}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4080,7 +4080,7 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_text: Memory Card 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

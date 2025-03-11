@@ -16,10 +16,13 @@ public class MedbayScan : MonoBehaviour
     bool scanDone = false;
     public GameObject player;
     public int communism = 0;
+    bool scanStart = false; 
+    Vector2 Scanposition = new Vector2(-17f, -4f);
     
     void Start()
     {
-        
+        player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
+
     }
     
     public void StartScan()
@@ -27,9 +30,16 @@ public class MedbayScan : MonoBehaviour
         if (scanDone == false && communism == 2)
         {
             StartCoroutine(WaitASec());
+            //player.transform.position = Scanposition;
         }        
     }
+    private void Update() {
 
+        if(scanStart)
+        {
+            //player.transform.position = Scanposition;
+        }
+    }
     public IEnumerator WaitASec()
     {
         
@@ -75,6 +85,7 @@ public class MedbayScan : MonoBehaviour
         {   
             text.text = "All Clear!";
             scanDone = true;
+            scanStart = false;
         }
         else if(timer == 10)
         {   

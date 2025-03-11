@@ -14,13 +14,17 @@ public class MedbayCommie : MonoBehaviour
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
     }
+    void Update()
+    {
+        currentItem = inventoryManager.GetSelectedItem(false);
+    }
     public void OnButtonPressRecipe()
     {           
-        currentItem = inventoryManager.GetSelectedItem(false);
         if (neededItem == currentItem )      
         {
             InventoryManager.instance.GetSelectedItem(true);      
             medbayScan.communism += 1;
+            buttonImage.sprite = full;
         }
     }
 }

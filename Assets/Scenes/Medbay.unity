@@ -1277,8 +1277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21.8, y: 0.000019073}
-  m_SizeDelta: {x: 136.23, y: 261.13}
+  m_AnchoredPosition: {x: 21.8, y: -6.68}
+  m_SizeDelta: {x: 136.23, y: 247.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863635969
 MonoBehaviour:
@@ -2218,7 +2218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -21.44, y: -14.9}
+  m_AnchoredPosition: {x: -31.355, y: -16}
   m_SizeDelta: {x: 222.71, y: 138}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1281090541
@@ -2265,7 +2265,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 863635972}
+      - m_Target: {fileID: 1281090544}
         m_TargetAssemblyTypeName: MedbayCommie, Assembly-CSharp
         m_MethodName: OnButtonPressRecipe
         m_Mode: 1
@@ -2890,7 +2890,7 @@ Transform:
   m_GameObject: {fileID: 1566696407}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.259999, y: -2.0514, z: 0}
+  m_LocalPosition: {x: -16.67, y: -4.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3234,7 +3234,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &2006966500
 RectTransform:

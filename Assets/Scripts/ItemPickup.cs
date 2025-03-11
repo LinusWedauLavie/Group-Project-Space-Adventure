@@ -17,13 +17,30 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
 
-
-        if (this.name == "Sichel") { Debug.Log("KAMERADEN AN DIE FRONT!!!"); }
-
-
         if (this.name == "CryoCoin")
         {
             if (saveRoomStates.coinCryoCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        if (this.name == "CanteenCoin")
+        {
+            if (saveRoomStates.coinCanteenCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        if (this.name == "LabCoin")
+        {
+            if (saveRoomStates.coinCanteenCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        if (this.name == "MedbayCoin")
+        {
+            if (saveRoomStates.coinCanteenCollected)
             {
                 gameObject.SetActive(false);
             }
@@ -49,13 +66,8 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 gameObject.SetActive(false);
             }
         }
-        if (this.name == "CanteenCoin")
-        {
-            if (saveRoomStates.coinCanteenCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
+
+
         //
     }
 
@@ -73,7 +85,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     saveRoomStates.sickleCollected = true;
                     break;
 
-                //
+                    //
 
             }
             Destroy(gameObject);

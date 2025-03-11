@@ -1708,7 +1708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: LabCoin
       objectReference: {fileID: 0}
     - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_TagString

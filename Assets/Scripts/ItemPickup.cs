@@ -35,6 +35,27 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 gameObject.SetActive(false);
             }
         }
+        if (this.name == "Sichel")
+        {
+            if (saveRoomStates.sickleCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        if (this.name == "Hammer")
+        {
+            if (saveRoomStates.hammerCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
+        if (this.name == "CanteenCoin")
+        {
+            if (saveRoomStates.coinCanteenCollected)
+            {
+                gameObject.SetActive(false);
+            }
+        }
         //
     }
 
@@ -42,11 +63,19 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
     {
         if (ableToPickUp != false)
         {
-            if (this.name == "CryoCoin")
+
+            switch (this.name)
             {
-                saveRoomStates.coinCryoCollected = true;
+                case "CryoCoin":
+                    saveRoomStates.coinCryoCollected = true;
+                    break;
+                case "Sichel":
+                    saveRoomStates.sickleCollected = true;
+                    break;
+
+                //
+
             }
-            //
             Destroy(gameObject);
         }
 

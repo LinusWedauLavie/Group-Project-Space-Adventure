@@ -281,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 0dc162ff2e505c34891cd1858cbc0c9a, type: 2}
     - target: {fileID: 2581022296304371198, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: m_Name
-      value: Coin
+      value: CanteenCoin
       objectReference: {fileID: 0}
     - target: {fileID: 2581022296304371198, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: m_TagString

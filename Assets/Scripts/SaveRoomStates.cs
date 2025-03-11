@@ -8,9 +8,11 @@ public class SaveRoomStates : MonoBehaviour
     //Cryo
     public bool firstLoad = true;
     public bool cryoCompletedSave;
-    public bool coinCryoCollected;
+    public bool coinCryoCollected, coinCanteenCollected;
     //Cabine
     public bool cabineCompletedSave;
+
+    public bool sickleCollected, hammerCollected;
 
 
     void Awake()

@@ -15,8 +15,8 @@ public class SaveRoomStates : MonoBehaviour
     public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected; //mehr coins hier))
     public int memoryCards; //Menge an karten die gesammelt wurden??
     public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //mehr mem cards hier??
-
-    public bool sickleCollected, hammerCollected;
+    public bool sickleCollected, hammerCollected; //mehr items hier??
+    public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected; //map pieces
 
 
     void Awake()

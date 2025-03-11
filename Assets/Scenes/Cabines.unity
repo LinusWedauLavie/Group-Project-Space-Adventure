@@ -4399,7 +4399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5149798179392206582, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_Name
-      value: PickableItem
+      value: cabinesMap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

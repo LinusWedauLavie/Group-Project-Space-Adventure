@@ -40,6 +40,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 {
                     gameObject.SetActive(false);
                 }
+                //Mehr coins hier
                 break;
             case "Sichel":
                 if (saveRoomStates.sickleCollected)
@@ -52,6 +53,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 {
                     gameObject.SetActive(false);
                 }
+                //Mehr items hier
                 break;
             case "cabinesMemCard":
                 if (saveRoomStates.cabinesMemCardCollected)
@@ -77,6 +79,28 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
+            //Mehr mem cards hier
+
+            case "cabinesMap":
+                if (saveRoomStates.cabinesMapCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "medbayMap":
+                if (saveRoomStates.medbayMapCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "theStorageMap":
+                if (saveRoomStates.theStorageMapCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            //Map pieces
+
             default:
                 if (SceneManager.GetActiveScene().name == "Cryo" && saveRoomStates.cryoCompletedSave)
                 {
@@ -106,16 +130,38 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     saveRoomStates.coinMedbayCollected = true;
                     break;
 
-                //Coin?
-
                 case "Sichel":
                     saveRoomStates.sickleCollected = true;
                     break;
                 case "Hammer":
                     saveRoomStates.hammerCollected = true;
                     break;
-                    //
 
+                case "cabinesMemCard":
+                    saveRoomStates.cabinesMemCardCollected = true;
+                    break;
+                case "canteenMemoryCard":
+                    saveRoomStates.canteenMemoryCardCollected = true;
+                    break;
+                case "labMemCard":
+                    saveRoomStates.labMemCardCollected = true;
+                    break;
+                case "medbayMemCard":
+                    saveRoomStates.medbayMemCardCollected = true;
+                    break;
+
+                case "cabinesMap":
+                    saveRoomStates.cabinesMapCollected = true;
+                    break;
+                case "medbayMap":
+                    saveRoomStates.medbayMapCollected = true;
+                    break;
+                case "theStorageMap":
+                    saveRoomStates.theStorageMapCollected = true;
+                    break;
+
+                default:
+                    break;
             }
             Destroy(gameObject);
         }

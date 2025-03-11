@@ -2190,7 +2190,7 @@ PrefabInstance:
       objectReference: {fileID: 815205922671746458, guid: 60875e5b0b26eae4b841dc3c9719d310, type: 3}
     - target: {fileID: 5149798179392206582, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_Name
-      value: PickableItem
+      value: theStorageMap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

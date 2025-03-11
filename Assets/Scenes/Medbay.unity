@@ -3322,7 +3322,7 @@ PrefabInstance:
       objectReference: {fileID: -3543470319804318938, guid: 08fd548a841e47d4baec3806d692cb3c, type: 3}
     - target: {fileID: 5149798179392206582, guid: e0f22c3f57a14d2409bf79cf189fa230, type: 3}
       propertyPath: m_Name
-      value: Recipe3
+      value: medbayMap
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

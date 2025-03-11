@@ -1612,7 +1612,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 647937961619102312, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: ableToPickUp
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Pivot.x
@@ -1660,7 +1660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.6599159
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1672,15 +1672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.75133944
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1479.1653
+      value: -1479.1603
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -953.93494
+      value: -953.8254
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1692,7 +1692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7189741058531036397, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -262.587
       objectReference: {fileID: 0}
     - target: {fileID: 7592509883042584364, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -1,6 +1,8 @@
 using System;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ItemPickup : MonoBehaviour, IPointerClickHandler
@@ -14,24 +16,37 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if (saveRoomStates.cryoCompletedSave && !CompareTag("Coin"))
+
+
+        if (this.name == "Sichel") { Debug.Log("KAMERADEN AN DIE FRONT!!!"); }
+
+
+        if (this.name == "CryoCoin")
         {
-            gameObject.SetActive(false);
+            if (saveRoomStates.coinCryoCollected)
+            {
+                gameObject.SetActive(false);
+            }
         }
-        if (saveRoomStates.coinCryoCollected && CompareTag("Coin"))
+        else if (SceneManager.GetActiveScene().name == "Cryo")
         {
-            gameObject.SetActive(false);
+            if (saveRoomStates.cryoCompletedSave)
+            {
+                gameObject.SetActive(false);
+            }
         }
-        
+        //
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (ableToPickUp != false)
         {
-            if (CompareTag("Coin"))
+            if (this.name == "CryoCoin")
             {
                 saveRoomStates.coinCryoCollected = true;
             }
+            //
             Destroy(gameObject);
         }
 

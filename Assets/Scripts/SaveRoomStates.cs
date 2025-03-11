@@ -3,14 +3,18 @@ using UnityEngine;
 public class SaveRoomStates : MonoBehaviour
 {
     static SaveRoomStates instance;
-    //Bridge
-    public int memoryCards;
+
     //Cryo
     public bool firstLoad = true;
     public bool cryoCompletedSave;
-    public bool coinCryoCollected, coinCanteenCollected;
+
     //Cabine
     public bool cabineCompletedSave;
+
+    //Collectables
+    public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected; //mehr coins hier))
+    public int memoryCards; //Menge an karten die gesammelt wurden??
+    public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //mehr mem cards hier??
 
     public bool sickleCollected, hammerCollected;
 

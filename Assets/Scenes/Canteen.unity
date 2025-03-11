@@ -395,6 +395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemoSpawn
       objectReference: {fileID: 0}
+    - target: {fileID: 8138190209342634527, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: ableToPickUp
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7074587853581143860, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
@@ -5893,7 +5897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Name
-      value: MemoryCard
+      value: canteenMemoryCard
       objectReference: {fileID: 0}
     - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_IsActive

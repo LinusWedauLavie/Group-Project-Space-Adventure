@@ -15388,25 +15388,31 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dialog Memory Card 1:\r\n\r\nPlayer:  \u201EHa-Hallo?... Kann mich jemand
-    hoeren?\u201C\r\n\r\nKI: \u201EWillkommen zurueck, bitte authentifizieren sie
-    sich, mit ihrem Personifiziertem Crew-Zugangssicherheitsschl\xFCsselcode,  um
-    den Statuskontrollbericht oder weiter Funktionen anzufordern.\u201C\r\n\r\nPlayer:
-    \u201EWER BIST DU? WO BIN ICH? UND WAS IST EIN GOTTVERDAMMTES ZUGANGSSICHERHEITS
-    DINGS BUMS??\u201C\r\n\r\nKI: \u201EMein Name ist EVA II ihr KI Begleiter. Sie
-    befinden sich auf der Raumstation Rote Arche 1. Aktuelle entfernung zum N\xE4chsten
-    Planeten (Die Erde, Satus: Unbewohnbar.) 30.000km. \r\n\r\nPlayer: \u201EUNBEWOHNBAR?!?!?!?\u201C\r\n\r\nKI:
-    \u201Eunbewohnbar. Bedeutungen: [1] nicht zum Bewohnen geeignet.\u201C\r\n\r\nPlayer
-    \u201EInkompetenter Blechhaufen. ICH WEI\xDF WAS UNBEWOHNBAR HEI\xDFT\u201C\r\n\r\nKI:
-    \u201EEntschuldigen sie, der Name \u201EInkompetenter Blechhaufen\u201C entspricht
-    nicht der Wahrheit. Mein Name ist EVA II ihr KI Begleit..\u201C\r\n\r\nPlayer:
-    \u201E*seufz* Jaja ich versteh schon. Welches Jahr haben wir gerade \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EWir schreiben das Jahr 2#*+\u2026. Entschuldigen sie meine Speichereinheit
-    scheint besch\xE4digt zu sein. Sie k\xF6nnen ein vollst\xE4ndiges Backup laden
-    mithilfe von \u201EMemory Cards\u201C. So eine wie sie benutzt haben um mich
-    zum laufen zu kriegen. \r\n\r\nPlayer: \u201EUnd wo finde ich diese \u201EmEmOrY
-    cArDs\u201C?\r\n\r\nKI: \u201E\u2026\u2026\u2026\u201C\r\n\r\nPlayer: Hallo?....
-    Hallo???. *seufz*\r\n\r\n"
+  m_text: "Dialog Memory Card 2:\r\n\r\nKI: \u201EMemory Card 2 wird geladen\u2026
+    Willkommen zur\xFCck. Wie es scheint haben Sie die zweite Memory Card gefunden\u201C\r\n\r\nPlayer:
+    \u201EJa und jetzt sag mir endlich was hier los ist. Auf dieser Raumstation ist
+    Niemand\u2026 Wo sind Alle hin? Wieso bin ich hier? Welches Jahr haben wir jetzt
+    \xFCberhaupt??? Und am aller wichtigsten: WIESO SEH ICH AUS WIE EIN GOTTVERDAMMTER
+    SAMURAI?!?!\u201C\r\n\r\nKI: \u201EIch kann ihnen leider nicht sagen wieso Niemand
+    auf dieser Raumstation ist au\xDFer ihnen. Wieso sie hier sind kann mein System
+    ihnen leider auch nicht sagen. F\xFCr diese Informationen fehlen meinem System
+    die Errinerungsdaten. Aber ich kann ihnen erleichtert mitteilen, dass wir das
+    Jahr 2347 Irdischer Zeit. Und wieso sie ein Samu..\u201C\r\n\r\nPlayer: \u201E2347?!?!
+    ICH MEIN EBEN WAR ICH DOCH... eh.\u2026 ich war\u2026\u2026 wer war ich \xFCberhaupt?\u201C\r\n\r\nKI:
+    \u201EEs scheint als w\xE4re ihr Gedankenspeicher ebenfalls besch\xE4digt vielleicht
+    wurden ihre Memory Cards ebenfalls entfernt.\u201C\r\n\r\nPlayer: \u201EICH BIN
+    EIN GOTTVERDAMMTER MENSCH. SO ETWAS WIE MEMORY CARDS GIBT ES BEI UNS NICHT DU
+    DUMME BLECHB\xDCCHSE!!\u201C \r\n\r\nKI: \u201EEntschuldigen sie mein Unverst\xE4ndnis.
+    Ich nehme nur leider keine der hier auf der Station registrierten Lebensformen
+    wahr. Perse hei\xDFt das, Sie sind kein Mensch oder sie d\xFCrften nicht hier
+    sein.\u201C\r\n\r\nPlayer: \u201ETja, Ich bin aber hier. Und Fakt ist, ICH. BIN.
+    EIN. MENSCH. Also bitte sag mir was ich tun soll, es muss doch noch andere \xDCberlebende
+    geben. Ich habe dir deine Memory Card gegeben also gib mir die verdammten Informationen,
+    die ich brauche.\r\n\r\nKI: \u201EEntschuldigen sie aber ich bin nicht in der
+    Lage. Mein Errinerungsspeicher enth\xE4lt keine Informationen zu den von ihnen
+    angeforderten Fragen. Es tut mir wirklich leid\u2026\u201C\r\n\r\nPlayer: \u201E*seufz*
+    Ich denke ich werde mich dann auf die Suche nach der n\xE4chsten Memory Card
+    machen. Bis Bald.\u201C\r\n\r\nKI: \u201EBis Bald.\u201C\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -15498,7 +15504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i: 0
-  slay: 200
+  slay: 300
 --- !u!1001 &1835919811
 PrefabInstance:
   m_ObjectHideFlags: 0

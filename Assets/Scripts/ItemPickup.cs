@@ -9,66 +9,81 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
 {
     SaveRoomStates saveRoomStates;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject item;
     public bool ableToPickUp;
     void Start()
     {
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
 
-        if (this.name == "CryoCoin")
+        switch (this.name)
         {
-            if (saveRoomStates.coinCryoCollected)
-            {
-                gameObject.SetActive(false);
-            }
+            case "CryoCoin":
+                if (saveRoomStates.coinCryoCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "CanteenCoin":
+                if (saveRoomStates.coinCanteenCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "LabCoin":
+                if (saveRoomStates.coinLabCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "MedbayCoin":
+                if (saveRoomStates.coinMedbayCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "Sichel":
+                if (saveRoomStates.sickleCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "Hammer":
+                if (saveRoomStates.hammerCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "cabinesMemCard":
+                if (saveRoomStates.cabinesMemCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "canteenMemoryCard":
+                if (saveRoomStates.canteenMemoryCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "labMemCard":
+                if (saveRoomStates.labMemCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            case "medbayMemCard":
+                if (saveRoomStates.medbayMemCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            default:
+                if (SceneManager.GetActiveScene().name == "Cryo" && saveRoomStates.cryoCompletedSave)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
         }
-        if (this.name == "CanteenCoin")
-        {
-            if (saveRoomStates.coinCanteenCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-        if (this.name == "LabCoin")
-        {
-            if (saveRoomStates.coinCanteenCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-        if (this.name == "MedbayCoin")
-        {
-            if (saveRoomStates.coinCanteenCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-        else if (SceneManager.GetActiveScene().name == "Cryo")
-        {
-            if (saveRoomStates.cryoCompletedSave)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-        if (this.name == "Sichel")
-        {
-            if (saveRoomStates.sickleCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-        if (this.name == "Hammer")
-        {
-            if (saveRoomStates.hammerCollected)
-            {
-                gameObject.SetActive(false);
-            }
-        }
-
-
-        //
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -81,10 +96,24 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 case "CryoCoin":
                     saveRoomStates.coinCryoCollected = true;
                     break;
+                case "CanteenCoin":
+                    saveRoomStates.coinCanteenCollected = true;
+                    break;
+                case "LabCoin":
+                    saveRoomStates.coinLabCollected = true;
+                    break;
+                case "MedbayCoin":
+                    saveRoomStates.coinMedbayCollected = true;
+                    break;
+
+                //Coin?
+
                 case "Sichel":
                     saveRoomStates.sickleCollected = true;
                     break;
-
+                case "Hammer":
+                    saveRoomStates.hammerCollected = true;
+                    break;
                     //
 
             }

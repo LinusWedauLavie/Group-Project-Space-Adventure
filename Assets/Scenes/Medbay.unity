@@ -411,7 +411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8537074448757605830, guid: 1b5ae8ab29042b94eb1d4da6f85cc841, type: 3}
       propertyPath: m_Name
-      value: MemCard
+      value: medbayMemCard
       objectReference: {fileID: 0}
     - target: {fileID: 8537074448757605830, guid: 1b5ae8ab29042b94eb1d4da6f85cc841, type: 3}
       propertyPath: m_IsActive

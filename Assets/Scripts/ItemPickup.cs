@@ -17,6 +17,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
 
         switch (this.name)
         {
+                //Mehr coins hier
             case "CryoCoin":
                 if (saveRoomStates.coinCryoCollected)
                 {
@@ -40,8 +41,8 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 {
                     gameObject.SetActive(false);
                 }
-                //Mehr coins hier
                 break;
+                //MedBay Items
             case "Sichel":
                 if (saveRoomStates.sickleCollected)
                 {
@@ -53,8 +54,8 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 {
                     gameObject.SetActive(false);
                 }
-                //Mehr items hier
                 break;
+                //memorycards
             case "cabinesMemCard":
                 if (saveRoomStates.cabinesMemCardCollected)
                 {
@@ -79,8 +80,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
-            //Mehr mem cards hier
-
+                //Lab minigame items
             case "cabinesMap":
                 if (saveRoomStates.cabinesMapCollected)
                 {
@@ -99,7 +99,6 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
-            //Map pieces
 
             default:
                 if (SceneManager.GetActiveScene().name == "Cryo" && saveRoomStates.cryoCompletedSave)
@@ -117,6 +116,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
 
             switch (this.name)
             {
+                //Coins
                 case "CryoCoin":
                     saveRoomStates.coinCryoCollected = true;
                     break;
@@ -129,14 +129,14 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 case "MedbayCoin":
                     saveRoomStates.coinMedbayCollected = true;
                     break;
-
+                //Medbay
                 case "Sichel":
                     saveRoomStates.sickleCollected = true;
                     break;
                 case "Hammer":
                     saveRoomStates.hammerCollected = true;
                     break;
-
+                //Memorycards
                 case "cabinesMemCard":
                     saveRoomStates.cabinesMemCardCollected = true;
                     break;
@@ -149,7 +149,7 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 case "medbayMemCard":
                     saveRoomStates.medbayMemCardCollected = true;
                     break;
-
+                //Lab minigame items
                 case "cabinesMap":
                     saveRoomStates.cabinesMapCollected = true;
                     break;

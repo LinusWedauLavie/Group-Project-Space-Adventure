@@ -56,7 +56,7 @@ public class SimonSays : MonoBehaviour
                 if (currentRound == 7)
                 {
                     done = true;
-                    saveRoomStates.GetCabinesRoomState();
+                    saveRoomStates.GetRoomState();
                     simonSaysEnterButton.enabled = false;
 
                     animator.SetInteger("Passed", 8);

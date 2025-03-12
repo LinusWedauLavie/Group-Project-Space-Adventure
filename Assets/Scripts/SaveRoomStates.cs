@@ -1,22 +1,23 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveRoomStates : MonoBehaviour
 {
     static SaveRoomStates instance;
 
-    //Cryo
-    public bool firstLoad = true;
-    public bool cryoCompletedSave;
+    //Room bool's damit die räume nur eine Aufgabe ihren State laden
+    public bool cryoCompletedSave, cabineCompletedSave;
 
-    //Cabine
-    public bool cabineCompletedSave;
+    //Für Cryo
+    public bool firstLoad = true;
 
     //Collectables
     public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected; //mehr coins hier))
-    public int memoryCards; //Menge an karten die gesammelt wurden??
-    public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //mehr mem cards hier??
-    public bool sickleCollected, hammerCollected; //mehr items hier??
-    public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected; //map pieces
+    public int memoryCards; //Menge an karten die gesammelt wurden
+    public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
+    public bool sickleCollected,sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
+    public int medbayCommieCount; //Medbay sichel und hammer zähler
+    public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected; //lab minigame items
 
 
     void Awake()
@@ -32,17 +33,42 @@ public class SaveRoomStates : MonoBehaviour
         }
     }
 
-    public void GetBridgeState()
+    public void GetRoomState()
     {
-        memoryCards = FindAnyObjectByType<Ki_MemoryCard>().memoryCards;
-    }
-    public void GetCabinesRoomState()
-    {
-        cabineCompletedSave = FindAnyObjectByType<SimonSays>().done;
-    }
-    public void GetCryoRoomState()
-    {
-        cryoCompletedSave = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
-        firstLoad = false;
+        switch(SceneManager.GetActiveScene().name)
+        {
+            case "Bridge":
+                memoryCards = FindAnyObjectByType<Ki_MemoryCard>().memoryCards;
+            break;
+            case "Cabines":
+                cabineCompletedSave = FindAnyObjectByType<SimonSays>().done;
+            break;
+            case "Canteen":
+
+            break;
+            case "Cryo":
+                cryoCompletedSave = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
+                firstLoad = false;
+            break;
+            case "Hangar":
+
+            break;
+            case "Lab":
+
+            break;
+            case "Medbay":
+                medbayCommieCount = FindAnyObjectByType<MedbayScan>().communism;
+                scanDone = FindAnyObjectByType<MedbayScan>().scanDone;
+                hammerPlaced = FindAnyObjectByType<MedbayCommie>().hammerPlaced;
+                sicklePlaced = FindAnyObjectByType<MedbayCommie>().sicklePlaced;
+
+            break;
+            case "TheStorage":
+
+            break;
+            default:
+                Debug.Log("Saveroomstate konnte den Raum nicht speichern, weil der Raum nicht gefunden wurde!");
+            break;
+        }
     }
 }

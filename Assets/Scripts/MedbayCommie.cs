@@ -4,17 +4,46 @@ public class MedbayCommie : MonoBehaviour
 {
     public Sprite full;
     public Sprite empty;
+    SaveRoomStates saveRoomStates;
     public InventoryManager inventoryManager;
     public Item currentItem;
     public Item neededItem;
-    UnityEngine.UI.Image buttonImage;
+    [HideInInspector]public UnityEngine.UI.Image buttonImage;
     public MedbayScan medbayScan;
+    [HideInInspector]public bool hammerPlaced, sicklePlaced; 
 
     void Start()
     {
-        buttonImage = GetComponent<UnityEngine.UI.Image>();
+
+        Debug.Log("du bist nur einmal da");
+        saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
-        buttonImage.sprite = empty;
+        if(saveRoomStates.medbayCommieCount != 0)
+        {
+
+            if(full == null)
+            {
+                Debug.Log("hilfe");
+            } 
+                Debug.Log(saveRoomStates.hammerPlaced);
+            if(saveRoomStates.hammerPlaced)
+            {
+                Debug.Log("HAmmer");
+                buttonImage.sprite = full;
+            }
+            if(saveRoomStates.sicklePlaced)
+            {
+                Debug.Log("Sichel");
+                buttonImage.sprite = full;
+            }
+            medbayScan.communism = saveRoomStates.medbayCommieCount;
+
+        }
+        else
+        {
+            buttonImage = GetComponent<UnityEngine.UI.Image>();
+            buttonImage.sprite = empty;
+        }
     }
     void Update()
     {
@@ -24,9 +53,22 @@ public class MedbayCommie : MonoBehaviour
     {           
         if (neededItem == currentItem )      
         {
+            if(neededItem.name == "Hammer")
+            {
+                hammerPlaced = true;
+                saveRoomStates.hammerPlaced = hammerPlaced;
+                buttonImage.sprite = full;
+            }else if(neededItem.name == "Sichel")
+            {
+                sicklePlaced = true;
+                saveRoomStates.sicklePlaced = sicklePlaced;
+                buttonImage.sprite = full;
+            }
+
             InventoryManager.instance.GetSelectedItem(true);      
             medbayScan.communism += 1;
-            buttonImage.sprite = full;
+
+            saveRoomStates.GetRoomState();
         }
     }
 }

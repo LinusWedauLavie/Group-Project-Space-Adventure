@@ -11,6 +11,7 @@ using UnityEngine.UI;
 
 public class MedbayScan : MonoBehaviour
 {
+    SaveRoomStates saveRoomStates;
     [SerializeField] TMP_Text text;
     public int timer;
     public bool scanDone = false;
@@ -21,8 +22,9 @@ public class MedbayScan : MonoBehaviour
     public GameObject memoryCard;
     void Start()
     {
+        saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
         player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
-
+        scanDone = saveRoomStates.scanDone;
     }
     
     public void StartScan()

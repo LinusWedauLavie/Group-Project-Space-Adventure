@@ -38,7 +38,7 @@ public class Ki_MemoryCard : MonoBehaviour
             inventoryManager.GetSelectedItem(true);       
             cardsUsed[memoryCards].SetActive(true);  
             memoryCards += 1;
-            saveRoomStates.GetBridgeState();  
+            saveRoomStates.GetRoomState();  
 
         }
     }

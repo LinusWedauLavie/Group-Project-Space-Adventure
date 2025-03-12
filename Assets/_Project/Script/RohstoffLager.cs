@@ -9,7 +9,7 @@ public class RohstoffLager : MonoBehaviour
 
     [SerializeField] public Observable<int> MiningDrones;
 
-    TextMeshProUGUI DronesInStorageText, RessourceAmountText;
+    public TextMeshProUGUI DronesInStorageText, RessourceAmountText;
 
 
     [SerializeField] public int speedOfDrills=20; //upgrades 25, 35, 50
@@ -44,7 +44,15 @@ public class RohstoffLager : MonoBehaviour
 
     public void UpdateDronesInStorage()
     {
-        if (DronesInStorageText == null) { DronesInStorageText= GameObject.Find("DroneAmountTooltip").GetComponent<TextMeshProUGUI>(); }
+        if (DronesInStorageText == null) 
+        { 
+
+            if (GameObject.Find("DroneAmountTooltip") == null) {  return; }
+            else
+            {
+                DronesInStorageText= GameObject.Find("DroneAmountTooltip").GetComponent<TextMeshProUGUI>(); 
+            }
+        }
         DronesInStorageText.text=  "Planet klicken um Abbau zu starten / stoppen\nAbbaudronen übrig: " + MiningDrones.Value;
     }
 

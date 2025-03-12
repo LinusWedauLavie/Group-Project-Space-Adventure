@@ -28,7 +28,7 @@ public class InventoryManager : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject); Es ist child von einem DontDestroyOnLoad Object
         }
     }
     void Update()

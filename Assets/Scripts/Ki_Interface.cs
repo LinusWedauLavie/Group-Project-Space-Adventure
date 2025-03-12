@@ -24,8 +24,13 @@ public class Ki_Interface : MonoBehaviour
     public void KiInterfaceButtonClick(bool activate)
     {
         kiCanvas.SetActive(activate);
-        storytext.SetActive(true);
+
+        //storytext.SetActive(true);
+
         //TODO machen das sich das Interface öffnet
+
+
+
     }
 
 

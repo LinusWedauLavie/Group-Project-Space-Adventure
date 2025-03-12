@@ -12,30 +12,38 @@ using UnityEngine.UI;
 public class DialogueBox : MonoBehaviour
 {
     [SerializeField] TMP_Text subtitles;
-    public float targetTime = 10.0f;
-    void Start()
-    {
-        
-    }
+    //public float targetTime;
 
+
+    /*
     void Update()
     {
-        targetTime -= Time.deltaTime;
-        if (targetTime <= 0.0f)
+        if (targetTime > 0.0f)
         {
+            targetTime -= Time.deltaTime;
+        }
+        else if (targetTime <= 0.0f)
+        {
+            if (subtitles==null)
+            {
+                    subtitles = GameObject.Find("TextBubble").GetComponent<TextMeshProUGUI>();
+                Debug.Log("Subtitles were null but hopefully fixed");
+            }
             subtitles.text = "";
             targetTime = 0;
         }
-    }
+    }*/
 
     public void ShowText(string dialogue)
     {   
-        targetTime = 5f;
+        StopAllCoroutines();
+        StartCoroutine(ShowTextCoroutine(dialogue));
+    }
+    //BITTE DIALOGEBOX VON AUFSAMMELBARE OBJEKTE NICHT INS DIE OBJEKTE SELBST EINFÜGEN SONDERN IN EINEM DEMOSPAWN
+    IEnumerator ShowTextCoroutine(string dialogue)
+    {
         subtitles.text = dialogue;
-        if (targetTime <= 0.0f)
-        {
-            subtitles.text = "";
-            targetTime = 0;
-        }
+        yield return new WaitForSeconds(5f);
+        subtitles.text = "";
     }
 }

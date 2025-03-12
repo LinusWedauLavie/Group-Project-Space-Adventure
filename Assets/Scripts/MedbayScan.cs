@@ -88,8 +88,6 @@ public class MedbayScan : MonoBehaviour
             {
                 text.text = "All Clear!";
                 scanDone = true;
-                if (saveRoomStates == null) { saveRoomStates = FindAnyObjectByType<SaveRoomStates>(); }
-                saveRoomStates.scanDone=true;
                 scanStart = false;
                 memoryCard.SetActive(true);
             }

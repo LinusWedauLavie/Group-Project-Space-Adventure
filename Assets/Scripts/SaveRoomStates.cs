@@ -12,7 +12,7 @@ public class SaveRoomStates : MonoBehaviour
     public bool firstLoad = true;
 
     //Collectables
-    public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected; //mehr coins hier))
+    public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected, coinBridgeCollected; //mehr coins hier))
     public int memoryCards; //Menge an karten die gesammelt wurden
     public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 

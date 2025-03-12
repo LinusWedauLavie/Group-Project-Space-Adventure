@@ -42,7 +42,13 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
-                //MedBay Items
+            case "BridgeCoin":
+                if (saveRoomStates.coinBridgeCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+            //MedBay Items
             case "Sichel":
                 if (saveRoomStates.sickleCollected)
                 {
@@ -129,6 +135,9 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                 case "MedbayCoin":
                     saveRoomStates.coinMedbayCollected = true;
                     break;
+                case "BridgeCoin":
+                    saveRoomStates.coinBridgeCollected = true;
+                    break;
                 //Medbay
                 case "Sichel":
                     saveRoomStates.sickleCollected = true;
@@ -148,6 +157,8 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     break;
                 case "medbayMemCard":
                     saveRoomStates.medbayMemCardCollected = true;
+                    if (saveRoomStates == null) { saveRoomStates = FindAnyObjectByType<SaveRoomStates>(); }
+                    saveRoomStates.scanDone = true;
                     break;
                 //Lab minigame items
                 case "cabinesMap":

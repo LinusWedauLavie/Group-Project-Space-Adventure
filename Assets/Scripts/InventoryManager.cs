@@ -52,6 +52,16 @@ public class InventoryManager : MonoBehaviour
         
     }
     
+    public void UpdateRessourcesInStorage()
+    {
+        RohstoffLager rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        if (rohstoffLager == null) { return; }
+        else
+        {
+            rohstoffLager.UpdateRessourcesInStorage();
+        }
+    }
+
     public void AddItem(Item item)
     {
         for (int i = 0; i < inventorySlots.Length; i++)

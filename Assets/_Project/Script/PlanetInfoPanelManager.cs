@@ -9,6 +9,8 @@ public class PlanetInfoPanelManager : MonoBehaviour
     public TextMeshProUGUI planetTextHeader, planetDescriptionText, planetRessourcessText;
 
     public ProduceRessources Planetressources;
+
+    RohstoffLager rohstoffLager;
     public void ShowIcePlanetStats()
     {
         if (TerminalIsNOTActive())
@@ -26,8 +28,11 @@ public class PlanetInfoPanelManager : MonoBehaviour
         planetInfoPanel.transform.position = new Vector3(IcePlanet.transform.position.x - 1.5f, IcePlanet.transform.position.y + 1.2f, 0);
         Vector3 newPosition = DroneInfoPanel.transform.position;
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
-        newPosition.x +=  -1.85435f;
+        newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowBlackholePlanetStats()
@@ -49,6 +54,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowSunPlanetStats()
@@ -70,6 +78,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowBarenPlanetStats()
@@ -91,6 +102,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowLavaPlanetStats()
@@ -112,6 +126,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowTerranPlanetStats()
@@ -133,6 +150,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowCrystalPlanetStats()
@@ -154,6 +174,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowHotPlanetStats()
@@ -175,6 +198,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowIcyPlanetStats()
@@ -196,6 +222,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowRadiatedPlanetStats()
@@ -217,6 +246,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowTerrestrialPlanetStats()
@@ -238,6 +270,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += -1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowJupiterPlanetStats()
@@ -259,6 +294,9 @@ public class PlanetInfoPanelManager : MonoBehaviour
         newPosition.x = GetComponentInParent<Transform>().transform.position.x;
         newPosition.x += 1.85435f;
         DroneInfoPanel.transform.position = newPosition;
+
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        rohstoffLager.UpdateDronesInStorage();
     }
 
     public void ShowRessources(ProduceRessources Planetressources)

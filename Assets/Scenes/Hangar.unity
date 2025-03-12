@@ -641,7 +641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Planet klicken um Abbau zu starten / stoppen\nAbbaudronen \xFCbrig: 2"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 71de30c1f9d8dc846bd433d0857acd1d, type: 2}
   m_sharedMaterial: {fileID: -7629282218172721171, guid: 71de30c1f9d8dc846bd433d0857acd1d, type: 2}
@@ -7777,7 +7777,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 4689240166119133576, guid: 557c045fd0b8a0442b58d6790a2d5622, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.46126127, a: 0.23529412}
+  m_Color: {r: 0, g: 1, b: 0.46126127, a: 0.33333334}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

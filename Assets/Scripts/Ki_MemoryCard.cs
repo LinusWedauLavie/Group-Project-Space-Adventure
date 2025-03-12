@@ -23,15 +23,12 @@ public class Ki_MemoryCard : MonoBehaviour
             cardsUsed[i].SetActive(true);
         }
     }
-
-
     void Update()
     {
         
     }
     public void OnButtonPress()
-    {
-       
+    {       
         currentItem = inventoryManager.GetSelectedItem(false);
         if (neededItem == currentItem )      
         {

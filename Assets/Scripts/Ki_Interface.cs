@@ -7,11 +7,11 @@ public class Ki_Interface : MonoBehaviour
 {
     public GameObject kiCanvas;
     public Button button;
-    SaveRoomStates saveRoomStates;
+    public GameObject storytext;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+
     }
 
     // Update is called once per frame
@@ -23,6 +23,7 @@ public class Ki_Interface : MonoBehaviour
     public void KiInterfaceButtonClick(bool activate)
     {
         kiCanvas.SetActive(activate);
+        storytext.SetActive(false);
         //TODO machen das sich das Interface öffnet
     }
 

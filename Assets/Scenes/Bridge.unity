@@ -1648,6 +1648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 844440413}
   button: {fileID: 0}
+  storytext: {fileID: 906579698}
 --- !u!114 &395863622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,6 +1875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &459413740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2021,6 +2023,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &482539916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2591,6 +2594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &617018006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4390,6 +4394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &1327285562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5798,6 +5803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &1800248668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5946,6 +5952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 844440413}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &1835022109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6244,6 +6251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kiCanvas: {fileID: 0}
   button: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &1889080489
 MonoBehaviour:
   m_ObjectHideFlags: 0

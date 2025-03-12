@@ -11928,6 +11928,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3262785773720744145, guid: 40d10d25ae271504390fd84ed60ba25f, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3262785773720744145, guid: 40d10d25ae271504390fd84ed60ba25f, type: 3}
+      propertyPath: m_fontSize
+      value: 92
+      objectReference: {fileID: 0}
     - target: {fileID: 5927121900640114458, guid: 40d10d25ae271504390fd84ed60ba25f, type: 3}
       propertyPath: m_Name
       value: SpeechBubble

@@ -9,9 +9,11 @@ public class CableMiniGame : MonoBehaviour
     public ButtonMiniGame[] buttons; // Array to hold the child objects
     public int[] buttonPositions; // This array will store the button indexes
     public bool rightSolution, wrongSolution; 
+    DialogueBox dialogueBox;
 
     void Start()
     {
+        dialogueBox = FindAnyObjectByType<DialogueBox>();
         // Initialize the array to match the button count
         buttonPositions = new int[buttons.Length];
 
@@ -47,6 +49,7 @@ public class CableMiniGame : MonoBehaviour
             wrongSolution = false;
             rightSolution = true; 
             InventoryManager.instance.GetSelectedItem(true);
+            dialogueBox.ShowText("Verdammt! Meine Kettensege ist kaputt gegangen :(");
         }
         
     }

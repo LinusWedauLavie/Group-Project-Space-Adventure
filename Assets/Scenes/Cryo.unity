@@ -3654,7 +3654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 457}
+  m_AnchoredPosition: {x: 0, y: 623}
   m_SizeDelta: {x: 1372.2039, y: 144.6311}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566761538
@@ -3742,7 +3742,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 2.8122253, z: 0, w: 0}
+  m_margin: {x: 0, y: 160.53242, z: 0, w: -153.45755}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10672,14 +10672,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa362678ad1f8a24e93a4a1baf069b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memoryCards: 0
   firstLoad: 1
   cryoCompletedSave: 0
+  cabineCompletedSave: 0
   coinCryoCollected: 0
   coinCanteenCollected: 0
-  cabineCompletedSave: 0
+  coinLabCollected: 0
+  coinMedbayCollected: 0
+  memoryCards: 0
+  cabinesMemCardCollected: 0
+  canteenMemoryCardCollected: 0
+  labMemCardCollected: 0
+  medbayMemCardCollected: 0
   sickleCollected: 0
   hammerCollected: 0
+  cabinesMapCollected: 0
+  medbayMapCollected: 0
+  theStorageMapCollected: 0
 --- !u!4 &2031595218
 Transform:
   m_ObjectHideFlags: 0

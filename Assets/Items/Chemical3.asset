@@ -16,4 +16,4 @@ MonoBehaviour:
   type: 0
   actionType: 0
   range: {x: 5, y: 4}
-  image: {fileID: 6061760685515086724, guid: 05631e9eae3e13e4cb154be0e7c41b6a, type: 3}
+  image: {fileID: 21300000, guid: 472fc24bdeeb78348b76ecc9e5a39529, type: 3}

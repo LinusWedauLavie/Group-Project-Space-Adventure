@@ -9842,7 +9842,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 10001
   m_TargetDisplay: 0
 --- !u!224 &1886125836
 RectTransform:
@@ -10561,9 +10561,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa362678ad1f8a24e93a4a1baf069b57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLoad: 1
   cryoCompletedSave: 0
   cabineCompletedSave: 0
+  firstLoad: 1
   coinCryoCollected: 0
   coinCanteenCollected: 0
   coinLabCollected: 0
@@ -10574,7 +10574,11 @@ MonoBehaviour:
   labMemCardCollected: 0
   medbayMemCardCollected: 0
   sickleCollected: 0
+  sicklePlaced: 0
   hammerCollected: 0
+  hammerPlaced: 0
+  scanDone: 0
+  medbayCommieCount: 0
   cabinesMapCollected: 0
   medbayMapCollected: 0
   theStorageMapCollected: 0

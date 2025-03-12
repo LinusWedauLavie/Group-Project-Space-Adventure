@@ -808,7 +808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -606, y: 353}
+  m_AnchoredPosition: {x: -608, y: 329.74}
   m_SizeDelta: {x: 453.3353, y: 85.0004}
   m_Pivot: {x: 0.5, y: 0.635534}
 --- !u!114 &1156871828
@@ -1088,7 +1088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000071526, y: 334.43}
+  m_AnchoredPosition: {x: 13.911, y: 318.22}
   m_SizeDelta: {x: 1082.179, y: 157.867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1578812770
@@ -1332,18 +1332,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Linus - Speicher und so
+  m_Text: 'Linus - Programmer
 
-    Kevin - Hangar und Hilfe
+    Kevin - Programmer, Artist
 
-    Alex - Mini-Games
+    Alex - Programmer,
+    Artist
 
-    Keanu
-    - Story- und Leveldesign
+    Keanu - Artist, Writer
 
-    Julia - spezifische Pixel assets
+    Julia - Artist
 
-    Jesus - Religion'
+    Jesus - Jesus
+
+    Lamb
+    - Motivator'
 --- !u!222 &1856600904
 CanvasRenderer:
   m_ObjectHideFlags: 0

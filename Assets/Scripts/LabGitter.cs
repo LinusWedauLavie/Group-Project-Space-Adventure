@@ -6,6 +6,8 @@ public class LabGitter : MonoBehaviour
     public Item neededItem;
     InventoryManager inventoryManager;
     public GameObject Gitter;
+    public GameObject GitterButton;
+
     void Start()
     {
         inventoryManager = FindAnyObjectByType<InventoryManager>();
@@ -24,6 +26,7 @@ public class LabGitter : MonoBehaviour
         {
             InventoryManager.instance.GetSelectedItem(false);      
             Gitter.SetActive(false);
+            GitterButton.SetActive(false);
         }
     }
 }

@@ -15,6 +15,7 @@ public class LabMiniGameRecipe : MonoBehaviour
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         buttonImage.sprite = recipeEmpty;
+        FindFirstObjectByType<SaveRoomStates>();
     }
 
     // Update is called once per frame
@@ -32,8 +33,8 @@ public class LabMiniGameRecipe : MonoBehaviour
         
         if (neededItem[0] == currentItem )      
         {
-            InventoryManager.instance.GetSelectedItem(false);      
-            rightSolution= true;
+            InventoryManager.instance.GetSelectedItem(false);      //Wenn zettel 1 plaziert, speicher als zettel 1
+            rightSolution = true;
         }
     }
 }

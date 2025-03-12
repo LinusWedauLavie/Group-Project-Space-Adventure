@@ -235,7 +235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -16}
+  m_AnchoredPosition: {x: -12, y: -23}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &55546688
@@ -725,7 +725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.000003, y: -104.999985}
+  m_AnchoredPosition: {x: -12.000003, y: -111}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596030285
@@ -1255,7 +1255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.000003, y: -290}
+  m_AnchoredPosition: {x: -12.000003, y: -283}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170407628
@@ -1316,7 +1316,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1170407628}
         m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: EndGame
+        m_MethodName: Credits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

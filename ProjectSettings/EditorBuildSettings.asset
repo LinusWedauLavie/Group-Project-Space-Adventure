@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheStorage.unity
     guid: 9cc5f135f2e1ea54db3948dff54cecf7
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 7bfedfc5c949de54786f691f29761cbb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

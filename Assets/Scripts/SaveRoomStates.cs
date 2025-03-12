@@ -15,7 +15,7 @@ public class SaveRoomStates : MonoBehaviour
     public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected; //mehr coins hier))
     public int memoryCards; //Menge an karten die gesammelt wurden
     public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
-    public bool sickleCollected,sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
+    public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
     public int medbayCommieCount; //Medbay sichel und hammer zähler
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected; //lab minigame items
 
@@ -35,40 +35,51 @@ public class SaveRoomStates : MonoBehaviour
 
     public void GetRoomState()
     {
-        switch(SceneManager.GetActiveScene().name)
+        switch (SceneManager.GetActiveScene().name)
         {
             case "Bridge":
                 memoryCards = FindAnyObjectByType<Ki_MemoryCard>().memoryCards;
-            break;
+                break;
             case "Cabines":
                 cabineCompletedSave = FindAnyObjectByType<SimonSays>().done;
-            break;
+                break;
             case "Canteen":
 
-            break;
+                break;
             case "Cryo":
                 cryoCompletedSave = FindAnyObjectByType<MoveObjectLeft>().hasMoved;
                 firstLoad = false;
-            break;
+                break;
             case "Hangar":
 
-            break;
+                break;
             case "Lab":
 
-            break;
+                break;
             case "Medbay":
                 medbayCommieCount = FindAnyObjectByType<MedbayScan>().communism;
                 scanDone = FindAnyObjectByType<MedbayScan>().scanDone;
-                hammerPlaced = FindAnyObjectByType<MedbayCommie>().hammerPlaced;
-                sicklePlaced = FindAnyObjectByType<MedbayCommie>().sicklePlaced;
 
-            break;
+                GameObject hammer = GameObject.Find("Hammer");
+
+                if (hammer.GetComponent<MedbayCommie>().hammerPlaced == true)
+                {
+                    hammerPlaced = hammer.GetComponent<MedbayCommie>().hammerPlaced;
+                }
+                GameObject sickle = GameObject.Find("Sichel");
+
+                if (sickle.GetComponent<MedbayCommie>().sicklePlaced == true)
+                {
+                    sicklePlaced = sickle.GetComponent<MedbayCommie>().sicklePlaced;
+                }
+
+                break;
             case "TheStorage":
 
-            break;
+                break;
             default:
                 Debug.Log("Saveroomstate konnte den Raum nicht speichern, weil der Raum nicht gefunden wurde!");
-            break;
+                break;
         }
     }
 }

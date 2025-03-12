@@ -19,6 +19,8 @@ public class LabMiniGame : MonoBehaviour
     public Item currentItem;
     public Item[] neededItem;
     public bool rightSolution; 
+    public GameObject strengthDrink;
+    public GameObject miniGameButton; 
 
     void Start()
     {
@@ -60,6 +62,8 @@ public class LabMiniGame : MonoBehaviour
         {   
             buttonImage.sprite = full; 
             rightSolution = true;
+            strengthDrink.SetActive(true);
+            miniGameButton.SetActive(false);
         }        
     }
 

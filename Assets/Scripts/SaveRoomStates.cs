@@ -16,8 +16,10 @@ public class SaveRoomStates : MonoBehaviour
     public int memoryCards; //Menge an karten die gesammelt wurden
     public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
-    public int medbayCommieCount; //Medbay sichel und hammer zähler
+    public int medbayCommieCount, coinsInVendingMachine; //Medbay sichel und hammer zähler, und coins in vending machine
+
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected; //lab minigame items
+    
 
 
     void Awake()

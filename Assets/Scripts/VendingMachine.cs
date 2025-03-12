@@ -17,15 +17,15 @@ public class VendingMachine : MonoBehaviour
     int number; 
     bool correct = false; 
     bool enoughCoins = false;
-    int totalCoins = 0;
-    public Button card; 
-    public Button decoyCard;
+    public int totalCoins = 0;
+    public Button  card; 
     public DialogueBox dialogueBox;
     bool lineSaid = false; 
     void Start()
     {
         displayText.text += "";
         dialogueBox = FindFirstObjectByType<DialogueBox>();
+        totalCoins= FindAnyObjectByType<SaveRoomStates>().coinsInVendingMachine;
     }
 
     // Update is called once per frame
@@ -50,9 +50,13 @@ public class VendingMachine : MonoBehaviour
             displayText.text += numbers;
         }
         if( totalCoins == 5 && displayText.text == "Insert Coins")
-        {   
-            card.interactable = true; 
-            decoyCard.enabled = false;
+        {
+
+            if (card != null)
+            {
+                card.GetComponent<Button>().interactable = true;
+                card.GetComponent<ItemPickup>().ableToPickUp = true;
+            }
         }
         else
         {   
@@ -80,6 +84,7 @@ public class VendingMachine : MonoBehaviour
     }
     public void CoinUsed(int coins)
     {          
-        totalCoins += coins;        
+        totalCoins += coins;     
+        FindAnyObjectByType<SaveRoomStates>().coinsInVendingMachine = totalCoins;
     }
 }

@@ -410,6 +410,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5343300735864741018, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
   m_PrefabInstance: {fileID: 2801930}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2801932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+  m_PrefabInstance: {fileID: 2801930}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d8782d32cfa3c4face01dac12cb558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &24461735
 GameObject:
   m_ObjectHideFlags: 0
@@ -4796,8 +4807,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 919440978}
   coinText: {fileID: 1515059700}
-  card: {fileID: 0}
-  decoyCard: {fileID: 1451670979}
+  totalCoins: 0
+  card: {fileID: 1451670979}
   dialogueBox: {fileID: 0}
 --- !u!114 &1014433409
 MonoBehaviour:
@@ -6208,6 +6219,18 @@ PrefabInstance:
     - target: {fileID: 7592509883042584364, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Colors.m_DisabledColor.r
       value: 0.7924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592509883042584364, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2801932}
+    - target: {fileID: 7592509883042584364, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickupItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7592509883042584364, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8730717482715382063, guid: 52fa63fc1cb36cc43af61e5be7af2cfa, type: 3}
       propertyPath: m_Name

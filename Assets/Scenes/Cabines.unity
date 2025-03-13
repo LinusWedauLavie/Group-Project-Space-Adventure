@@ -264,6 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0ee9d924ce7e544bfd5ba6a3087d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Memorycard: {fileID: 93224085}
   button: {fileID: 14434771}
 --- !u!1 &15135403
 GameObject:

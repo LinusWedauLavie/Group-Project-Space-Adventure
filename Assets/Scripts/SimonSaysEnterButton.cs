@@ -5,6 +5,7 @@ public class SimonSaysEnterButton : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     SaveRoomStates saveRoomStates;
+    public GameObject Memorycard;
     public Button button;
     void Awake()
     {
@@ -13,7 +14,11 @@ public class SimonSaysEnterButton : MonoBehaviour
         {
             button.enabled = false;
         }
-        
+        if (saveRoomStates.cabineCompletedSave == true && saveRoomStates.cabinesMemCardCollected == false)
+        {
+          Memorycard.SetActive(true);
+        }
+
     }
     void Start()
     {

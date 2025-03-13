@@ -18,8 +18,8 @@ public class SaveRoomStates : MonoBehaviour
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
     public int medbayCommieCount, coinsInVendingMachine, labLevel; //Medbay sichel und hammer zähler, und coins in vending machine und lab level counter
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced, LabMiniGameRigthSolution, LabRecipeRightSolutionTop, LabRecipeRightSolutionMid, LabRecipeRightSolutionBottom; //lab minigame items und anderes
-    
-    
+
+
 
 
     void Awake()
@@ -56,9 +56,24 @@ public class SaveRoomStates : MonoBehaviour
 
                 break;
             case "Lab":
-                LabRecipeRightSolutionTop = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionTop;
-                LabRecipeRightSolutionMid = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionMid;
-                LabRecipeRightSolutionBottom = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionBottom;
+
+                GameObject labTop = GameObject.Find("labPaperTop");
+                if (labTop.GetComponent<LabMiniGameRecipe>().rightSolutionTop == true)
+                {
+                    LabRecipeRightSolutionTop = labTop.GetComponent<LabMiniGameRecipe>().rightSolutionTop;
+                }
+                GameObject labMid = GameObject.Find("labPaperMid");
+                if (labMid.GetComponent<LabMiniGameRecipe>().rightSolutionMid == true)
+                {
+                    LabRecipeRightSolutionMid = labMid.GetComponent<LabMiniGameRecipe>().rightSolutionMid;
+                }
+
+                GameObject labBottom = GameObject.Find("labPaperBottom");
+                if (labBottom.GetComponent<LabMiniGameRecipe>().rightSolutionBottom == true)
+                {
+                    LabRecipeRightSolutionBottom = labBottom.GetComponent<LabMiniGameRecipe>().rightSolutionBottom;
+                }
+
                 LabMiniGameRigthSolution = FindAnyObjectByType<LabMiniGame>().rightSolution;
                 labLevel = FindAnyObjectByType<LabMiniGame>().level;
                 break;

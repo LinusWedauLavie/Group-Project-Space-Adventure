@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LabMiniGameRecipe : MonoBehaviour
@@ -10,19 +11,27 @@ public class LabMiniGameRecipe : MonoBehaviour
     public InventoryManager inventoryManager;
     public Item currentItem;
     public Item[] neededItem;
-    public bool rightSolutionTop, rightSolutionMid, rightSolutionBottom = false; 
+    public bool rightSolutionTop, rightSolutionMid, rightSolutionBottom = false;
     void Start()
     {
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
         buttonImage.sprite = recipeEmpty;
+
+
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
-        if(rightSolutionBottom || rightSolutionMid || rightSolutionTop)
+
+        if (saveRoomStates.LabRecipeRightSolutionTop == true && this.gameObject.name == "labPaperTop")
         {
-            Debug.Log("Bitte");
-            rightSolutionTop = saveRoomStates.LabRecipeRightSolutionTop;
-            rightSolutionMid = saveRoomStates.LabRecipeRightSolutionMid;
-            rightSolutionBottom = saveRoomStates.LabRecipeRightSolutionBottom;
+            rightSolutionTop = true;
+        }
+        if (saveRoomStates.LabRecipeRightSolutionMid == true && this.gameObject.name == "labPaperMid")
+        {
+            rightSolutionMid = true;
+        }
+        if (saveRoomStates.LabRecipeRightSolutionBottom == true && this.gameObject.name == "labPaperBottom")
+        {
+            rightSolutionBottom = true;
         }
     }
 
@@ -31,37 +40,42 @@ public class LabMiniGameRecipe : MonoBehaviour
     {
         currentItem = inventoryManager.GetSelectedItem(false);
         if (rightSolutionTop == true)
-        {   
+        {
             buttonImage.sprite = recipeFull;
         }
-        if(rightSolutionMid == true)      
-        {   
+        if (rightSolutionMid == true)
+        {
             buttonImage.sprite = recipeFull;
         }
-        if(rightSolutionBottom == true)      
-        {   
+        if (rightSolutionBottom == true)
+        {
             buttonImage.sprite = recipeFull;
         }
     }
     public void OnButtonPressRecipe()
-    {   
-        if (neededItem[0] == currentItem )      
+    {
+        if (neededItem[0] == currentItem)
         {
-            InventoryManager.instance.GetSelectedItem(false);      //Wenn zettel 1 plaziert, speicher als zettel 1
+            InventoryManager.instance.GetSelectedItem(true);      //Wenn zettel 1 plaziert, speicher als zettel 1
             if (neededItem[0].name == "Recipe2")
             {
                 rightSolutionTop = true;
+                saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                saveRoomStates.LabRecipeRightSolutionTop = rightSolutionTop;
             }
             if (neededItem[0].name == "Recipe3")
             {
                 rightSolutionMid = true;
+                saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                saveRoomStates.LabRecipeRightSolutionMid = rightSolutionMid;
             }
             if (neededItem[0].name == "Recipe1")
             {
                 rightSolutionBottom = true;
+                saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                saveRoomStates.LabRecipeRightSolutionBottom = rightSolutionBottom;
             }
             saveRoomStates.GetRoomState();
         }
-        Debug.Log("SAve");
     }
 }

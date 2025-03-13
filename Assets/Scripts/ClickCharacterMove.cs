@@ -31,16 +31,16 @@ public class ClickCharacterMove : MonoBehaviour
 	}
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Mouse0))
+		if (Input.GetKeyDown(KeyCode.Mouse0) && saveRoomStates.medbayScan == false)
 		{
+			Debug.Log(saveRoomStates.medbayScan);
 			targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			mouseClick = true;
 
 		}
-		if (mouseClick == true)
+		if (mouseClick == true && saveRoomStates.medbayScan == false)
 		{
-			relativePosition = new Vector2(
-			targetPosition.x - gameObject.transform.position.x, 0);
+			relativePosition = new Vector2(targetPosition.x - gameObject.transform.position.x, 0);
 			isMoving = true;
 			if (relativePosition.x < 0)
 			{

@@ -18,7 +18,7 @@ public class MedbayScan : MonoBehaviour
     public GameObject player;
     public int communism = 0;
     bool scanStart = false;
-    Vector2 Scanposition = new Vector2(-17f, -4f);
+    Vector2 Scanposition = new Vector2(-5.5f, -2.4f);
     public GameObject memoryCard;
     void Start()
     {
@@ -31,8 +31,10 @@ public class MedbayScan : MonoBehaviour
     {
         if (scanDone == false && communism == 2)
         {
+            Debug.Log(saveRoomStates.medbayScan + "vor dem safe");
+            saveRoomStates.medbayScan = true;
+            player.transform.position = Scanposition;
             StartCoroutine(WaitASec());
-            //player.transform.position = Scanposition;
         }
     }
     private void Update()
@@ -40,7 +42,7 @@ public class MedbayScan : MonoBehaviour
 
         if (scanStart)
         {
-            //player.transform.position = Scanposition;
+            player.transform.position = Scanposition;
         }
     }
     public IEnumerator WaitASec()
@@ -90,6 +92,9 @@ public class MedbayScan : MonoBehaviour
                 scanDone = true;
                 scanStart = false;
                 memoryCard.SetActive(true);
+                saveRoomStates.medbayScan = false;
+                player.transform.position = new Vector2(-5.6f, -3.8f);
+
             }
             else if (timer == 10)
             {

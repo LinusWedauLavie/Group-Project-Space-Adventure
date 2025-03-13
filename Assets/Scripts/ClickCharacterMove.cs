@@ -24,7 +24,7 @@ public class ClickCharacterMove : MonoBehaviour
 	string activeSceneName;
 	void Start()
 	{
-
+		
 		animator = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -56,10 +56,15 @@ public class ClickCharacterMove : MonoBehaviour
 		if (relativePosition.x < 0.1 && relativePosition.x > -0.1)
 		{
 			isMoving = false;
-
 		}
+
 		animator.SetBool("Moving", isMoving);
 
+	}
+	public void ResetMovement()
+	{
+		relativePosition.x = 0;
+		relativePosition.y = 0;
 	}
 	void FixedUpdate()
 	{
@@ -97,8 +102,13 @@ public class ClickCharacterMove : MonoBehaviour
 
 
 
-public class SetPlayerPosition
+public class SetPlayerPosition : MonoBehaviour
 {
+	public ClickCharacterMove movement;
+	public void Start() 
+	{
+		movement = FindAnyObjectByType<ClickCharacterMove>();
+	}
 	Vector2 bridgeGroundPosition = new Vector2(-0.34f, -3.8f);
 	Vector2 cabinesGroundPosition = new Vector2(5.5f, -3.63f);
 	Vector2 canteenGroundPosition = new Vector2(1f, 1.72f);
@@ -114,6 +124,8 @@ public class SetPlayerPosition
 		{
 			case "Bridge":
 				player.transform.position = bridgeGroundPosition;
+				movement.relativePosition.x = 0;
+				movement.speed.x =0;
 				break;
 			case "Cabines":
 				player.transform.position = cabinesGroundPosition;

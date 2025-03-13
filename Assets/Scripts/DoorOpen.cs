@@ -24,8 +24,7 @@ public class DoorOpen : MonoBehaviour, IPointerClickHandler,IPointerEnterHandler
         buttonImage.sprite = pressedImage;
         doorOpen = true;
         audioSource.Play();        
-        SceneManager.LoadScene(sceneName);     
-        charactermove.ResetMovement();        
+        SceneManager.LoadScene(sceneName);            
     }
 
     public void OnPointerEnter(PointerEventData eventData)

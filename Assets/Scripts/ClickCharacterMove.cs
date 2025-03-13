@@ -24,7 +24,7 @@ public class ClickCharacterMove : MonoBehaviour
 	string activeSceneName;
 	void Start()
 	{
-		
+
 		animator = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
@@ -61,11 +61,7 @@ public class ClickCharacterMove : MonoBehaviour
 		animator.SetBool("Moving", isMoving);
 
 	}
-	public void ResetMovement()
-	{
-		relativePosition.x = 0;
-		relativePosition.y = 0;
-	}
+
 	void FixedUpdate()
 	{
 		if (mouseClick)
@@ -104,10 +100,12 @@ public class ClickCharacterMove : MonoBehaviour
 
 public class SetPlayerPosition : MonoBehaviour
 {
-	public ClickCharacterMove movement;
-	public void Start() 
+	//public ClickCharacterMove movement;
+	public ClickCharacterMove clickCharacterMove;
+	public void Start()
 	{
-		movement = FindAnyObjectByType<ClickCharacterMove>();
+		//clickCharacterMove = FindAnyObjectByType<ClickCharacterMove>();
+		//movement = FindAnyObjectByType<ClickCharacterMove>();
 	}
 	Vector2 bridgeGroundPosition = new Vector2(-0.34f, -3.8f);
 	Vector2 cabinesGroundPosition = new Vector2(5.5f, -3.63f);
@@ -120,36 +118,45 @@ public class SetPlayerPosition : MonoBehaviour
 
 	public void SetGroundPosition(string activeSceneName, GameObject player, SaveRoomStates saveRoomStates)
 	{
+		if (clickCharacterMove == null) { clickCharacterMove = FindAnyObjectByType<ClickCharacterMove>(); }
 		switch (activeSceneName)
 		{
 			case "Bridge":
 				player.transform.position = bridgeGroundPosition;
-				movement.relativePosition.x = 0;
-				movement.speed.x =0;
+				clickCharacterMove.targetPosition = bridgeGroundPosition;
+				//		movement.relativePosition.x = 0;
+				//		movement.speed.x =0;
 				break;
 			case "Cabines":
 				player.transform.position = cabinesGroundPosition;
+				clickCharacterMove.targetPosition = cabinesGroundPosition;
 				break;
 			case "Canteen":
 				player.transform.position = canteenGroundPosition;
+				clickCharacterMove.targetPosition = canteenGroundPosition;
 				break;
 			case "Cryo":
 				if (saveRoomStates.firstLoad == false)
 				{
 					player.transform.position = cryoGroundPosition;
+					clickCharacterMove.targetPosition = cryoGroundPosition;
 				}
 				break;
 			case "Hangar":
 				player.transform.position = hangarGroundPosition;
+				clickCharacterMove.targetPosition = hangarGroundPosition;
 				break;
 			case "Lab":
 				player.transform.position = labGroundPosition;
+				clickCharacterMove.targetPosition = labGroundPosition;
 				break;
 			case "Medbay":
 				player.transform.position = medbayGroundPosition;
+				clickCharacterMove.targetPosition = medbayGroundPosition;
 				break;
 			case "TheStorage":
 				player.transform.position = storageGroundPosition;
+				clickCharacterMove.targetPosition = storageGroundPosition;
 				break;
 
 		}

@@ -7363,25 +7363,25 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dialog Memory Card 1:\r\n\r\nPlayer:  \u201EHa-Hallo?... Kann mich jemand
-    hoeren?\u201C\r\n\r\nKI: \u201EWillkommen zurueck, bitte authentifizieren sie
-    sich, mit ihrem Personifiziertem Crew-Zugangssicherheitsschl\xFCsselcode,  um
-    den Statuskontrollbericht oder weiter Funktionen anzufordern.\u201C\r\n\r\nPlayer:
-    \u201EWER BIST DU? WO BIN ICH? UND WAS IST EIN GOTTVERDAMMTES ZUGANGSSICHERHEITS
-    DINGS BUMS??\u201C\r\n\r\nKI: \u201EMein Name ist EVA II ihr KI Begleiter. Sie
-    befinden sich auf der Raumstation Rote Arche 1. Aktuelle entfernung zum N\xE4chsten
-    Planeten (Die Erde, Satus: Unbewohnbar.) 30.000km. \r\n\r\nPlayer: \u201EUNBEWOHNBAR?!?!?!?\u201C\r\n\r\nKI:
-    \u201Eunbewohnbar. Bedeutungen: [1] nicht zum Bewohnen geeignet.\u201C\r\n\r\nPlayer
-    \u201EInkompetenter Blechhaufen. ICH WEI\xDF WAS UNBEWOHNBAR HEI\xDFT\u201C\r\n\r\nKI:
-    \u201EEntschuldigen sie, der Name \u201EInkompetenter Blechhaufen\u201C entspricht
-    nicht der Wahrheit. Mein Name ist EVA II ihr KI Begleit..\u201C\r\n\r\nPlayer:
-    \u201E*seufz* Jaja ich versteh schon. Welches Jahr haben wir gerade \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EWir schreiben das Jahr 2#*+\u2026. Entschuldigen sie meine Speichereinheit
-    scheint besch\xE4digt zu sein. Sie k\xF6nnen ein vollst\xE4ndiges Backup laden
-    mithilfe von \u201EMemory Cards\u201C. So eine wie sie benutzt haben um mich
-    zum laufen zu kriegen. \r\n\r\nPlayer: \u201EUnd wo finde ich diese \u201EmEmOrY
-    cArDs\u201C?\r\n\r\nKI: \u201E\u2026\u2026\u2026\u201C\r\n\r\nPlayer: Hallo?....
-    Hallo???. *seufz*\r\n\r\n"
+  m_text: "Dialog Memory Card 3:\r\n\r\nKI: \u201EEndlich bist du\u2026 \xC4h ich
+    meine Sie wieder da!\u201C\r\n\r\nPlayer: \u201EOh, da scheint sich aber jemand
+    zu freuen. Naja ist ja auch egal, was hat dir diese Memory Card gebracht? An
+    was erinnerst du dich?\u201C\r\n\r\nKI: \u201EIch kann mich wieder erinnern wieso
+    die Erde Unbewohnbar ist. Und ich wei\xDF auch\u2026\u201C\r\n\r\nPlayer: \u201EWas
+    wei\xDFt du??\u201C\r\n\r\nKI: \u201ENichts\u2026 Alles Gut\u2026 Die Erde ist
+    aufgrund vieler Faktoren unbewohnbar. Jedoch f\xFCr den gr\xF6\xDFten Ausl\xF6ser,
+    w\xFCrde ich den vom ehemaligem Gro\xDFf\xFChrer aller Amerikaner \u201EElon
+    Musk\u201C angef\xFChrten Atomaren \u201EShowdown\u201C, wie er ihn nannte, halten.\u201C\r\n\r\nPlayer:
+    \u201EELON HAT WAS???... Naja ich hatte sowieso keine Tesla Aktien\u201C\r\n\r\nKI:
+    \u201EEs scheint so als w\xFCrdest du dich auch wieder an deine Vergangenheit
+    erinnern :)\u201C\r\n\r\nPlayer: \u201ESo langsam kommt es wieder in Bruchst\xFCcken
+    zur\xFCck aber nichts\u2026 und ich meine wirklich GAR NICHTS an dass ich mich
+    erinnere w\xFCrde logisch hier her f\xFChren. Ich meine selbst unser Sonnensystem
+    scheint nicht das gleiche zu sein.\u201C\r\n\r\nKI: \u201EDu hast recht die Daten
+    aus den Memory Cards stimmen nicht komplett mit der aktuellen Situation \xFCberein.
+    Vielleicht finden wir zusammen noch mehr heraus. Ich glaub an dich du schaffst
+    das!\u201C\r\n\r\nPlayer: \u201EGut ich mach mich auf den Weg. Ich hoffe du langweilst
+    dich nicht ohne mich ;)\u201C\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}

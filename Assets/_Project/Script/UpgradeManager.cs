@@ -7,7 +7,7 @@ public class UpgradeManager : MonoBehaviour
 
     public TextMeshProUGUI discoveryChanceCostText, miningSpeedCostText, droneAmountCostText;
 
-    int droneCost = 20;
+    int droneCost = 10;
 
     public void DiscoveryChanceUpgrade()
     {

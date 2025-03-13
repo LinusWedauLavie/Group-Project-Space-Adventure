@@ -3312,7 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlanetUran:
-    value: 0
+    value: 40
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
@@ -3329,7 +3329,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   PlanetChemikalien:
-    value: 80
+    value: 40
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
@@ -11573,7 +11573,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
   MiningDrones:
-    value: 2
+    value: 3
     onValueChanged:
       m_PersistentCalls:
         m_Calls:

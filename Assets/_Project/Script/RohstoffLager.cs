@@ -40,7 +40,7 @@ public class RohstoffLager : MonoBehaviour
     {
         Uran.Value = 5; Chemikalien.Value = 10; WeltraumSchrott.Value = 15;
         MetallErz.Value = 0; Legierungen.Value = 0; Mundspülung.Value = 0; Zitronensäure.Value = 0; TerraSchlangenGift.Value = 0;
-        MiningDrones.Value = 2;
+        MiningDrones.Value = 3;
     }
 
     public void UpdateDronesInStorage()

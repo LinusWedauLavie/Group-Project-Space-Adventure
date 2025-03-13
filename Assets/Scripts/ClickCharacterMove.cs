@@ -100,6 +100,7 @@ public class ClickCharacterMove : MonoBehaviour
 
 public class SetPlayerPosition : MonoBehaviour
 {
+	
 	//public ClickCharacterMove movement;
 	public ClickCharacterMove clickCharacterMove;
 	public void Start()

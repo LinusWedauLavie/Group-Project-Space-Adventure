@@ -61,7 +61,6 @@ public class SaveRoomStates : MonoBehaviour
                 LabRecipeRightSolutionBottom = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionBottom;
                 LabMiniGameRigthSolution = FindAnyObjectByType<LabMiniGame>().rightSolution;
                 labLevel = FindAnyObjectByType<LabMiniGame>().level;
-                Debug.Log(LabRecipeRightSolutionMid);
                 break;
             case "Medbay":
                 medbayCommieCount = FindAnyObjectByType<MedbayScan>().communism;

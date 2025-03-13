@@ -6,7 +6,7 @@ public class ProduceRessources : MonoBehaviour
 {
     [SerializeField] public Observable<float> PlanetUran, PlanetChemikalien, PlanetWeltraumSchrott, PlanetMetallErz, PlanetLegierungen, PlanetMundspülung, PlanetZitronensäure, PlanetTerraSchlangenGift; //Spawnchancen für die Rohstoffe
 
-    RohstoffLager rohstoffLager;
+    public RohstoffLager rohstoffLager; //Nichts ändern
     PlanetInfoPanelManager planetInfoPanelManager;
     bool isDrilling;
     Slider slider;

@@ -446,14 +446,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 50874605}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -463,14 +463,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 50874605}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -480,18 +480,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 50874605}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -1491,14 +1492,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 202424756}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1508,14 +1509,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 202424756}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1525,18 +1526,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 202424756}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -1869,14 +1871,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 282243256}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1886,14 +1888,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 282243256}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1903,18 +1905,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 282243256}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -2844,14 +2847,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 440731633}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -2861,14 +2864,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 440731633}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -2878,18 +2881,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 440731633}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -3397,14 +3401,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 503102504}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -3414,14 +3418,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 503102504}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -3431,18 +3435,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 503102504}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -4336,14 +4341,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 757927151}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -4353,14 +4358,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 757927151}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -4370,18 +4375,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 757927151}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -5798,14 +5804,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 793607121}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -5815,14 +5821,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 793607121}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -5832,18 +5838,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 793607121}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -6089,14 +6096,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 845817239}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -6106,14 +6113,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 845817239}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -6123,18 +6130,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 845817239}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -6992,14 +7000,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 982441822}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7009,14 +7017,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 982441822}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7026,18 +7034,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 982441822}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -7799,14 +7808,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1118839874}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7816,14 +7825,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1118839874}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -7833,18 +7842,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1118839874}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -8628,14 +8638,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1328561100}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -8645,14 +8655,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1328561100}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -8662,18 +8672,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1328561100}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:
@@ -8876,12 +8887,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: itemsToPickUp.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: 'itemsToPickUp.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 4a3198824e1a2774a8ae073ec6adfae9, type: 2}
+    - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: 'itemsToPickUp.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 813787e20f7c30a4791898ec45ad7ef0, type: 2}
+    - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: 'itemsToPickUp.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f3b143812edee644db3b269497ebafcf, type: 2}
+    - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: 'itemsToPickUp.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 56137ce73563ed74e8e7cb2555ae6f31, type: 2}
     - target: {fileID: 5343300735864741018, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12545,14 +12568,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2069615963}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 1
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -12562,14 +12585,14 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2069615963}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 3
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -12579,18 +12602,19 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2069615963}
-          m_TargetAssemblyTypeName: ProduceRessources, Assembly-CSharp
-          m_MethodName: UpdatePlanetRessourceValues
-          m_Mode: 1
+        - m_Target: {fileID: 1366764429}
+          m_TargetAssemblyTypeName: DemoScript, Assembly-CSharp
+          m_MethodName: PickupItem
+          m_Mode: 3
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  rohstoffLager: {fileID: 0}
   drillProgress:
     value: 0
     onValueChanged:

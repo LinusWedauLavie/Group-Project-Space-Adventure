@@ -20,13 +20,14 @@ public class RohstoffLager : MonoBehaviour
     {
         if (instance != null)
         {
+            Debug.Log("RohstoffLager already exists");
             Destroy(gameObject);
         }
         else
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            //Debug.Log("RohstoffLager created");
+            Debug.Log("RohstoffLager created");
         }
     }
 

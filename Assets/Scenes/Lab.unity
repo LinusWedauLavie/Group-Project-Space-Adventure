@@ -971,18 +971,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 218186608}
-        m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
-        m_MethodName: ShowText
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Hmm, da komme ich nicht dran...
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &218186605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3330,9 +3318,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeFull: {fileID: -4118689495681347844, guid: e6075ae4c9148834c87cfa439355cc26, type: 3}
   recipeEmpty: {fileID: 9015810425677230763, guid: 63439d2db5b9b2d43b105f0ad21394aa, type: 3}
-  spriteRendererBottom: {fileID: 0}
-  spriteRendererMid: {fileID: 0}
-  spriteRendererTop: {fileID: 0}
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
   neededItem:
@@ -3661,9 +3646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeFull: {fileID: -1154344993935458473, guid: 59951a4f8e8f5f94bae73f190162c62c, type: 3}
   recipeEmpty: {fileID: -1699924982295112392, guid: 7728e6ed78097b54292c14f4bbe87089, type: 3}
-  spriteRendererBottom: {fileID: 0}
-  spriteRendererMid: {fileID: 0}
-  spriteRendererTop: {fileID: 0}
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
   neededItem:
@@ -4695,9 +4677,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipeFull: {fileID: -672569068813456947, guid: d3ab3dc278c83d6449fa3831d8ed094c, type: 3}
   recipeEmpty: {fileID: 8857037825073011928, guid: 7d93e2fcc5dc3ed48b6a756fd8ca00c6, type: 3}
-  spriteRendererBottom: {fileID: 0}
-  spriteRendererMid: {fileID: 0}
-  spriteRendererTop: {fileID: 0}
   inventoryManager: {fileID: 0}
   currentItem: {fileID: 0}
   neededItem:

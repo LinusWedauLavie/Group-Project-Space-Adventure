@@ -78,17 +78,18 @@ public class LabMiniGame : MonoBehaviour
     public void OnButtonPress()
     {         
         currentItem = InventoryManager.instance.GetSelectedItem(false);
-        if (level >= 7) {}
-        else if (neededItem[level] == currentItem )      
-        {
-            InventoryManager.instance.GetSelectedItem(false);
-            if (level != 6) { level += 1; }
+        if (level < 6) {
+        if (neededItem[level] == currentItem)
+            {
+                InventoryManager.instance.GetSelectedItem(false);
+                if (level != 6) { level += 1; }
+            }
+            else if (neededItem[level] != currentItem)
+            {
+                level = 0;
+            }
+            saveRoomStates.GetRoomState();
         }
-        else if (neededItem[level] != currentItem )      
-        {
-            level = 0;
-        }
-        saveRoomStates.GetRoomState();        
     }
    
 }

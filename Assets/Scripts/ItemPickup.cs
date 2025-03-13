@@ -105,6 +105,12 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
+            case "Strenght":
+                if (saveRoomStates.pickedUpPotion)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
 
             default:
                 if (SceneManager.GetActiveScene().name == "Cryo" && saveRoomStates.cryoCompletedSave)
@@ -169,6 +175,9 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     break;
                 case "theStorageMap":
                     saveRoomStates.theStorageMapCollected = true;
+                    break;
+                case "Strenght":
+                    saveRoomStates.pickedUpPotion = true;
                     break;
 
                 default:

@@ -16,9 +16,9 @@ public class SaveRoomStates : MonoBehaviour
     public int memoryCards; //Menge an karten die gesammelt wurden
     public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
-    public int medbayCommieCount, coinsInVendingMachine; //Medbay sichel und hammer zähler, und coins in vending machine
-
-    public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced; //lab minigame items
+    public int medbayCommieCount, coinsInVendingMachine, labLevel; //Medbay sichel und hammer zähler, und coins in vending machine und lab level counter
+    public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced, LabMiniGameRigthSolution, LabRecipeRightSolutionTop, LabRecipeRightSolutionMid, LabRecipeRightSolutionBottom; //lab minigame items und anderes
+    
     
 
 
@@ -56,20 +56,24 @@ public class SaveRoomStates : MonoBehaviour
 
                 break;
             case "Lab":
-
+                LabRecipeRightSolutionTop = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionTop;
+                LabRecipeRightSolutionMid = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionMid;
+                LabRecipeRightSolutionBottom = FindAnyObjectByType<LabMiniGameRecipe>().rightSolutionBottom;
+                LabMiniGameRigthSolution = FindAnyObjectByType<LabMiniGame>().rightSolution;
+                labLevel = FindAnyObjectByType<LabMiniGame>().level;
+                Debug.Log(LabRecipeRightSolutionMid);
                 break;
             case "Medbay":
                 medbayCommieCount = FindAnyObjectByType<MedbayScan>().communism;
                 scanDone = FindAnyObjectByType<MedbayScan>().scanDone;
 
                 GameObject hammer = GameObject.Find("Hammer");
-
                 if (hammer.GetComponent<MedbayCommie>().hammerPlaced == true)
                 {
                     hammerPlaced = hammer.GetComponent<MedbayCommie>().hammerPlaced;
                 }
-                GameObject sickle = GameObject.Find("Sichel");
 
+                GameObject sickle = GameObject.Find("Sichel");
                 if (sickle.GetComponent<MedbayCommie>().sicklePlaced == true)
                 {
                     sicklePlaced = sickle.GetComponent<MedbayCommie>().sicklePlaced;

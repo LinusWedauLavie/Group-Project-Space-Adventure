@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class LabMiniGame : MonoBehaviour
 {
+    SaveRoomStates saveRoomStates;
     public Sprite empty;
     public Sprite oneLayer;
     public Sprite oneLayerone;
@@ -13,7 +14,7 @@ public class LabMiniGame : MonoBehaviour
     public Sprite twoLayers;
     public Sprite twoLayersone;
     public Sprite full;
-    int level = 0;
+    [HideInInspector] public int level = 0;
     UnityEngine.UI.Image buttonImage;
     public InventoryManager inventoryManager;
     public Item currentItem;
@@ -24,8 +25,14 @@ public class LabMiniGame : MonoBehaviour
 
     void Start()
     {
+        saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
         buttonImage = GetComponent<UnityEngine.UI.Image>();
         inventoryManager = FindAnyObjectByType<InventoryManager>();
+        if(saveRoomStates.labLevel != 0 || saveRoomStates.LabMiniGameRigthSolution)
+        {
+            level = saveRoomStates.labLevel;
+            rightSolution = saveRoomStates.LabMiniGameRigthSolution; 
+        }
     }
     void Update()
     {
@@ -64,6 +71,7 @@ public class LabMiniGame : MonoBehaviour
             rightSolution = true;
             strengthDrink.SetActive(true);
             miniGameButton.SetActive(false);
+            saveRoomStates.GetRoomState();
         }        
     }
 
@@ -78,7 +86,8 @@ public class LabMiniGame : MonoBehaviour
         else if (neededItem[level] != currentItem )      
         {
             level = 0;
-        }        
+        }
+        saveRoomStates.GetRoomState();        
     }
    
 }

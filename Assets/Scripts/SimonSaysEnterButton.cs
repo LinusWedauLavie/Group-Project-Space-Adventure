@@ -8,11 +8,9 @@ public class SimonSaysEnterButton : MonoBehaviour
     public Button button;
     void Awake()
     {
-        Debug.Log("vorher");
         saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
         if(saveRoomStates.cabineCompletedSave == true)
         {
-            Debug.Log("tets");
             button.enabled = false;
         }
         

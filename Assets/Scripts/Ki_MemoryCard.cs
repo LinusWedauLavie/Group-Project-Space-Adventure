@@ -25,7 +25,7 @@ public class Ki_MemoryCard : MonoBehaviour
     }
     void Update()
     {
-        
+        currentItem = inventoryManager.GetSelectedItem(false);
     }
     public void OnButtonPress()
     {       

@@ -78,7 +78,8 @@ public class LabMiniGame : MonoBehaviour
     public void OnButtonPress()
     {         
         currentItem = InventoryManager.instance.GetSelectedItem(false);
-        if (neededItem[level] == currentItem )      
+        if (level >= 7) {return;}
+        else if (neededItem[level] == currentItem )      
         {
             InventoryManager.instance.GetSelectedItem(false);
             level += 1;

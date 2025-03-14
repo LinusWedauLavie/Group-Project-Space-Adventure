@@ -14,7 +14,7 @@ public class LabMiniGame : MonoBehaviour
     public Sprite twoLayers;
     public Sprite twoLayersone;
     public Sprite full;
-    [HideInInspector] public int level = 0;
+    public int level = 0;
     UnityEngine.UI.Image buttonImage;
     public InventoryManager inventoryManager;
     public Item currentItem;
@@ -78,10 +78,11 @@ public class LabMiniGame : MonoBehaviour
     public void OnButtonPress()
     {         
         currentItem = InventoryManager.instance.GetSelectedItem(false);
-        if (neededItem[level] == currentItem )      
+        if (level >= 7) {}
+        else if (neededItem[level] == currentItem )      
         {
             InventoryManager.instance.GetSelectedItem(false);
-            level += 1;
+            if (level != 6) { level += 1; }
         }
         else if (neededItem[level] != currentItem )      
         {

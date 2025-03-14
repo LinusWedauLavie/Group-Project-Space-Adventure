@@ -45,7 +45,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Goats Grand Maw";
-        planetDescriptionText.text = "Blackhole Description";
+        planetDescriptionText.text = "Ein schwarzes Loch in der Nähe der Space-Station.\n\n In der alten Zeit wurde es häufig als Friedhof einer unbekannten Spezies benutzt, wodurch es dort einiges an Schrott von kleineren Schiffen und unzählige Leichen gibt.";
 
         ShowRessources(Planetressources);
 
@@ -69,7 +69,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Orange";
-        planetDescriptionText.text = "Sun Description";
+        planetDescriptionText.text = "Eine riesige Orange die im Durchschnitt 5500C° warm ist. \nEinmal hat jemand probiert einen Bissen davon zu nehmen, leider ist er verbrannt, bevor er auch nur nah genug dran gehen konnte, deswegen ist der Geschmack der Orange immer noch ein Rätsel.";
 
         ShowRessources(Planetressources);
 
@@ -93,7 +93,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Delta Lambtauri";
-        planetDescriptionText.text = "Baren Planet Description";
+        planetDescriptionText.text = "Der einst große Planet der Lämmer, jetzt nur noch eine leere Einöde. Der Planet war voller Lämmer bis auf einmal eine Alien-Spezies entschied diese aufgrund einer Prophezeiung auszulöschen. Es gibt Gerüchte von einem letzten Lamm mit einer großen Kraft.";
 
         ShowRessources(Planetressources);
 
@@ -117,7 +117,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "X-03 Molten";
-        planetDescriptionText.text = "Lava Planet Description";
+        planetDescriptionText.text = "Der 3. Lava Planet der jemals gefunden wurde. Alles auf ihm ist längst geschmolzen und hat sich mit der Lava assimiliert. Jedes Team, das den Planeten besucht hat ist verschwunden und nur die hitzeresistenzen Dronen schaffen es zurück.";
 
         ShowRessources(Planetressources);
 
@@ -141,7 +141,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Verfluchter Terran";
-        planetDescriptionText.text = "Terran Planet Description";
+        planetDescriptionText.text = "Dieser Planet hat eine lange Geschichte an Traditionen und Lebewesen, doch wegen einem Geschehnis ist er heutzutage unbewohnbar. Auf ihm befinden sich einige schädliche Ressourcen, die sehr hilfreich sein können, wenn man sie mit Vorsicht behandelt.";
 
         ShowRessources(Planetressources);
 
@@ -165,7 +165,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Great Sparkle";
-        planetDescriptionText.text = "Crystal Planet Description";
+        planetDescriptionText.text = "Man sagt, dass dieser Planet für keine zwei Personen gleich aussieht. Sowohl der Planet als auch die Bewohner beherrschen die Kunst der Verkleidung und Täuschung. Er wird von den sogenannten „Masked Fools“ gesteuert, mit denen seit Jahren keiner Kontakt aufbauen konnte.";
 
         ShowRessources(Planetressources);
 
@@ -189,7 +189,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Lavaeater";
-        planetDescriptionText.text = "Hot Planet Description";
+        planetDescriptionText.text = "Für Ihre Schiffsindustrie und Zitronenanbau, sind die Laveateriner in der ganzen Galaxie bekannt. Niemand hat jemals einen Laveateriner gesehen oder nur mit ihnen gesprochen, wodurch verschiedene Theorien über sie existieren. Wahrscheinlich sind sie nur schüchtern.";
 
         ShowRessources(Planetressources);
 
@@ -213,7 +213,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Storm E";
-        planetDescriptionText.text = "Icy Planet Description";
+        planetDescriptionText.text = "Dieser Planet war früher für seine wilde Natur und Bewohner bekannt, doch nach der großen Lammvernichtung, hat sich dort ein anderes Klima aufgebaut. Es gibt Geschichten von einem Monster, der alles in seinem Wege umbringt oder versklavt. ";
 
         ShowRessources(Planetressources);
 
@@ -237,7 +237,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Effing Failure";
-        planetDescriptionText.text = "Radiated Planet Description";
+        planetDescriptionText.text = "Effing Failure (früher „Mars“) war der Plan B der Menschheit. Leider hat der Leader aus „Amerika“ entschieden, zuerst an Atomkraft und ähnlichen Projekten zu arbeiten, die nicht mit dem lokalen Klima abgestimmt waren, wodurch der komplette Planet unbewohnbar wurde.";
 
         ShowRessources(Planetressources);
 
@@ -261,7 +261,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Terrarium";
-        planetDescriptionText.text = "Terrestrial Planet Description";
+        planetDescriptionText.text = "Den Planet umgibt eine riesige, unsichtbare Glasscheibe mit einzelnen Vacuumlöchern. Auf ihm lebt eine Spezies namens „Dinosaurier“. Diese sind vor Millionen von Jahren von Terra geflohen, da ihr Satellitensystem einen unausweichbaren Meteoriten entdeckt haben.";
 
         ShowRessources(Planetressources);
 
@@ -285,7 +285,7 @@ public class PlanetInfoPanelManager : MonoBehaviour
 
         planetInfoPanel.SetActive(true);
         planetTextHeader.text = "Jupitwo";
-        planetDescriptionText.text = "Jupiter Planet Description";
+        planetDescriptionText.text = "Nachdem der Originale Planet „Jupiter“ als Zwergplanet eingestuft wurde, haben sich einige Spezies zusammengetan um einen neuen und verbesserten Jupiter zu bauen. Durch Ressourcensammlung wurde der Originale Jupiter zerstört und Jupitwo ist der letzte Beweis dessen Existenz.";
 
         ShowRessources(Planetressources);
 

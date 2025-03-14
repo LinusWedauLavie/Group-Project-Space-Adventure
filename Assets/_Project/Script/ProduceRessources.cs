@@ -20,6 +20,7 @@ public class ProduceRessources : MonoBehaviour
 
     public void PlanetDrillStartClicked()
     {
+        if (rohstoffLager == null) { rohstoffLager = FindAnyObjectByType<RohstoffLager>(); }
         if (rohstoffLager.MiningDrones.Value > 0 && isDrilling == false)
         {
             rohstoffLager.MiningDrones.Value--;
@@ -35,10 +36,10 @@ public class ProduceRessources : MonoBehaviour
         }
     }
 
-    
-void Update()
-{
-            planetInfoPanelManager = FindAnyObjectByType<PlanetInfoPanelManager>();
+
+    void Update()
+    {
+        planetInfoPanelManager = FindAnyObjectByType<PlanetInfoPanelManager>();
         if (planetInfoPanelManager == null) { showingRessources = false; return; }
         if (planetInfoPanelManager.Planetressources == this)
         {
@@ -50,10 +51,11 @@ void Update()
         {
             showingRessources = false;
         }
-}
+    }
 
     IEnumerator StartDrill() //Muss noch checken ob es beim richtigen planet ist :<
     {
+        if (rohstoffLager == null) { rohstoffLager = FindAnyObjectByType<RohstoffLager>(); }
         drillProgress.Value = 0;
 
         while (drillProgress.Value < 100)

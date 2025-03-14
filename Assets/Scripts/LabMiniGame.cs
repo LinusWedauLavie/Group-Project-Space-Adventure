@@ -69,7 +69,14 @@ public class LabMiniGame : MonoBehaviour
         {   
             buttonImage.sprite = full; 
             rightSolution = true;
-            strengthDrink.SetActive(true);
+            if (saveRoomStates.pickedUpPotion == false)
+            {
+                strengthDrink.SetActive(true);
+            }
+            else
+            {
+                buttonImage.sprite = empty;
+            }
             miniGameButton.SetActive(false);
             saveRoomStates.GetRoomState();
         }        

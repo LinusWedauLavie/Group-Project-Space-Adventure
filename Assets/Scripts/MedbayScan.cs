@@ -31,8 +31,6 @@ public class MedbayScan : MonoBehaviour
     {
         if (scanDone == false && communism == 2)
         {
-            Debug.Log(saveRoomStates.medbayScan + "vor dem safe");
-            saveRoomStates.medbayScan = true;
             player.transform.position = Scanposition;
             StartCoroutine(WaitASec());
         }
@@ -92,7 +90,6 @@ public class MedbayScan : MonoBehaviour
                 scanDone = true;
                 scanStart = false;
                 memoryCard.SetActive(true);
-                saveRoomStates.medbayScan = false;
                 player.transform.position = new Vector2(-5.6f, -3.8f);
 
             }

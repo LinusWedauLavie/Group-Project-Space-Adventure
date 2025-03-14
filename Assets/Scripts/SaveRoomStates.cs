@@ -18,7 +18,7 @@ public class SaveRoomStates : MonoBehaviour
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
     public int medbayCommieCount, coinsInVendingMachine, labLevel; //Medbay sichel und hammer zähler, und coins in vending machine und lab level counter
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced, LabMiniGameRigthSolution, LabRecipeRightSolutionTop, LabRecipeRightSolutionMid, LabRecipeRightSolutionBottom, pickedUpPotion, brokeVent; //lab minigame items und anderes
-    public bool medbayScan;
+    
 
 
 

@@ -1,29 +1,22 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ClickCharacterMove : MonoBehaviour
 {
-	public Vector2 speed = new Vector2(5f, 0f);
-	bool mouseClick = false;
-	bool isMoving = false;
-	private Animator animator;
-	private Rigidbody2D rb;
-	private SpriteRenderer spriteRenderer;
-	public Vector2 targetPosition;
-	public Vector2 relativePosition;
-	private Vector2 movement;
-	private Rigidbody2D rigidbodyComponent;
-	SaveRoomStates saveRoomStates;
-	void Awake()
-	{
-		saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
-		SceneManager.activeSceneChanged += OnSceneChanged;
-	}
-	public GameObject player;
-	string activeSceneName;
-	void Start()
-	{
+    public Vector2 speed = new Vector2(5f, 0f);
+    bool mouseClick = false;
+    bool isMoving = false;
+    private Animator animator;
+    private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
+    public Vector2 targetPosition;
+    public Vector2 relativePosition;
+    private Vector2 movement;
+    private Rigidbody2D rigidbodyComponent;
+    SaveRoomStates saveRoomStates;
+    SetPlayerPosition setPlayerPosition;
+    public GameObject player;
+    string activeSceneName;
 
 		animator = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody2D>();
@@ -51,115 +44,98 @@ public class ClickCharacterMove : MonoBehaviour
 				spriteRenderer.flipX = false;
 			}
 
-		}
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseClick = true;
+        }
 
-		if (relativePosition.x < 0.1 && relativePosition.x > -0.1)
-		{
-			isMoving = false;
-		}
+        if (mouseClick)
+        {
+            relativePosition = new Vector2(targetPosition.x - transform.position.x, 0);
+            isMoving = true;
+            spriteRenderer.flipX = relativePosition.x < 0;
+        }
 
-		animator.SetBool("Moving", isMoving);
+        if (Mathf.Abs(relativePosition.x) < 0.1f)
+        {
+            isMoving = false;
+        }
 
-	}
+        animator.SetBool("Moving", isMoving);
+    }
 
-	void FixedUpdate()
-	{
-		if (mouseClick)
-		{
-			if (speed.x * Time.deltaTime >= Mathf.Abs(relativePosition.x))
-			{
-				movement.x = relativePosition.x;
-
-			}
-			else
-			{
-				movement.x = speed.x * Mathf.Sign(relativePosition.x);
-			}
-			/*if(	speed.y * Time.deltaTime >=  Mathf.Abs(relativePosition.y) ) {
-				movement.y = relativePosition.y;
-			} else{
-				movement.y = speed.y * Mathf.Sign(relativePosition.y);
-			}*/
-
-			GetComponent<Rigidbody2D>().linearVelocity = movement;
-
-		}
-
-	}
-
-	SetPlayerPosition setPlayerPosition = new SetPlayerPosition();
-	public void OnSceneChanged(Scene current, Scene next)
-	{
-		player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
-		setPlayerPosition.SetGroundPosition(SceneManager.GetActiveScene().name, player, saveRoomStates);
-	}
-
+void FixedUpdate()
+{
+    if (mouseClick)
+    {
+        movement.x = Mathf.Abs(relativePosition.x) <= speed.x * Time.deltaTime ? relativePosition.x : speed.x * Mathf.Sign(relativePosition.x);
+        rb.linearVelocity = movement;
+    }
 }
 
 
+    public void OnSceneChanged(Scene current, Scene next)
+    {
+        player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
+        setPlayerPosition.SetGroundPosition(SceneManager.GetActiveScene().name, player, saveRoomStates);
+    }
+}
 
 public class SetPlayerPosition : MonoBehaviour
 {
-	
-	//public ClickCharacterMove movement;
-	public ClickCharacterMove clickCharacterMove;
-	public void Start()
-	{
-		//clickCharacterMove = FindAnyObjectByType<ClickCharacterMove>();
-		//movement = FindAnyObjectByType<ClickCharacterMove>();
-	}
-	Vector2 bridgeGroundPosition = new Vector2(-0.34f, -3.8f);
-	Vector2 cabinesGroundPosition = new Vector2(5.5f, -3.63f);
-	Vector2 canteenGroundPosition = new Vector2(1f, 1.72f);
-	Vector2 cryoGroundPosition = new Vector2(-7.5f, -3.76f);
-	Vector2 hangarGroundPosition = new Vector2(-1f, -5.51f);
-	Vector2 labGroundPosition = new Vector2(0f, -3.8f);
-	Vector2 medbayGroundPosition = new Vector2(6.6f, -3.8f);
-	Vector2 storageGroundPosition = new Vector2(-2.1f, -1.344f);
+    public ClickCharacterMove clickCharacterMove;
+    Vector2 bridgeGroundPosition = new Vector2(-0.34f, -3.8f);
+    Vector2 cabinesGroundPosition = new Vector2(5.5f, -3.63f);
+    Vector2 canteenGroundPosition = new Vector2(1f, 1.72f);
+    Vector2 cryoGroundPosition = new Vector2(-7.5f, -3.76f);
+    Vector2 hangarGroundPosition = new Vector2(-1f, -5.51f);
+    Vector2 labGroundPosition = new Vector2(0f, -3.8f);
+    Vector2 medbayGroundPosition = new Vector2(6.6f, -3.8f);
+    Vector2 storageGroundPosition = new Vector2(-2.1f, -1.344f);
 
-	public void SetGroundPosition(string activeSceneName, GameObject player, SaveRoomStates saveRoomStates)
-	{
-		if (clickCharacterMove == null) { clickCharacterMove = FindAnyObjectByType<ClickCharacterMove>(); }
-		switch (activeSceneName)
-		{
-			case "Bridge":
-				player.transform.position = bridgeGroundPosition;
-				clickCharacterMove.targetPosition = bridgeGroundPosition;
-				//		movement.relativePosition.x = 0;
-				//		movement.speed.x =0;
-				break;
-			case "Cabines":
-				player.transform.position = cabinesGroundPosition;
-				clickCharacterMove.targetPosition = cabinesGroundPosition;
-				break;
-			case "Canteen":
-				player.transform.position = canteenGroundPosition;
-				clickCharacterMove.targetPosition = canteenGroundPosition;
-				break;
-			case "Cryo":
-				if (saveRoomStates.firstLoad == false)
-				{
-					player.transform.position = cryoGroundPosition;
-					clickCharacterMove.targetPosition = cryoGroundPosition;
-				}
-				break;
-			case "Hangar":
-				player.transform.position = hangarGroundPosition;
-				clickCharacterMove.targetPosition = hangarGroundPosition;
-				break;
-			case "Lab":
-				player.transform.position = labGroundPosition;
-				clickCharacterMove.targetPosition = labGroundPosition;
-				break;
-			case "Medbay":
-				player.transform.position = medbayGroundPosition;
-				clickCharacterMove.targetPosition = medbayGroundPosition;
-				break;
-			case "TheStorage":
-				player.transform.position = storageGroundPosition;
-				clickCharacterMove.targetPosition = storageGroundPosition;
-				break;
-
-		}
-	}
+    public void SetGroundPosition(string activeSceneName, GameObject player, SaveRoomStates saveRoomStates)
+    {
+        if (clickCharacterMove == null) { clickCharacterMove = FindAnyObjectByType<ClickCharacterMove>(); }
+        switch (activeSceneName)
+        {
+            case "Bridge":
+                player.transform.position = bridgeGroundPosition;
+                clickCharacterMove.targetPosition = bridgeGroundPosition;
+                break;
+            case "Cabines":
+                player.transform.position = cabinesGroundPosition;
+                clickCharacterMove.targetPosition = cabinesGroundPosition;
+                break;
+            case "Canteen":
+                player.transform.position = canteenGroundPosition;
+                clickCharacterMove.targetPosition = canteenGroundPosition;
+                break;
+            case "Cryo":
+                if (!saveRoomStates.firstLoad)
+                {
+                    player.transform.position = cryoGroundPosition;
+                    clickCharacterMove.targetPosition = cryoGroundPosition;
+                }
+                break;
+            case "Hangar":
+                player.transform.position = hangarGroundPosition;
+                clickCharacterMove.targetPosition = hangarGroundPosition;
+                break;
+            case "Lab":
+                player.transform.position = labGroundPosition;
+                clickCharacterMove.targetPosition = labGroundPosition;
+                break;
+            case "Medbay":
+                player.transform.position = medbayGroundPosition;
+                clickCharacterMove.targetPosition = medbayGroundPosition;
+                break;
+            case "TheStorage":
+                player.transform.position = storageGroundPosition;
+                clickCharacterMove.targetPosition = storageGroundPosition;
+                break;
+        }
+    }
 }

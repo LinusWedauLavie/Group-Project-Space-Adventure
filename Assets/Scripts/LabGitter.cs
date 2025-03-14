@@ -11,6 +11,11 @@ public class LabGitter : MonoBehaviour
     void Start()
     {
         inventoryManager = FindAnyObjectByType<InventoryManager>();
+        if (FindAnyObjectByType<SaveRoomStates>().brokeVent)
+        {
+            Gitter.SetActive(false);
+            GitterButton.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -27,6 +32,10 @@ public class LabGitter : MonoBehaviour
             InventoryManager.instance.GetSelectedItem(false);      
             Gitter.SetActive(false);
             GitterButton.SetActive(false);
+            FindFirstObjectByType<SaveRoomStates>().brokeVent=true;
+        }
+        else { DialogueBox dialogueBox = FindAnyObjectByType<DialogueBox>();
+            dialogueBox.ShowText("Hmm, da komme ich nicht dran...");
         }
     }
 }

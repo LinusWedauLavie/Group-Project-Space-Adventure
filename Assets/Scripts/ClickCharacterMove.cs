@@ -25,13 +25,13 @@ public class ClickCharacterMove : MonoBehaviour
         setPlayerPosition = gameObject.AddComponent<SetPlayerPosition>();
     }
 
-    void Start()
+    public void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
     }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -44,7 +44,14 @@ public class ClickCharacterMove : MonoBehaviour
         {
             relativePosition = new Vector2(targetPosition.x - transform.position.x, 0);
             isMoving = true;
-            spriteRenderer.flipX = relativePosition.x < 0;
+            if (relativePosition.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (relativePosition.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
         }
         else
         {
@@ -57,6 +64,13 @@ public class ClickCharacterMove : MonoBehaviour
         }
 
         animator.SetBool("Moving", isMoving);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && saveRoomStates.medbayScan == false)
+        {
+            Debug.Log(saveRoomStates.medbayScan);
+            targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseClick = true;
+        }
     }
 
     void FixedUpdate()

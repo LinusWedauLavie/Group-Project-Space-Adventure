@@ -31,10 +31,11 @@ public class MedbayScan : MonoBehaviour
     {
         if (scanStart == false && scanDone == false && communism == 2)
         {
-            Debug.Log(saveRoomStates.medbayScan + "vor dem safe");
             saveRoomStates.medbayScan = true;
             scanStart = true;
             player.transform.position = Scanposition;
+            FindAnyObjectByType<ClickCharacterMove>().relativePosition = new Vector2(0, 0);
+            FindAnyObjectByType<ClickCharacterMove>().speed = new Vector2(0, 0);
             StartCoroutine(WaitASec());
         }
         else if (scanStart == false && scanDone == false)
@@ -96,8 +97,10 @@ public class MedbayScan : MonoBehaviour
                 text.text = "All Clear!";
                 scanDone = true;
                 scanStart = false;
+                saveRoomStates.medbayScan = false;
                 memoryCard.SetActive(true);
                 player.transform.position = new Vector2(-5.6f, -3.8f);
+                FindAnyObjectByType<ClickCharacterMove>().speed = new Vector2(5, 2);
 
             }
             else if (timer == 10)

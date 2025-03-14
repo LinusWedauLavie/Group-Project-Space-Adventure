@@ -29,10 +29,17 @@ public class MedbayScan : MonoBehaviour
 
     public void StartScan()
     {
-        if (scanDone == false && communism == 2)
+        if (scanStart == false && scanDone == false && communism == 2)
         {
+            Debug.Log(saveRoomStates.medbayScan + "vor dem safe");
+            saveRoomStates.medbayScan = true;
+            scanStart = true;
             player.transform.position = Scanposition;
             StartCoroutine(WaitASec());
+        }
+        else if (scanStart == false && scanDone == false)
+        {
+            FindAnyObjectByType<DialogueBox>().ShowText("Was ist das? EIn Scanner?");
         }
     }
     private void Update()

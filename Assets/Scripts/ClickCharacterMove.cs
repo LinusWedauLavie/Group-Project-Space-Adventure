@@ -17,74 +17,56 @@ public class ClickCharacterMove : MonoBehaviour
     SetPlayerPosition setPlayerPosition;
     public GameObject player;
     string activeSceneName;
-    public void Start()   
+
+    void Awake()
     {
-		animator = GetComponent<Animator>();
-		rb = GetComponent<Rigidbody2D>();
-		spriteRenderer = GetComponent<SpriteRenderer>();
         saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
-	}
-	void Update()
-	{
-
-        
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                mouseClick = true;
-
-            }
-            if (mouseClick == true)
-            {
-                relativePosition = new Vector2(targetPosition.x - gameObject.transform.position.x, 0);
-                isMoving = true;
-                if (relativePosition.x < 0)
-                {
-                    spriteRenderer.flipX = true;
-                }
-                else if (relativePosition.x > 0)
-                {
-                    spriteRenderer.flipX = false;
-                }
-            
-            }
-
-
-        
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                mouseClick = true;
-            }
-
-            if (mouseClick)
-            {
-                relativePosition = new Vector2(targetPosition.x - transform.position.x, 0);
-                isMoving = true;
-                spriteRenderer.flipX = relativePosition.x < 0;
-            }
-            if (Mathf.Abs(relativePosition.x) < 0.1f)
-            {
-                isMoving = false;
-            }
-
-            animator.SetBool("Moving", isMoving);
-
-        
-
-         
+        SceneManager.activeSceneChanged += OnSceneChanged;
+        setPlayerPosition = gameObject.AddComponent<SetPlayerPosition>();
     }
 
-
-
-void FixedUpdate()
-{
-    if (mouseClick)
+    void Start()
     {
-        movement.x = Mathf.Abs(relativePosition.x) <= speed.x * Time.deltaTime ? relativePosition.x : speed.x * Mathf.Sign(relativePosition.x);
-        rb.linearVelocity = movement;
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
-}
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mouseClick = true;
+        }
+
+        if (mouseClick && saveRoomStates.medbayScan == false)
+        {
+            relativePosition = new Vector2(targetPosition.x - transform.position.x, 0);
+            isMoving = true;
+            spriteRenderer.flipX = relativePosition.x < 0;
+        }
+        else
+        {
+            isMoving = false;
+        }
+
+        if (Mathf.Abs(relativePosition.x) < 0.1f)
+        {
+            isMoving = false;
+        }
+
+        animator.SetBool("Moving", isMoving);
+    }
+
+    void FixedUpdate()
+    {
+        if (mouseClick && saveRoomStates.medbayScan == false)
+        {
+            movement.x = Mathf.Abs(relativePosition.x) <= speed.x * Time.deltaTime ? relativePosition.x : speed.x * Mathf.Sign(relativePosition.x);
+            rb.linearVelocity = movement;
+        }
+    }
 
 
     public void OnSceneChanged(Scene current, Scene next)
@@ -92,7 +74,7 @@ void FixedUpdate()
         player = FindAnyObjectByType<ClickCharacterMove>().gameObject;
         setPlayerPosition.SetGroundPosition(SceneManager.GetActiveScene().name, player, saveRoomStates);
     }
-
+}
 
 public class SetPlayerPosition : MonoBehaviour
 {
@@ -149,6 +131,4 @@ public class SetPlayerPosition : MonoBehaviour
                 break;
         }
     }
-}
-
 }

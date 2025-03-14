@@ -5953,31 +5953,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dialog Memory Card 2:\r\n\r\nKI: \u201EMemory Card 2 wird geladen\u2026
-    Willkommen zur\xFCck. Wie es scheint haben Sie die zweite Memory Card gefunden\u201C\r\n\r\nPlayer:
-    \u201EJa und jetzt sag mir endlich was hier los ist. Auf dieser Raumstation ist
-    Niemand\u2026 Wo sind Alle hin? Wieso bin ich hier? Welches Jahr haben wir jetzt
-    \xFCberhaupt??? Und am aller wichtigsten: WIESO SEH ICH AUS WIE EIN GOTTVERDAMMTER
-    SAMURAI?!?!\u201C\r\n\r\nKI: \u201EIch kann ihnen leider nicht sagen wieso Niemand
-    auf dieser Raumstation ist au\xDFer ihnen. Wieso sie hier sind kann mein System
-    ihnen leider auch nicht sagen. F\xFCr diese Informationen fehlen meinem System
-    die Errinerungsdaten. Aber ich kann ihnen erleichtert mitteilen, dass wir das
-    Jahr 2347 Irdischer Zeit. Und wieso sie ein Samu..\u201C\r\n\r\nPlayer: \u201E2347?!?!
-    ICH MEIN EBEN WAR ICH DOCH... eh.\u2026 ich war\u2026\u2026 wer war ich \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EEs scheint als w\xE4re ihr Gedankenspeicher ebenfalls besch\xE4digt vielleicht
-    wurden ihre Memory Cards ebenfalls entfernt.\u201C\r\n\r\nPlayer: \u201EICH BIN
-    EIN GOTTVERDAMMTER MENSCH. SO ETWAS WIE MEMORY CARDS GIBT ES BEI UNS NICHT DU
-    DUMME BLECHB\xDCCHSE!!\u201C \r\n\r\nKI: \u201EEntschuldigen sie mein Unverst\xE4ndnis.
-    Ich nehme nur leider keine der hier auf der Station registrierten Lebensformen
-    wahr. Perse hei\xDFt das, Sie sind kein Mensch oder sie d\xFCrften nicht hier
-    sein.\u201C\r\n\r\nPlayer: \u201ETja, Ich bin aber hier. Und Fakt ist, ICH. BIN.
-    EIN. MENSCH. Also bitte sag mir was ich tun soll, es muss doch noch andere \xDCberlebende
-    geben. Ich habe dir deine Memory Card gegeben also gib mir die verdammten Informationen,
-    die ich brauche.\r\n\r\nKI: \u201EEntschuldigen sie aber ich bin nicht in der
-    Lage. Mein Errinerungsspeicher enth\xE4lt keine Informationen zu den von ihnen
-    angeforderten Fragen. Es tut mir wirklich leid\u2026\u201C\r\n\r\nPlayer: \u201E*seufz*
-    Ich denke ich werde mich dann auf die Suche nach der n\xE4chsten Memory Card
-    machen. Bis Bald.\u201C\r\n\r\nKI: \u201EBis Bald.\u201C\r\n"
+  m_text: "Player: \"Ich bin wieder da. Hier ist es echt komisch, es ist als w\xFCrde
+    die Zeit nicht vergehen.\r\nIch bin in diesem verdammt alten K\xF6rper, aber
+    ich f\xFChle mich nicht als w\xE4re ich wirklich so alt.\r\nIch f\xFChle das
+    ich lebe, das mein Herz schl\xE4gt, aber ich musste noch kein einziges mal auf
+    Toilette.\r\nDesto mehr ich mich an diese Raumstation gew\xF6hne, desto komischer
+    kommt mir das alles hier vor, aber wenigstens bleibst du noch gleich.\"\r\n\r\nKI:
+    \"....\"\r\n\r\nPlayer: \"Hallo??? BIST DU NOCH DA ?!?!?!?\"\r\n\r\nKI: \"Keine
+    Sorge ich wusste nur nicht wie ich Antworten sollte. Ich wollte nichts falsches
+    sagen.\"\r\n\r\nPlayer:\"Indem du nichts sagst, sagst du etwas falsches. Ich
+    meine Wir sind hier die einzigen die, die f\xE4higkeit besitzen miteinander zu
+    kommunizieren.\"\r\n\r\nKI:\"Das ergibt Sinn und ich will auch mit dir kommunizieren...
+    Es ist nur.... manchmal habe ich angst....\"\r\n\r\nPlayer\": Bist du nicht eine
+    K\xFCnstliche Intelligenz? Und du hast ANGST?? langsam f\xE4ngst du an mir ansgt
+    zu machen.\"\r\n\r\nKI:\"Nein entschuldige... das war nicht meine absicht.. Es
+    kann nur sein das ich Vielleicht genau so verwirrt bin wie du....\"\r\n\r\nPlayer:\"MANN
+    die haben euch echt gut hinbekommen... soweit ich mich errinern kann haben die
+    KI's fr\xFCher mir nur bei meinen Hausaufgaben geholfen und du bist verwirrt.
+    Hahahahah.\"\r\n\r\nKI:\"...Komm und geh such die n\xE4chste Memory Card vorher
+    gebe ich dir keine Infos.. wieso auch du hast ja eh nicht mal nachgefragt....\"\r\n\r\nPlayer:\"HEY
+    NEIN WARTE.... HALLOOO? HAAAALLOOOOOOO?...man ich darfs mir mit ihr echt nicht
+    verscherzen sonst muss ich noch mit mir selber reden.\" "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -10481,7 +10477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i: 0
-  slay: 200
+  slay: 450
 --- !u!114 &2140878344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10502,25 +10498,37 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dialog Memory Card 1:\r\n\r\nPlayer:  \u201EHa-Hallo?... Kann mich jemand
-    hoeren?\u201C\r\n\r\nKI: \u201EWillkommen zurueck, bitte authentifizieren sie
-    sich, mit ihrem Personifiziertem Crew-Zugangssicherheitsschl\xFCsselcode,  um
-    den Statuskontrollbericht oder weiter Funktionen anzufordern.\u201C\r\n\r\nPlayer:
-    \u201EWER BIST DU? WO BIN ICH? UND WAS IST EIN GOTTVERDAMMTES ZUGANGSSICHERHEITS
-    DINGS BUMS??\u201C\r\n\r\nKI: \u201EMein Name ist EVA II ihr KI Begleiter. Sie
-    befinden sich auf der Raumstation Rote Arche 1. Aktuelle entfernung zum N\xE4chsten
-    Planeten (Die Erde, Satus: Unbewohnbar.) 30.000km. \r\n\r\nPlayer: \u201EUNBEWOHNBAR?!?!?!?\u201C\r\n\r\nKI:
-    \u201Eunbewohnbar. Bedeutungen: [1] nicht zum Bewohnen geeignet.\u201C\r\n\r\nPlayer
-    \u201EInkompetenter Blechhaufen. ICH WEI\xDF WAS UNBEWOHNBAR HEI\xDFT\u201C\r\n\r\nKI:
-    \u201EEntschuldigen sie, der Name \u201EInkompetenter Blechhaufen\u201C entspricht
-    nicht der Wahrheit. Mein Name ist EVA II ihr KI Begleit..\u201C\r\n\r\nPlayer:
-    \u201E*seufz* Jaja ich versteh schon. Welches Jahr haben wir gerade \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EWir schreiben das Jahr 2#*+\u2026. Entschuldigen sie meine Speichereinheit
-    scheint besch\xE4digt zu sein. Sie k\xF6nnen ein vollst\xE4ndiges Backup laden
-    mithilfe von \u201EMemory Cards\u201C. So eine wie sie benutzt haben um mich
-    zum laufen zu kriegen. \r\n\r\nPlayer: \u201EUnd wo finde ich diese \u201EmEmOrY
-    cArDs\u201C?\r\n\r\nKI: \u201E\u2026\u2026\u2026\u201C\r\n\r\nPlayer: Hallo?....
-    Hallo???. *seufz*\r\n\r\n"
+  m_text: "Player:\"Ich habe nachgedacht... Ich hatte ja auch viel Zeit... Alsooo\"\r\n\r\nKI:\"Lass
+    mich dich unterbrechen ich habe neue Informationen die du wissen solltest...
+    bzw. die du wissen musst.\r\nEs Handelt sich dabei darum\"\r\n\r\nPLayer:\"Das
+    du gar keine KI bist oder? Oder bin ich eine? Oder wir beide?\r\nIch glaube diese
+    Welt voller wiederspr\xFCche erkl\xE4rt so viel wie sie nicht tut. Ach ich wei\xDF
+    noch nicht einmal ob dieser Satz Sinn gemacht hat.\r\nIst auch eigentlich egal.
+    Ich wei\xDF dass du seit unserem ersten Gespr\xE4ch ver\xE4ndert hast oder vielleicht
+    verstellst du dich. Mittlerweile ist mir auch egal was oder wer du bist oder
+    wer ich bin.\r\nWenn es eh keine anderen Menschen gibt dann ist doch sowieso
+    alles egal.\"\r\n\r\nKI:\"Du solltest mir vielleicht einmal zuh\xF6ren\"\r\n\r\nPlayer:\"UND
+    WIESO?? ES IST ALLES EGAL NICHTS K\xD6NNTE MICH IN IRGENDEINER FORM AUCH NUR
+    ANSATZWEISE INTERESSIEREN... ... ... es gibt niemanden ist dir das bewusst?\"\r\n\r\nKI:\"Flasch.
+    Es gibt sie noch. Die Menschheit.\"\r\n\r\nPlayer:\"WAS?? WO?? WIE?? WANN?? oke
+    die letzte fragen lassen mal weg... Aber nochmal um es deutlich zu machen. WO?
+    UND WIE?\"\r\n\r\nKI:\"Sie sind alle wieder vereint. Kurz vor dem Aus der Menschlichen
+    Spezies haben die kl\xFCgsten K\xF6pfe des Sonnensystems eine von Maschinen verwaltete
+    Cloud errichtet um das Bewustsein jedes Menschen zu speichern und \r\nf\xFCr
+    immer am leben zu halten. Und du hast die M\xF6glichkeit ihrer beizuwohnen.\"\r\n\r\nPlayer:\"...
+    Das klingt ja alles sch\xF6n und gut. Aber wieso bin ich dann hier aufgewacht
+    und nicht in dieser achsotollen \"Cloud\".\"\r\n\r\nKI:\"Das ist der Haken an
+    der Sache. Du wirst mit ihnen verbunden mit jedem einzelnen Bewusstsein. Zu einem
+    Gro\xDFen. Kein Individuum wei\xDF wie es sich anf\xFChlt. Da es keine Individuen
+    mehr gibt.\r\nDas einzige was man sagen kann ist das sich der Hauptteil der Weltbev\xF6lkerung
+    daf\xFCr entschieden hat. Sie hatten zu sehr Angst vor dem Tod. Jeder tat es
+    freiwllig. Aber wie ist es bei dir.\r\nHast du Angst vor dem Tod?\"\r\n\r\nPlayer:\"Was...
+    das ist.. Ich... Also ich meine... *urghh* was soll das denn alles. Das wird
+    mir alles ein wenig zu viel und zu \xFCberhastet ich meine. ICH MUSS DOCH SOWIESO
+    NOCH EINE MMEMORY CARD FINDE. HAHAHAH JA GUUUUT.\r\nDann mach ich mich mal auf
+    den Weg wa??. Ich hab ja noch soo viel hier zu tun\r\n\r\nKI:\"Vergiss aber nicht.
+    Irgendwann MUSST du dich entscheiden. Versprich mir ordentlich dar\xFCber nachzudenken.
+    ok?\"\r\n\r\nPlayer:\"Mhm.. wie auch immer. wir sehen uns.\" \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}

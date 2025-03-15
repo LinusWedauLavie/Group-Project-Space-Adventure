@@ -12,12 +12,13 @@ public class ProduceRessources : MonoBehaviour
     Slider slider;
     [SerializeField] public Observable<float> drillProgress;
     bool showingRessources = false;
+    SaveRoomStates saveRoomStates;
 
     private void Start()
     {
         rohstoffLager = FindAnyObjectByType<RohstoffLager>();
-        SaveRoomStates saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
-        if (saveRoomStates.IcyPlanetChemikalien == 0 && saveRoomStates.IcyPlanetWeltraumSchrott == 0 && saveRoomStates.IcyPlanetUran==0) { return; }
+        saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
+        if (saveRoomStates.IcyPlanetChemikalien == 0 && saveRoomStates.IcyPlanetWeltraumSchrott == 0 && saveRoomStates.IcyPlanetUran == 0) { return; }
         Debug.Log("Saves Werden geladen");
         switch (this.gameObject.name)
         {
@@ -363,6 +364,14 @@ public class ProduceRessources : MonoBehaviour
             rohstoffLager.TerraSchlangenGift.Value++;
         }
 
+        if (saveRoomStates.firstCollectedResource == false)
+        {
+            saveRoomStates.firstCollectedResource = true;
+
+            FindFirstObjectByType<DialogueBox>().ShowText("Cool, die Drohne hat auch eine Memory Card gefunden!");
+            
+            FindAnyObjectByType<DemoScript>().PickupItem(4);
+        }
 
         StartCoroutine(StartDrill());
     }

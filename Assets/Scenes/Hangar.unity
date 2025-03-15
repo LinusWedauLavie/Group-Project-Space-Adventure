@@ -9010,7 +9010,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: itemsToPickUp.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: 'itemsToPickUp.Array.data[0]'
@@ -9028,6 +9028,10 @@ PrefabInstance:
       propertyPath: 'itemsToPickUp.Array.data[3]'
       value: 
       objectReference: {fileID: 11400000, guid: 56137ce73563ed74e8e7cb2555ae6f31, type: 2}
+    - target: {fileID: 2088725549119735338, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
+      propertyPath: 'itemsToPickUp.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 0dc162ff2e505c34891cd1858cbc0c9a, type: 2}
     - target: {fileID: 5343300735864741018, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

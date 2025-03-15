@@ -14,11 +14,11 @@ public class SaveRoomStates : MonoBehaviour
     //Collectables
     public bool coinCryoCollected, coinCanteenCollected, coinLabCollected, coinMedbayCollected, coinBridgeCollected; //mehr coins hier))
     public int memoryCards; //Menge an karten die gesammelt wurden
-    public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected; //memorycards 
+    public bool cabinesMemCardCollected, canteenMemoryCardCollected, labMemCardCollected, medbayMemCardCollected, hangarMemCardCollected, bridgeMemCardCollected; //memorycards 
     public bool sickleCollected, sicklePlaced, hammerCollected, hammerPlaced, scanDone; //Medbay minigame 
     public int medbayCommieCount, coinsInVendingMachine, labLevel; //Medbay sichel und hammer zähler, und coins in vending machine und lab level counter
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced, LabMiniGameRigthSolution, LabRecipeRightSolutionTop, LabRecipeRightSolutionMid, LabRecipeRightSolutionBottom, pickedUpPotion, brokeVent; //lab minigame items und anderes
-    public bool medbayScan;
+    public bool medbayScan, firstCollectedResource;
 
     public float GoatsGrandMawPlanetUran, GoatsGrandMawPlanetChemikalien, GoatsGrandMawPlanetWeltraumSchrott, GoatsGrandMawPlanetMetallErz, GoatsGrandMawPlanetLegierungen, GoatsGrandMawPlanetMundspülung, GoatsGrandMawPlanetZitronensäure, GoatsGrandMawPlanetTerraSchlangenGift;
     public float DeltaLambtauriPlanetUran, DeltaLambtauriPlanetChemikalien, DeltaLambtauriPlanetWeltraumSchrott, DeltaLambtauriPlanetMetallErz, DeltaLambtauriPlanetLegierungen, DeltaLambtauriPlanetMundspülung, DeltaLambtauriPlanetZitronensäure, DeltaLambtauriPlanetTerraSchlangenGift;

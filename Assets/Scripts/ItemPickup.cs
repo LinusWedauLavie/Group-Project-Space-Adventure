@@ -86,6 +86,18 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     gameObject.SetActive(false);
                 }
                 break;
+                case "hangarMemoryCard":
+                if (saveRoomStates.hangarMemCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
+                case "bridgeMemCard":
+                if (saveRoomStates.bridgeMemCardCollected)
+                {
+                    gameObject.SetActive(false);
+                }
+                break;
                 //Lab minigame items
             case "cabinesMap":
                 if (saveRoomStates.cabinesMapCollected)
@@ -165,6 +177,12 @@ public class ItemPickup : MonoBehaviour, IPointerClickHandler
                     saveRoomStates.medbayMemCardCollected = true;
                     if (saveRoomStates == null) { saveRoomStates = FindAnyObjectByType<SaveRoomStates>(); }
                     saveRoomStates.scanDone = true;
+                    break;
+                case "hangarMemoryCard":
+                    saveRoomStates.hangarMemCardCollected = true;
+                    break;
+                case "bridgeMemCard":
+                    saveRoomStates.bridgeMemCardCollected = true;
                     break;
                 //Lab minigame items
                 case "cabinesMap":

@@ -29,7 +29,7 @@ public class LabGitter : MonoBehaviour
         
         if (neededItem == currentItem )      
         {
-            InventoryManager.instance.GetSelectedItem(false);      
+            InventoryManager.instance.GetSelectedItem(true);      
             Gitter.SetActive(false);
             GitterButton.SetActive(false);
             FindFirstObjectByType<SaveRoomStates>().brokeVent=true;

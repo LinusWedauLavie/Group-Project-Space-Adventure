@@ -20,7 +20,18 @@ public class SaveRoomStates : MonoBehaviour
     public bool cabinesMapCollected, medbayMapCollected, theStorageMapCollected, cabinesMapPlaced, medbayMapPlaced, theStorageMapPlaced, LabMiniGameRigthSolution, LabRecipeRightSolutionTop, LabRecipeRightSolutionMid, LabRecipeRightSolutionBottom, pickedUpPotion, brokeVent; //lab minigame items und anderes
     public bool medbayScan;
 
-
+    public float GoatsGrandMawPlanetUran, GoatsGrandMawPlanetChemikalien, GoatsGrandMawPlanetWeltraumSchrott, GoatsGrandMawPlanetMetallErz, GoatsGrandMawPlanetLegierungen, GoatsGrandMawPlanetMundspülung, GoatsGrandMawPlanetZitronensäure, GoatsGrandMawPlanetTerraSchlangenGift;
+    public float DeltaLambtauriPlanetUran, DeltaLambtauriPlanetChemikalien, DeltaLambtauriPlanetWeltraumSchrott, DeltaLambtauriPlanetMetallErz, DeltaLambtauriPlanetLegierungen, DeltaLambtauriPlanetMundspülung, DeltaLambtauriPlanetZitronensäure, DeltaLambtauriPlanetTerraSchlangenGift;
+    public float IcyPlanetUran, IcyPlanetChemikalien, IcyPlanetWeltraumSchrott, IcyPlanetMetallErz, IcyPlanetLegierungen, IcyPlanetMundspülung, IcyPlanetZitronensäure, IcyPlanetTerraSchlangenGift;
+    public float X03MoltenPlanetUran, X03MoltenPlanetChemikalien, X03MoltenPlanetWeltraumSchrott, X03MoltenPlanetMetallErz, X03MoltenPlanetLegierungen, X03MoltenPlanetMundspülung, X03MoltenPlanetZitronensäure, X03MoltenPlanetTerraSchlangenGift;
+    public float VerfluchterTerranPlanetUran, VerfluchterTerranPlanetChemikalien, VerfluchterTerranPlanetWeltraumSchrott, VerfluchterTerranPlanetMetallErz, VerfluchterTerranPlanetLegierungen, VerfluchterTerranPlanetMundspülung, VerfluchterTerranPlanetZitronensäure, VerfluchterTerranPlanetTerraSchlangenGift;
+    public float GreatSparklePlanetUran, GreatSparklePlanetChemikalien, GreatSparklePlanetWeltraumSchrott, GreatSparklePlanetMetallErz, GreatSparklePlanetLegierungen, GreatSparklePlanetMundspülung, GreatSparklePlanetZitronensäure, GreatSparklePlanetTerraSchlangenGift;
+    public float LavaeaterPlanetUran, LavaeaterPlanetChemikalien, LavaeaterPlanetWeltraumSchrott, LavaeaterPlanetMetallErz, LavaeaterPlanetLegierungen, LavaeaterPlanetMundspülung, LavaeaterPlanetZitronensäure, LavaeaterPlanetTerraSchlangenGift;
+    public float StormEPlanetUran, StormEPlanetChemikalien, StormEPlanetWeltraumSchrott, StormEPlanetMetallErz, StormEPlanetLegierungen, StormEPlanetMundspülung, StormEPlanetZitronensäure, StormEPlanetTerraSchlangenGift;
+    public float EffingFailurePlanetUran, EffingFailurePlanetChemikalien, EffingFailurePlanetWeltraumSchrott, EffingFailurePlanetMetallErz, EffingFailurePlanetLegierungen, EffingFailurePlanetMundspülung, EffingFailurePlanetZitronensäure, EffingFailurePlanetTerraSchlangenGift;
+    public float TerrariumPlanetUran, TerrariumPlanetChemikalien, TerrariumPlanetWeltraumSchrott, TerrariumPlanetMetallErz, TerrariumPlanetLegierungen, TerrariumPlanetMundspülung, TerrariumPlanetZitronensäure, TerrariumPlanetTerraSchlangenGift;
+    public float JupitwoPlanetUran, JupitwoPlanetChemikalien, JupitwoPlanetWeltraumSchrott, JupitwoPlanetMetallErz, JupitwoPlanetLegierungen, JupitwoPlanetMundspülung, JupitwoPlanetZitronensäure, JupitwoPlanetTerraSchlangenGift;
+    public float OrangePlanetUran, OrangePlanetChemikalien, OrangePlanetWeltraumSchrott, OrangePlanetMetallErz, OrangePlanetLegierungen, OrangePlanetMundspülung, OrangePlanetZitronensäure, OrangePlanetTerraSchlangenGift;
 
     void Awake()
     {
@@ -76,7 +87,7 @@ public class SaveRoomStates : MonoBehaviour
 
                 LabMiniGameRigthSolution = FindAnyObjectByType<LabMiniGame>().rightSolution;
                 labLevel = FindAnyObjectByType<LabMiniGame>().level;
-                
+
 
                 break;
             case "Medbay":

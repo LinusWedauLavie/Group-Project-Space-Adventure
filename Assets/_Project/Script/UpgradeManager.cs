@@ -9,6 +9,54 @@ public class UpgradeManager : MonoBehaviour
 
     int droneCost = 10;
 
+    void Start()
+    {
+        rohstoffLager = FindAnyObjectByType<RohstoffLager>();
+        switch (rohstoffLager.discoveryChance)
+        {
+            case 100:
+                discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 20 Uran";
+                break;
+            case 70:
+                discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 40 Uran";
+                break;
+            case 45:
+                discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 60 Uran";
+                break;
+            case 20:
+                discoveryChanceCostText.text = "Ressourcenchance Upgrade \nMaximum erreicht";
+                break;
+            default:
+                break;
+        }
+        switch (rohstoffLager.speedOfDrills)
+        {
+            case 20:
+                miningSpeedCostText.text = "Abbaugeschwindigkeit Upgrade \nKosten: 20 Chemikalien";
+                break;
+            case 25:
+                miningSpeedCostText.text = "Abbaugeschwindigkeit Upgrade \nKosten: 40 Chemikalien";
+                break;
+            case 35:
+                miningSpeedCostText.text = "Abbaugeschwindigkeit Upgrade \nKosten: 60 Chemikalien";
+                break;
+            case 50:
+                miningSpeedCostText.text = "Abbaugeschwindigkeit Upgrade \nMaximum erreicht";
+                break;
+            default:
+                break;
+        }
+        droneCost *= rohstoffLager.totalMiningDrones.Value-2;
+        if (rohstoffLager.totalMiningDrones.Value < 12)
+        {
+            droneAmountCostText.text = "Extra Drone Upgrade \nKosten: " + droneCost + " Legierungen";
+        }
+        else
+        {
+            droneAmountCostText.text = "Extra Drone Upgrade \nMaximum erreicht";
+        }
+    }
+
     public void DiscoveryChanceUpgrade()
     {
         rohstoffLager = FindAnyObjectByType<RohstoffLager>();
@@ -83,14 +131,15 @@ public class UpgradeManager : MonoBehaviour
     {
         rohstoffLager = FindAnyObjectByType<RohstoffLager>();
 
-        if (rohstoffLager.MiningDrones.Value < 12)
+        if (rohstoffLager.totalMiningDrones.Value < 12)
         {
             if (rohstoffLager.Legierungen.Value >= droneCost)
             {
                 rohstoffLager.Legierungen.Value -= droneCost;
                 droneCost += 10;
-                rohstoffLager.MiningDrones.Value += 1;
-                if (rohstoffLager.MiningDrones.Value >= 12)
+                rohstoffLager.currentMiningDrones.Value += 1;
+                rohstoffLager.totalMiningDrones.Value += 1;
+                if (rohstoffLager.totalMiningDrones.Value >= 12)
                 {
                     droneAmountCostText.text = "Extra Drone Upgrade \nMaximum erreicht";
                 }

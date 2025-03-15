@@ -6553,7 +6553,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 923521487205524253, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
       propertyPath: m_Name
-      value: Button (3)
+      value: HangarDoor
       objectReference: {fileID: 0}
     - target: {fileID: 923521487205524253, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9110,7 +9110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8128907680000103842, guid: a4b8aa56c826b7443b88866b2eb02ddc, type: 3}
       propertyPath: m_Name
-      value: DemoSpawn
+      value: HangarsDemoSpawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -11819,7 +11819,24 @@ MonoBehaviour:
     onValueChanged:
       m_PersistentCalls:
         m_Calls: []
-  MiningDrones:
+  currentMiningDrones:
+    value: 3
+    onValueChanged:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1901700955}
+          m_TargetAssemblyTypeName: RohstoffLager, Assembly-CSharp
+          m_MethodName: UpdateDronesInStorage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  totalMiningDrones:
     value: 3
     onValueChanged:
       m_PersistentCalls:
@@ -12997,7 +13014,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 923521487205524253, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
       propertyPath: m_Name
-      value: Button (2)
+      value: HangarDoor
       objectReference: {fileID: 0}
     - target: {fileID: 923521487205524253, guid: ac2ecc910f56ea94ca88ddca509468fb, type: 3}
       propertyPath: m_StaticEditorFlags

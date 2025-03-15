@@ -11,6 +11,27 @@ public class DemoScript : MonoBehaviour
         {
             inventoryManager = FindFirstObjectByType<InventoryManager>();
         }
+        if (this.name == "HangarsDemoSpawn")
+        {
+            if (id == 1)
+            {
+                SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                if (saveRoomStates.StormEPlanetMundspülung == 0)
+                { return; }
+            }
+            else if (id == 2)
+            {
+                SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                if (saveRoomStates.VerfluchterTerranPlanetTerraSchlangenGift == 0)
+                { return; }
+            }
+            else if (id == 3)
+            {
+                SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                if (saveRoomStates.LavaeaterPlanetZitronensäure == 0)
+                { return; }
+            }
+        }
         inventoryManager.AddItem(itemsToPickUp[id]);
     }
 

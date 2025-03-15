@@ -49,6 +49,7 @@ public class VendingMachine : MonoBehaviour
         {
             displayText.text += numbers;
         }
+        coinText.text = totalCoins.ToString();
         if( totalCoins == 5 && displayText.text == "Insert Coins")
         {
 
@@ -58,12 +59,7 @@ public class VendingMachine : MonoBehaviour
                 card.GetComponent<ItemPickup>().ableToPickUp = true;
             }
         }
-        else
-        {   
-            coinText.text = totalCoins.ToString();
-        }
-       
-        
+
     }
     public void StoreInput(string numbers)
     {  

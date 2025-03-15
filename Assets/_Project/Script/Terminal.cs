@@ -37,6 +37,27 @@ public class Terminal : MonoBehaviour
         color = normalColor;
         alphaValue = 0.33f;
         ActivateTerminalButton.GetComponent<Button>().enabled = false;
+
+
+        
+                RohstoffLager rohstoffLager = FindFirstObjectByType<RohstoffLager>();
+                if (rohstoffLager.TerraSchlangenGift.Value == 0)
+                {
+                    SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                    saveRoomStates.VerfluchterTerranPlanetTerraSchlangenGift = 1;
+                }
+                if (rohstoffLager.Zitronensäure.Value == 0)
+                {
+                    SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                    saveRoomStates.LavaeaterPlanetZitronensäure = 1;
+                }
+                if (rohstoffLager.Mundspülung.Value == 0)
+                {
+                    SaveRoomStates saveRoomStates = FindFirstObjectByType<SaveRoomStates>();
+                    saveRoomStates.StormEPlanetMundspülung = 1;
+                } 
+
+
         StartCoroutine(OpenMap());
     }
     public void BackAwayFromPlanetMap()

@@ -44,11 +44,11 @@ public class DemoScript : MonoBehaviour
         Item recievedItem = inventoryManager.GetSelectedItem(false);
         if (recievedItem != null)
         {
-            Debug.Log(recievedItem);
+            //Debug.Log(recievedItem);
         }
         else
         {
-            Debug.Log("No Item");
+            //Debug.Log("No Item");
         }
     }
 
@@ -61,11 +61,11 @@ public class DemoScript : MonoBehaviour
         Item recievedItem = inventoryManager.GetSelectedItem(true);
         if (recievedItem != null)
         {
-            Debug.Log("Used" + recievedItem);
+            //Debug.Log("Used" + recievedItem);
         }
         else
         {
-            Debug.Log("No Item used");
+            //Debug.Log("No Item used");
         }
     }
 

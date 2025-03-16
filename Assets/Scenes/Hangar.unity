@@ -11860,7 +11860,7 @@ MonoBehaviour:
   DronesInStorageText: {fileID: 0}
   RessourceAmountText: {fileID: 0}
   speedOfDrills: 20
-  discoveryChance: 100
+  discoveryChance: 80
 --- !u!4 &1901700956
 Transform:
   m_ObjectHideFlags: 0

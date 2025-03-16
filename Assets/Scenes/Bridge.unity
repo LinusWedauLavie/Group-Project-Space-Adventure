@@ -560,7 +560,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 281424098}
+  - {fileID: 1143915942}
   - {fileID: 610596994}
+  - {fileID: 918252059}
   m_Father: {fileID: 740378044}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -602,31 +604,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dialog Memory Card 2:\r\n\r\nKI: \u201EMemory Card 2 wird geladen\u2026
-    Willkommen zur\xFCck. Wie es scheint haben Sie die zweite Memory Card gefunden\u201C\r\n\r\nPlayer:
-    \u201EJa und jetzt sag mir endlich was hier los ist. Auf dieser Raumstation ist
-    Niemand\u2026 Wo sind Alle hin? Wieso bin ich hier? Welches Jahr haben wir jetzt
-    \xFCberhaupt??? Und am aller wichtigsten: WIESO SEH ICH AUS WIE EIN GOTTVERDAMMTER
-    SAMURAI?!?!\u201C\r\n\r\nKI: \u201EIch kann ihnen leider nicht sagen wieso Niemand
-    auf dieser Raumstation ist au\xDFer ihnen. Wieso sie hier sind kann mein System
-    ihnen leider auch nicht sagen. F\xFCr diese Informationen fehlen meinem System
-    die Errinerungsdaten. Aber ich kann ihnen erleichtert mitteilen, dass wir das
-    Jahr 2347 Irdischer Zeit. Und wieso sie ein Samu..\u201C\r\n\r\nPlayer: \u201E2347?!?!
-    ICH MEIN EBEN WAR ICH DOCH... eh.\u2026 ich war\u2026\u2026 wer war ich \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EEs scheint als w\xE4re ihr Gedankenspeicher ebenfalls besch\xE4digt vielleicht
-    wurden ihre Memory Cards ebenfalls entfernt.\u201C\r\n\r\nPlayer: \u201EICH BIN
-    EIN GOTTVERDAMMTER MENSCH. SO ETWAS WIE MEMORY CARDS GIBT ES BEI UNS NICHT DU
-    DUMME BLECHB\xDCCHSE!!\u201C \r\n\r\nKI: \u201EEntschuldigen sie mein Unverst\xE4ndnis.
-    Ich nehme nur leider keine der hier auf der Station registrierten Lebensformen
-    wahr. Perse hei\xDFt das, Sie sind kein Mensch oder sie d\xFCrften nicht hier
-    sein.\u201C\r\n\r\nPlayer: \u201ETja, Ich bin aber hier. Und Fakt ist, ICH. BIN.
-    EIN. MENSCH. Also bitte sag mir was ich tun soll, es muss doch noch andere \xDCberlebende
-    geben. Ich habe dir deine Memory Card gegeben also gib mir die verdammten Informationen,
-    die ich brauche.\r\n\r\nKI: \u201EEntschuldigen sie aber ich bin nicht in der
-    Lage. Mein Errinerungsspeicher enth\xE4lt keine Informationen zu den von ihnen
-    angeforderten Fragen. Es tut mir wirklich leid\u2026\u201C\r\n\r\nPlayer: \u201E*seufz*
-    Ich denke ich werde mich dann auf die Suche nach der n\xE4chsten Memory Card
-    machen. Bis Bald.\u201C\r\n\r\nKI: \u201EBis Bald.\u201C\r\n"
+  m_text: "Also, F\xDCr welches Ende entscheidet sich unser Samurai nun...?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -660,7 +638,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -691,7 +669,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -40, y: 141.7709, z: -40, w: 141.7709}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2134,7 +2112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &281424098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2152,7 +2130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -215.5, y: -2035}
+  m_AnchoredPosition: {x: -215.5, y: -400}
   m_SizeDelta: {x: 113, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281424099
@@ -2198,7 +2176,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 281424100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1143915939}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 281424097}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 610596993}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &281424100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3630,7 +3644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &610596994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3648,7 +3662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199, y: -2035}
+  m_AnchoredPosition: {x: 199, y: -400}
   m_SizeDelta: {x: 113, y: 53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &610596995
@@ -3694,7 +3708,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 610596996}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 918252058}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 281424097}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 610596993}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &610596996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5574,6 +5624,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917864793}
   m_CullTransparentMesh: 1
+--- !u!1 &918252058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918252059}
+  - component: {fileID: 918252061}
+  - component: {fileID: 918252060}
+  m_Layer: 5
+  m_Name: EndingBText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &918252059
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918252058}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 77999503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -235}
+  m_SizeDelta: {x: 0, y: 690}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &918252060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918252058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Der Samurai schlie\xDFt sich dem Netzwerk an Menschen an und genie\xDFt
+    das ewige Leben.\nEr w\xDCnscht sich zwar mal eine Sekunde Ruhe, aber sonst bereut
+    er diese entscheidung nicht.\n\nDu hast alle Memory Cards gesammelt und damit
+    das Spiel geschafft!\nDr\xDCcke die Escape Taste um das Spiel zu beenden, oder
+    verlasse und betrete wieder diesem Raum und schaue das andere ende an. Danke
+    f\xDCrs Spielen! :>"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -40, y: 435, z: -40, w: -250}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &918252061
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918252058}
+  m_CullTransparentMesh: 1
 --- !u!1 &922466522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,8 +6174,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Dialog Memory Card 1:\r\n\r\nPlayer:  \u201EHa-Hallo?... Kann mich jemand
-    hoeren?\u201C\r\n\r\nKI: \u201EWillkommen zurueck, bitte authentifizieren sie
-    sich, mit ihrem Personifiziertem Crew-Zugangssicherheitsschl\xFCsselcode,  um
+    hoeren?\u201C\r\n\r\nKI: \u201EWillkommen zur\xDCck, bitte authentifizieren sie
+    sich, mit ihrem Personifiziertem Crew-Zugangssicherheitsschl\xDCsselcode,  um
     den Statuskontrollbericht oder weiter Funktionen anzufordern.\u201C\r\n\r\nPlayer:
     \u201EWER BIST DU? WO BIN ICH? UND WAS IST EIN GOTTVERDAMMTES ZUGANGSSICHERHEITS
     DINGS BUMS??\u201C\r\n\r\nKI: \u201EMein Name ist EVA II ihr KI Begleiter. Sie
@@ -5996,7 +6187,7 @@ MonoBehaviour:
     nicht der Wahrheit. Mein Name ist EVA II ihr KI Begleit..\u201C\r\n\r\nPlayer:
     \u201E*seufz* Jaja ich versteh schon. Welches Jahr haben wir gerade \xFCberhaupt?\u201C\r\n\r\nKI:
     \u201EWir schreiben das Jahr 2#*+\u2026. Entschuldigen sie meine Speichereinheit
-    scheint besch\xE4digt zu sein. Sie k\xF6nnen ein vollst\xE4ndiges Backup laden
+    scheint besch\xC4digt zu sein. Sie k\xF6nnen ein vollst\xE4ndiges Backup laden
     mithilfe von \u201EMemory Cards\u201C. So eine wie sie benutzt haben um mich
     zum laufen zu kriegen. \r\n\r\nPlayer: \u201EUnd wo finde ich diese \u201EmEmOrY
     cArDs\u201C?\r\n\r\nKI: \u201E\u2026\u2026\u2026\u201C\r\n\r\nPlayer: Hallo?....
@@ -6079,6 +6270,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066609557}
   m_CullTransparentMesh: 1
+--- !u!1 &1143915939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1143915942}
+  - component: {fileID: 1143915941}
+  - component: {fileID: 1143915940}
+  m_Layer: 5
+  m_Name: EndingAText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1143915940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143915939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Der Samurai st\xDCrmte in den Hangar und erteilte seiner Flotte an Drohnen
+    den Befehl den Verlassenden Kaisermond\n(ein mit riesigem Laserstrahl und einem
+    gigantischen Triebwerk ausgestattetem Kriegs-Mond des einst Gro\xDFem Katzenreiches)
+    \nwieder funktionsF\xC4hig zu machen.\nNach einer ewigkeit an abbau- und bauarbeiten
+    schlie\xDFt der Samurai zuletzt EVA II an den Zentralcomputers des Kriegsmondes
+    an, gemeinsam erkunden Sie damit die Galaxie.\n\nDu hast alle Memory Cards gesammelt
+    und damit das Spiel geschafft!\nDr\xDCcke die Escape Taste um das Spiel zu beenden,
+    oder verlasse und betrete wieder diesem Raum und schaue das andere ende an. Danke
+    f\xDCrs Spielen! :>"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
+  m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -40, y: 435, z: -40, w: -250}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1143915941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143915939}
+  m_CullTransparentMesh: 1
+--- !u!224 &1143915942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143915939}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 77999503}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -235}
+  m_SizeDelta: {x: 0, y: 690}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1154069982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,24 +6709,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Player: \"Ich bin wieder da. Hier ist es echt komisch, es ist als w\xFCrde
-    die Zeit nicht vergehen.\r\nIch bin in diesem verdammt alten K\xF6rper, aber
-    ich f\xFChle mich nicht als w\xE4re ich wirklich so alt.\r\nIch f\xFChle das
-    ich lebe, das mein Herz schl\xE4gt, aber ich musste noch kein einziges mal auf
-    Toilette.\r\nDesto mehr ich mich an diese Raumstation gew\xF6hne, desto komischer
-    kommt mir das alles hier vor, aber wenigstens bleibst du noch gleich.\"\r\n\r\nKI:
+  m_text: "Dialog Memory Card 4:\n\nPlayer: \"Ich bin wieder da. Hier ist es echt
+    komisch, es ist als w\xDCrde die Zeit nicht vergehen.\r\nIch bin in diesem verdammt
+    alten K\xD6rper, aber ich f\xDChle mich nicht als w\xC4re ich wirklich so alt.\r\nIch
+    f\xDChle das ich lebe, das mein Herz schl\xE4gt, aber ich musste noch kein einziges
+    mal auf Toilette.\r\nDesto mehr ich mich an diese Raumstation gew\xF6hne, desto
+    komischer kommt mir das alles hier vor, aber wenigstens bleibst du noch gleich.\"\r\n\r\nKI:
     \"....\"\r\n\r\nPlayer: \"Hallo??? BIST DU NOCH DA ?!?!?!?\"\r\n\r\nKI: \"Keine
     Sorge ich wusste nur nicht wie ich Antworten sollte. Ich wollte nichts falsches
     sagen.\"\r\n\r\nPlayer:\"Indem du nichts sagst, sagst du etwas falsches. Ich
-    meine Wir sind hier die einzigen die, die f\xE4higkeit besitzen miteinander zu
+    meine Wir sind hier die einzigen die, die f\xC4higkeit besitzen miteinander zu
     kommunizieren.\"\r\n\r\nKI:\"Das ergibt Sinn und ich will auch mit dir kommunizieren...
     Es ist nur.... manchmal habe ich angst....\"\r\n\r\nPlayer\": Bist du nicht eine
-    K\xFCnstliche Intelligenz? Und du hast ANGST?? langsam f\xE4ngst du an mir ansgt
+    K\xFCnstliche Intelligenz? Und du hast ANGST?? langsam f\xC4ngst du an mir angst
     zu machen.\"\r\n\r\nKI:\"Nein entschuldige... das war nicht meine absicht.. Es
     kann nur sein das ich Vielleicht genau so verwirrt bin wie du....\"\r\n\r\nPlayer:\"MANN
     die haben euch echt gut hinbekommen... soweit ich mich errinern kann haben die
-    KI's fr\xFCher mir nur bei meinen Hausaufgaben geholfen und du bist verwirrt.
-    Hahahahah.\"\r\n\r\nKI:\"...Komm und geh such die n\xE4chste Memory Card vorher
+    KI's fr\xDCher mir nur bei meinen Hausaufgaben geholfen und du bist verwirrt.
+    Hahahahah.\"\r\n\r\nKI:\"...Komm und geh such die n\xC4chste Memory Card vorher
     gebe ich dir keine Infos.. wieso auch du hast ja eh nicht mal nachgefragt....\"\r\n\r\nPlayer:\"HEY
     NEIN WARTE.... HALLOOO? HAAAALLOOOOOOO?...man ich darfs mir mit ihr echt nicht
     verscherzen sonst muss ich noch mit mir selber reden.\" "
@@ -7786,16 +8121,16 @@ MonoBehaviour:
     was erinnerst du dich?\u201C\r\n\r\nKI: \u201EIch kann mich wieder erinnern wieso
     die Erde Unbewohnbar ist. Und ich wei\xDF auch\u2026\u201C\r\n\r\nPlayer: \u201EWas
     wei\xDFt du??\u201C\r\n\r\nKI: \u201ENichts\u2026 Alles Gut\u2026 Die Erde ist
-    aufgrund vieler Faktoren unbewohnbar. Jedoch f\xFCr den gr\xF6\xDFten Ausl\xF6ser,
-    w\xFCrde ich den vom ehemaligem Gro\xDFf\xFChrer aller Amerikaner \u201EElon
-    Musk\u201C angef\xFChrten Atomaren \u201EShowdown\u201C, wie er ihn nannte, halten.\u201C\r\n\r\nPlayer:
+    aufgrund vieler Faktoren unbewohnbar. Jedoch f\xFCr den gr\xF6\xDFten Ausl\xD6ser,
+    w\xDCrde ich den vom ehemaligem Gro\xDFf\xDChrer aller Amerikaner \u201EElon
+    Musk\u201C angef\xDChrten Atomaren \u201EShowdown\u201C, wie er ihn nannte, halten.\u201C\r\n\r\nPlayer:
     \u201EELON HAT WAS???... Naja ich hatte sowieso keine Tesla Aktien\u201C\r\n\r\nKI:
-    \u201EEs scheint so als w\xFCrdest du dich auch wieder an deine Vergangenheit
-    erinnern :)\u201C\r\n\r\nPlayer: \u201ESo langsam kommt es wieder in Bruchst\xFCcken
-    zur\xFCck aber nichts\u2026 und ich meine wirklich GAR NICHTS an dass ich mich
-    erinnere w\xFCrde logisch hier her f\xFChren. Ich meine selbst unser Sonnensystem
+    \u201EEs scheint so als w\xDCrdest du dich auch wieder an deine Vergangenheit
+    erinnern :)\u201C\r\n\r\nPlayer: \u201ESo langsam kommt es wieder in Bruchst\xDCcken
+    zur\xDCck aber nichts\u2026 und ich meine wirklich GAR NICHTS an dass ich mich
+    erinnere w\xDCrde logisch hier her f\xDChren. Ich meine selbst unser Sonnensystem
     scheint nicht das gleiche zu sein.\u201C\r\n\r\nKI: \u201EDu hast recht die Daten
-    aus den Memory Cards stimmen nicht komplett mit der aktuellen Situation \xFCberein.
+    aus den Memory Cards stimmen nicht komplett mit der aktuellen Situation \xDCberein.
     Vielleicht finden wir zusammen noch mehr heraus. Ich glaub an dich du schaffst
     das!\u201C\r\n\r\nPlayer: \u201EGut ich mach mich auf den Weg. Ich hoffe du langweilst
     dich nicht ohne mich ;)\u201C\r\n"
@@ -8212,26 +8547,26 @@ MonoBehaviour:
     Willkommen zur\xFCck. Wie es scheint haben Sie die zweite Memory Card gefunden\u201C\r\n\r\nPlayer:
     \u201EJa und jetzt sag mir endlich was hier los ist. Auf dieser Raumstation ist
     Niemand\u2026 Wo sind Alle hin? Wieso bin ich hier? Welches Jahr haben wir jetzt
-    \xFCberhaupt??? Und am aller wichtigsten: WIESO SEH ICH AUS WIE EIN GOTTVERDAMMTER
+    \xDCberhaupt??? Und am aller wichtigsten: WIESO SEH ICH AUS WIE EIN GOTTVERDAMMTER
     SAMURAI?!?!\u201C\r\n\r\nKI: \u201EIch kann ihnen leider nicht sagen wieso Niemand
     auf dieser Raumstation ist au\xDFer ihnen. Wieso sie hier sind kann mein System
-    ihnen leider auch nicht sagen. F\xFCr diese Informationen fehlen meinem System
+    ihnen leider auch nicht sagen. F\xDCr diese Informationen fehlen meinem System
     die Errinerungsdaten. Aber ich kann ihnen erleichtert mitteilen, dass wir das
     Jahr 2347 Irdischer Zeit. Und wieso sie ein Samu..\u201C\r\n\r\nPlayer: \u201E2347?!?!
-    ICH MEIN EBEN WAR ICH DOCH... eh.\u2026 ich war\u2026\u2026 wer war ich \xFCberhaupt?\u201C\r\n\r\nKI:
-    \u201EEs scheint als w\xE4re ihr Gedankenspeicher ebenfalls besch\xE4digt vielleicht
+    ICH MEIN EBEN WAR ICH DOCH... eh.\u2026 ich war\u2026\u2026 wer war ich \xDCberhaupt?\u201C\r\n\r\nKI:
+    \u201EEs scheint als w\xC4re ihr Gedankenspeicher ebenfalls besch\xC4digt vielleicht
     wurden ihre Memory Cards ebenfalls entfernt.\u201C\r\n\r\nPlayer: \u201EICH BIN
     EIN GOTTVERDAMMTER MENSCH. SO ETWAS WIE MEMORY CARDS GIBT ES BEI UNS NICHT DU
     DUMME BLECHB\xDCCHSE!!\u201C \r\n\r\nKI: \u201EEntschuldigen sie mein Unverst\xE4ndnis.
     Ich nehme nur leider keine der hier auf der Station registrierten Lebensformen
-    wahr. Perse hei\xDFt das, Sie sind kein Mensch oder sie d\xFCrften nicht hier
+    wahr. Perse hei\xDFt das, Sie sind kein Mensch oder sie d\xDCrften nicht hier
     sein.\u201C\r\n\r\nPlayer: \u201ETja, Ich bin aber hier. Und Fakt ist, ICH. BIN.
     EIN. MENSCH. Also bitte sag mir was ich tun soll, es muss doch noch andere \xDCberlebende
     geben. Ich habe dir deine Memory Card gegeben also gib mir die verdammten Informationen,
     die ich brauche.\r\n\r\nKI: \u201EEntschuldigen sie aber ich bin nicht in der
-    Lage. Mein Errinerungsspeicher enth\xE4lt keine Informationen zu den von ihnen
+    Lage. Mein Errinerungsspeicher enth\xC4lt keine Informationen zu den von ihnen
     angeforderten Fragen. Es tut mir wirklich leid\u2026\u201C\r\n\r\nPlayer: \u201E*seufz*
-    Ich denke ich werde mich dann auf die Suche nach der n\xE4chsten Memory Card
+    Ich denke ich werde mich dann auf die Suche nach der n\xC4chsten Memory Card
     machen. Bis Bald.\u201C\r\n\r\nKI: \u201EBis Bald.\u201C\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -10904,9 +11239,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ich will nicht in dieser Verr\xFCckten, Falschen Welt Leben, ich repariere
-    den Computer und lade mein Verstand hoch!\n<color=\"red\">Kostet: 100 Weltraumschrott\nund
-    100 Chemikalien </color>"
+  m_text: "Ich will nicht in diesem Verr\xDCckten, Falschen Universum Leben, ich
+    lade mein Verstand hoch!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -11042,13 +11376,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Real, oder nicht ist Egal, ich will das "Kaisermond" Raumschiff in Delta
-    Lambtauri reparieren und durch die Galaxie reisen!
-
-    <color="red">Kostet:
-    100 Uran
-
-    und 100 Legierung </color>'
+  m_text: Ich werde das "Kaisermond" Raumschiff in Delta Lambtauri reparieren und
+    durch die Galaxie reisen!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
   m_sharedMaterial: {fileID: 4083842428849004554, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}
@@ -11199,36 +11528,37 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Player:\"Ich habe nachgedacht... Ich hatte ja auch viel Zeit... Alsooo\"\r\n\r\nKI:\"Lass
-    mich dich unterbrechen ich habe neue Informationen die du wissen solltest...
-    bzw. die du wissen musst.\r\nEs Handelt sich dabei darum\"\r\n\r\nPLayer:\"Das
-    du gar keine KI bist oder? Oder bin ich eine? Oder wir beide?\r\nIch glaube diese
-    Welt voller wiederspr\xFCche erkl\xE4rt so viel wie sie nicht tut. Ach ich wei\xDF
-    noch nicht einmal ob dieser Satz Sinn gemacht hat.\r\nIst auch eigentlich egal.
-    Ich wei\xDF dass du seit unserem ersten Gespr\xE4ch ver\xE4ndert hast oder vielleicht
-    verstellst du dich. Mittlerweile ist mir auch egal was oder wer du bist oder
-    wer ich bin.\r\nWenn es eh keine anderen Menschen gibt dann ist doch sowieso
-    alles egal.\"\r\n\r\nKI:\"Du solltest mir vielleicht einmal zuh\xF6ren\"\r\n\r\nPlayer:\"UND
-    WIESO?? ES IST ALLES EGAL NICHTS K\xD6NNTE MICH IN IRGENDEINER FORM AUCH NUR
-    ANSATZWEISE INTERESSIEREN... ... ... es gibt niemanden ist dir das bewusst?\"\r\n\r\nKI:\"Flasch.
-    Es gibt sie noch. Die Menschheit.\"\r\n\r\nPlayer:\"WAS?? WO?? WIE?? WANN?? oke
-    die letzte fragen lassen mal weg... Aber nochmal um es deutlich zu machen. WO?
-    UND WIE?\"\r\n\r\nKI:\"Sie sind alle wieder vereint. Kurz vor dem Aus der Menschlichen
-    Spezies haben die kl\xFCgsten K\xF6pfe des Sonnensystems eine von Maschinen verwaltete
-    Cloud errichtet um das Bewustsein jedes Menschen zu speichern und \r\nf\xFCr
-    immer am leben zu halten. Und du hast die M\xF6glichkeit ihrer beizuwohnen.\"\r\n\r\nPlayer:\"...
-    Das klingt ja alles sch\xF6n und gut. Aber wieso bin ich dann hier aufgewacht
+  m_text: "Dialog Memory Card 5:\n\nPlayer:\"Ich habe nachgedacht... Ich hatte ja
+    auch viel Zeit... Alsooo\"\r\n\r\nKI:\"Lass mich dich unterbrechen ich habe neue
+    Informationen die du wissen solltest... bzw. die du wissen musst.\r\nEs Handelt
+    sich dabei darum\"\r\n\r\nPLayer:\"Das du gar keine KI bist oder? Oder bin ich
+    eine? Oder wir beide?\r\nIch glaube diese Welt voller wiederspr\xDCche erkl\xC4rt
+    so viel wie sie nicht tut. Ach ich wei\xDF noch nicht einmal ob dieser Satz Sinn
+    gemacht hat.\r\nIst auch eigentlich egal. Ich wei\xDF dass du seit unserem ersten
+    Gespr\xC4ch ver\xC4ndert hast oder vielleicht verstellst du dich. Mittlerweile
+    ist mir auch egal was oder wer du bist oder wer ich bin.\r\nWenn es eh keine
+    anderen Menschen gibt dann ist doch sowieso alles egal.\"\r\n\r\nKI:\"Du solltest
+    mir vielleicht einmal zuh\xD6ren\"\r\n\r\nPlayer:\"UND WIESO?? ES IST ALLES EGAL
+    NICHTS K\xD6NNTE MICH IN IRGENDEINER FORM AUCH NUR ANSATZWEISE INTERESSIEREN...
+    ... ... es gibt niemanden ist dir das bewusst?\"\r\n\r\nKI:\"Falsch. Es gibt
+    sie noch. Die Menschheit.\"\r\n\r\nPlayer:\"WAS?? WO?? WIE?? WANN?? oke die letzte
+    fragen lassen mal weg... Aber nochmal um es deutlich zu machen. WO? UND WIE?\"\r\n\r\nKI:\"Sie
+    sind alle wieder vereint. Kurz vor dem Aus der Menschlichen Spezies haben die
+    kl\xDCgsten K\xD6pfe des Sonnensystems eine von Maschinen verwaltete Cloud errichtet
+    um das Bewustsein jedes Menschen zu speichern und \r\nf\xFCr immer am leben zu
+    halten. Und du hast die M\xD6glichkeit ihrer beizuwohnen.\"\r\n\r\nPlayer:\"...
+    Das klingt ja alles sch\xD6n und gut. Aber wieso bin ich dann hier aufgewacht
     und nicht in dieser achsotollen \"Cloud\".\"\r\n\r\nKI:\"Das ist der Haken an
     der Sache. Du wirst mit ihnen verbunden mit jedem einzelnen Bewusstsein. Zu einem
-    Gro\xDFen. Kein Individuum wei\xDF wie es sich anf\xFChlt. Da es keine Individuen
-    mehr gibt.\r\nDas einzige was man sagen kann ist das sich der Hauptteil der Weltbev\xF6lkerung
-    daf\xFCr entschieden hat. Sie hatten zu sehr Angst vor dem Tod. Jeder tat es
+    Gro\xDFen. Kein Individuum wei\xDF wie es sich anf\xDChlt. Da es keine Individuen
+    mehr gibt.\r\nDas einzige was man sagen kann ist das sich der Hauptteil der Weltbev\xD6lkerung
+    daf\xDCr entschieden hat. Sie hatten zu sehr Angst vor dem Tod. Jeder tat es
     freiwllig. Aber wie ist es bei dir.\r\nHast du Angst vor dem Tod?\"\r\n\r\nPlayer:\"Was...
     das ist.. Ich... Also ich meine... *urghh* was soll das denn alles. Das wird
     mir alles ein wenig zu viel und zu \xFCberhastet ich meine. ICH MUSS DOCH SOWIESO
-    NOCH EINE MMEMORY CARD FINDE. HAHAHAH JA GUUUUT.\r\nDann mach ich mich mal auf
+    NOCH EINE MMEMORY CARD FINDEN. HAHAHAH JA GUUUUT.\r\nDann mach ich mich mal auf
     den Weg wa??. Ich hab ja noch soo viel hier zu tun\r\n\r\nKI:\"Vergiss aber nicht.
-    Irgendwann MUSST du dich entscheiden. Versprich mir ordentlich dar\xFCber nachzudenken.
+    Irgendwann MUSST du dich entscheiden. Versprich mir ordentlich dar\xDCber nachzudenken.
     ok?\"\r\n\r\nPlayer:\"Mhm.. wie auch immer. wir sehen uns.\" \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9ddb0cd818375b449fde262b75f7d0e, type: 2}

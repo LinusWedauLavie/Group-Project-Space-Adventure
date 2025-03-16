@@ -14,13 +14,13 @@ public class UpgradeManager : MonoBehaviour
         rohstoffLager = FindAnyObjectByType<RohstoffLager>();
         switch (rohstoffLager.discoveryChance)
         {
-            case 100:
+            case 80:
                 discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 20 Uran";
                 break;
-            case 70:
+            case 60:
                 discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 40 Uran";
                 break;
-            case 45:
+            case 40:
                 discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 60 Uran";
                 break;
             case 20:
@@ -63,23 +63,23 @@ public class UpgradeManager : MonoBehaviour
 
         switch (rohstoffLager.discoveryChance)
         {
-            case 100:
+            case 80:
                 if (rohstoffLager.Uran.Value >= 20)
                 {
                     rohstoffLager.Uran.Value -= 20;
-                    rohstoffLager.discoveryChance = 70;
+                    rohstoffLager.discoveryChance = 60;
                     discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 40 Uran";
                 }
                 break;
-            case 70:
+            case 60:
                 if (rohstoffLager.Uran.Value >= 40)
                 {
                     rohstoffLager.Uran.Value -= 40;
-                    rohstoffLager.discoveryChance = 45;
+                    rohstoffLager.discoveryChance = 40;
                     discoveryChanceCostText.text = "Ressourcenchance Upgrade \nKosten: 60 Uran";
                 }
                 break;
-            case 45:
+            case 40:
                 if (rohstoffLager.Uran.Value >= 60)
                 {
                     rohstoffLager.Uran.Value -= 60;

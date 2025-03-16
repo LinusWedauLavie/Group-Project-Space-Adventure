@@ -1,13 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
-using System;
-using NUnit.Framework.Constraints;
-using UnityEngine.InputSystem.Controls;
-using System.ComponentModel;
-using UnityEngine.UI;
+
 
 public class DialogueBox : MonoBehaviour
 {
@@ -27,7 +21,7 @@ public class DialogueBox : MonoBehaviour
             if (subtitles==null)
             {
                     subtitles = GameObject.Find("TextBubble").GetComponent<TextMeshProUGUI>();
-                Debug.Log("Subtitles were null but hopefully fixed");
+                //Debug.Log("Subtitles were null but hopefully fixed");
             }
             subtitles.text = "";
             targetTime = 0;
@@ -39,7 +33,7 @@ public class DialogueBox : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(ShowTextCoroutine(dialogue));
     }
-    //BITTE DIALOGEBOX VON AUFSAMMELBARE OBJEKTE NICHT INS DIE OBJEKTE SELBST EINFÜGEN SONDERN IN EINEM DEMOSPAWN
+    //BITTE DIALOGEBOX VON AUFSAMMELBARE OBJEKTE NICHT INS DIE OBJEKTE SELBST EINFï¿½GEN SONDERN IN EINEM DEMOSPAWN
     IEnumerator ShowTextCoroutine(string dialogue)
     {
         subtitles.text = dialogue;

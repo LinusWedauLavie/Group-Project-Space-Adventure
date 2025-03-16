@@ -1,13 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
-using System;
-using NUnit.Framework.Constraints;
-using UnityEngine.InputSystem.Controls;
-using System.ComponentModel;
-using UnityEngine.UI;
 
 public class MedbayScan : MonoBehaviour
 {

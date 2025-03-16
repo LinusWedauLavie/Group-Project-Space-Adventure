@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
  
 public class ButtonMiniGame : MonoBehaviour, IPointerClickHandler ,IPointerEnterHandler, IPointerExitHandler 

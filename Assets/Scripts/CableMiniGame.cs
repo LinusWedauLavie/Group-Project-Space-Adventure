@@ -1,8 +1,5 @@
-using System;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class CableMiniGame : MonoBehaviour
 {
@@ -41,7 +38,7 @@ public class CableMiniGame : MonoBehaviour
         int cableSum = buttonPositions.Sum();
         if (index == 2 || index == 3|| index == 6|| index == 7)
         {
-            Debug.Log("Boom");
+            //Debug.Log("Boom");
            wrongSolution = true;
         }
         if (cableSum == 18 && buttonPositions[0] == 0 && buttonPositions[1] == 1 && buttonPositions[4] == 4 && buttonPositions[5] == 5 && buttonPositions[8] == 8)
@@ -49,7 +46,7 @@ public class CableMiniGame : MonoBehaviour
             wrongSolution = false;
             rightSolution = true; 
             InventoryManager.instance.GetSelectedItem(true);
-            dialogueBox.ShowText("Verdammt! Meine Kettensege ist kaputt gegangen :(");
+            dialogueBox.ShowText("Verdammt! Meine KettensÄge ist kaputt gegangen :(");
         }
         
     }

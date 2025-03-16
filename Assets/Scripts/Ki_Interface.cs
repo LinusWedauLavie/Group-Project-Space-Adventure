@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 
 public class Ki_Interface : MonoBehaviour
 {
@@ -41,12 +39,12 @@ public class Ki_Interface : MonoBehaviour
         switch(buttonName)
         {
             case "Memory Card 1":
-                Debug.Log("test33r24");
+                //Debug.Log("test33r24");
                 storytext.SetActive(true);
                 //TODO machen das man den Text sieht
             break;
             case "Memory Card 2":
-                Debug.Log("test2398048907235");
+                //Debug.Log("test2398048907235");
                 storytext.SetActive(true);
                 //TODO machen das man den Text sieht
             break;

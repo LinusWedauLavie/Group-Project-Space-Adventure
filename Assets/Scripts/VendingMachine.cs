@@ -1,12 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
-using System;
-using NUnit.Framework.Constraints;
-using UnityEngine.InputSystem.Controls;
-using System.ComponentModel;
 using UnityEngine.UI;
 
 public class VendingMachine : MonoBehaviour
@@ -16,7 +9,6 @@ public class VendingMachine : MonoBehaviour
     string numbers;
     int number; 
     bool correct = false; 
-    bool enoughCoins = false;
     public int totalCoins = 0;
     public Button  card; 
     public DialogueBox dialogueBox;
@@ -41,7 +33,7 @@ public class VendingMachine : MonoBehaviour
             displayText.text = "のｔ アヴァイァｂぇ";
             if(lineSaid == false)
             {   
-                dialogueBox.ShowText("Ich kann doch kein Scheiß Französisch");
+                dialogueBox.ShowText("Ich kann doch kein Scheiß FranzÖsisch?!");
             }
            
         }

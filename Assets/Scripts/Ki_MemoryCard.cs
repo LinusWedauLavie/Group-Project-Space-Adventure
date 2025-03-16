@@ -1,7 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System;
-using UnityEngine.EventSystems;
 
 
 public class Ki_MemoryCard : MonoBehaviour

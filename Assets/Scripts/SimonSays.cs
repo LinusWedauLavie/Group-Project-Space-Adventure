@@ -1,7 +1,3 @@
-using System;
-using Microsoft.Unity.VisualStudio.Editor;
-using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +7,6 @@ public class SimonSays : MonoBehaviour
     public SimonSaysButtons[] buttons;
     public int[] solution = { 1, 4, 1, 4, 2, 3 };
     public int[] currentInput = { 0, 0, 0, 0, 0, 0 };
-    bool noMistake = true;
     public Animator animator;
     public int currentRound = 1;
     public int i = 0;

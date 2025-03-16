@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Mikrowelle : MonoBehaviour
@@ -22,7 +21,7 @@ public class Mikrowelle : MonoBehaviour
         }
         if (rohstoffLager == null)
         {
-            dialogueBox.ShowText("Eine...Mikrowelle? Da kann ich bestimmt Erze aus dem Hangar zu Legierungen schmelzen! \nIch brÄuche 1 MetallErz und 1 Weltraumschrott dafÜr...");
+            dialogueBox.ShowText("Eine...Mikrowelle? Mit 1 MetallErz und 1 Weltraumschrott kÖnnte ich Legierungen schmelzen!");
             return;
         }
         else if (rohstoffLager.MetallErz.Value >= 1 && rohstoffLager.WeltraumSchrott.Value >= 1)
@@ -31,7 +30,7 @@ public class Mikrowelle : MonoBehaviour
         }
         else
         {
-            dialogueBox.ShowText("Eine...Mikrowelle? Da kann ich bestimmt Erze aus dem Hangar zu Legierungen schmelzen! \nIch brÄuche 1 MetallErz und 1 Weltraumschrott dafÜr...");
+            dialogueBox.ShowText("Eine...Mikrowelle? Mit 1 MetallErz und 1 Weltraumschrott kÖnnte ich Legierungen schmelzen!");
         }
     }
 

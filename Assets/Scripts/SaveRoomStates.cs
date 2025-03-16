@@ -46,6 +46,20 @@ public class SaveRoomStates : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            {
+
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#endif
+                Application.Quit();
+            }
+        }
+    }
+
     public void GetRoomState()
     {
         switch (SceneManager.GetActiveScene().name)
@@ -111,7 +125,7 @@ public class SaveRoomStates : MonoBehaviour
 
                 break;
             default:
-                Debug.Log("Saveroomstate konnte den Raum nicht speichern, weil der Raum nicht gefunden wurde!");
+                //Debug.Log("Saveroomstate konnte den Raum nicht speichern, weil der Raum nicht gefunden wurde!");
                 break;
         }
     }

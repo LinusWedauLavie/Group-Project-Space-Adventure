@@ -19,7 +19,7 @@ public class ProduceRessources : MonoBehaviour
         rohstoffLager = FindAnyObjectByType<RohstoffLager>();
         saveRoomStates = FindAnyObjectByType<SaveRoomStates>();
         if (saveRoomStates.IcyPlanetChemikalien == 0 && saveRoomStates.IcyPlanetWeltraumSchrott == 0 && saveRoomStates.IcyPlanetUran == 0) { return; }
-        Debug.Log("Saves Werden geladen");
+        //Debug.Log("Saves Werden geladen");
         switch (this.gameObject.name)
         {
 

@@ -1,9 +1,6 @@
-using System;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class ItemPickup : MonoBehaviour, IPointerClickHandler
 {

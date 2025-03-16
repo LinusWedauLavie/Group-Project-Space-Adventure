@@ -67,7 +67,7 @@ public class ClickCharacterMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && saveRoomStates.medbayScan == false)
         {
-            Debug.Log(saveRoomStates.medbayScan);
+            //Debug.Log(saveRoomStates.medbayScan);
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseClick = true;
         }
@@ -137,7 +137,7 @@ public class SetPlayerPosition : MonoBehaviour
             case "Medbay":
                 player.transform.position = medbayGroundPosition;
                 clickCharacterMove.targetPosition = medbayGroundPosition;
-                Debug.Log(clickCharacterMove.targetPosition);
+                //Debug.Log(clickCharacterMove.targetPosition);
                 break;
             case "TheStorage":
                 player.transform.position = storageGroundPosition;

@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class LabMiniGameRecipe : MonoBehaviour
@@ -6,7 +5,6 @@ public class LabMiniGameRecipe : MonoBehaviour
     SaveRoomStates saveRoomStates;
     public Sprite recipeFull;
     public Sprite recipeEmpty;
-    int level = 0;
     UnityEngine.UI.Image buttonImage;
     public InventoryManager inventoryManager;
     public Item currentItem;

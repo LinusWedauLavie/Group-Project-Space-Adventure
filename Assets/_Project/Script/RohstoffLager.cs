@@ -1,4 +1,3 @@
-using System.Runtime.InteropServices.WindowsRuntime;
 using TMPro;
 using UnityEngine;
 
@@ -13,21 +12,21 @@ public class RohstoffLager : MonoBehaviour
 
 
     [SerializeField] public int speedOfDrills=20; //upgrades 25, 35, 50
-    [SerializeField] public int discoveryChance=100; //Wenn Random 1 - 100, kleiner Gleich besser. upgrades 70, 45, 20
+    [SerializeField] public int discoveryChance=80; //Wenn Random 1 - 100, kleiner Gleich besser. upgrades 70, 45, 20
 
 
     void Awake()
     {
         if (instance != null)
         {
-            Debug.Log("RohstoffLager already exists");
+            //Debug.Log("RohstoffLager already exists");
             Destroy(gameObject);
         }
         else
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            Debug.Log("RohstoffLager created");
+            //Debug.Log("RohstoffLager created");
         }
     }
 
